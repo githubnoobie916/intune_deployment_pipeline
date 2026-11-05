@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "recipeId": "mozilla.firefox.current.x64.en-us",
+  "recipeSha256": "C9B39A4D7CBFF6C9416933926C7F9C21BC9BB5585498A8E61B8F7516BD38AFBE",
+  "discoveredAtUtc": "2026-11-04T05:14:15.3325239Z",
+  "version": "159.0.1",
+  "sourceUrl": "https://archive.mozilla.org/pub/firefox/releases/159.0.1/win64/en-US/Firefox%20Setup%20159.0.1.msi",
+  "vendorSha256": "5e9e344fcf409d07351c20814b17214d59c39e3669142b8b7267556bb394577b",
+  "evergreenModuleVersion": "2610.2859.0",
+  "definitionsRelease": "v26.11.03.146",
+  "rawMetadata": {
+    "Version": "159.0.1",
+    "Channel": "Current",
+    "Language": "en-US",
+    "Sha256": "5e9e344fcf409d07351c20814b17214d59c39e3669142b8b7267556bb394577b",
+    "Architecture": "x64",
+    "Type": "msi",
+    "Filename": "Firefox Setup 159.0.1.msi",
+    "URI": "https://archive.mozilla.org/pub/firefox/releases/159.0.1/win64/en-US/Firefox%20Setup%20159.0.1.msi"
+  },
+  "installerValidated": false
+}

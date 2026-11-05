@@ -1,0 +1,25 @@
+{
+  "AppVendor": "Notepad++",
+  "AppName": "Notepad++",
+  "AppVersion": "8.9.8.1",
+  "AppArch": "x64",
+  "AppLang": "Multi",
+  "AppRevision": "02",
+  "AppSuccessExitCodes": [
+    0
+  ],
+  "AppRebootExitCodes": [
+    1641,
+    3010
+  ],
+  "AppProcessesToClose": [
+    {
+      "Name": "notepad++",
+      "Description": "Notepad++"
+    }
+  ],
+  "AppScriptVersion": "1.1.0",
+  "AppScriptDate": "2026-11-03",
+  "AppScriptAuthor": "Endpoint Engineering — illustrative sample",
+  "RequireAdmin": true
+}

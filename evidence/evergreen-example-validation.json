@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "checkedAtUtc": "2026-11-04T05:24:04.9204767Z",
+  "scope": "Evergreen research and illustrative examples; no endpoint or tenant validation",
+  "checks": {
+    "windowsPowerShellParser": "5.1.26100.9711",
+    "parsedOwnedScripts": 14,
+    "parseErrors": 0,
+    "validRecipes": [
+      "firefox",
+      "notepadplusplus"
+    ],
+    "schemaDraft": "2020-12",
+    "pinnedVersionNullRejected": true,
+    "pinnedVersionNonemptyAccepted": true,
+    "detectionUtf8BomConfirmed": [
+      "firefox",
+      "notepadplusplus"
+    ],
+    "packagingPreview": {
+      "executed": true,
+      "contentPrepToolExecuted": false,
+      "createdOutput": false,
+      "expectedSetupEntry": "Invoke-AppDeployToolkit.exe",
+      "expectedOutputName": "Invoke-AppDeployToolkit.intunewin",
+      "wrongContentPrepHashRejected": true,
+      "relativeOutputFollowsPowerShellLocation": true
+    },
+    "discoveryExample": {
+      "executed": true,
+      "powerShell": "7.6.9",
+      "firefoxVersion": "159.0.1",
+      "notepadVersion": "8.9.8.1",
+      "selectionCardinality": 1,
+      "relativeOutputFollowsPowerShellLocation": true,
+      "absentProcessCacheEnvironmentRestored": true,
+      "definitionsAutoUpdated": false,
+      "warning": "Extracted archive has no .evergreen_version marker; no Update-Evergreen was run."
+    }
+  },
+  "notPerformed": [
+    "Installer downloads or Authenticode identity validation",
+    "Endpoint installation or uninstall",
+    "Detection runtime on an installed endpoint",
+    "Actual .intunewin creation",
+    "Intune connection, publication, or assignment"
+  ],
+  "fileHashes": [
+    {
+      "path": "schemas/application-recipe.schema.json",
+      "sha256": "FE20875D764F42C7D8722B87F647282C755CF0D9852B802115B01D7315C291C0"
+    },
+    {
+      "path": "examples/Discover-Application.example.ps1",
+      "sha256": "CD9CC5594935AC24848735B6354C334B7CFE7DF76218B6E19454D012A4EB5AE2"
+    },
+    {
+      "path": "examples/Package-Application.example.ps1",
+      "sha256": "45CBB931B4E5F584B08891BAD07346036700920C789AA7F48D2A698281289AEE"
+    },
+    {
+      "path": "docs/Worked-examples.md",
+      "sha256": "FA6DBFA6C7B33EAAC756ED5A2219D1034DCECF7D17546818B21453598CAE78EF"
+    },
+    {
+      "path": "docs/Framework-assessment.md",
+      "sha256": "BC3C2BDCCF9AD080B8455A7A9F94E840514A2576D97D5DF2F9D4F2680D1DA87B"
+    },
+    {
+      "path": "examples/apps/firefox/actions.json",
+      "sha256": "02749F03D1287F3967E3431F577AB23671CFAF41831A1453583F986D2BF12CA1"
+    },
+    {
+      "path": "examples/apps/firefox/Detect.ps1",
+      "sha256": "E8BB3888329E74FFC9633F7FFCE825900860F2543E0149CF76E3F8F5422AA1C6"
+    },
+    {
+      "path": "examples/apps/firefox/Install.ps1",
+      "sha256": "18FCE2E108237341AB92BBE662A22AD2BAF3BCCBA7CD54121EC36D104DF50652"
+    },
+    {
+      "path": "examples/apps/firefox/metadata.json",
+      "sha256": "73A808FBAF9B7201447F95B98F3F1B75559ED71EE29DF1843F0D7F32981D88B1"
+    },
+    {
+      "path": "examples/apps/firefox/policies.json",
+      "sha256": "E977C3D690224DD727D8761D2C0A66BA41BFD02AE0FD7850C4545D06B5A8E63C"
+    },
+    {
+      "path": "examples/apps/firefox/Post.ps1",
+      "sha256": "1EC589B20209227887FB50D5227850CBEAE847CF99110669BBA338F2A3E9FC46"
+    },
+    {
+      "path": "examples/apps/firefox/Pre.ps1",
+      "sha256": "AA014C63EB23C04123262EE018856C71758A52E74499A1D83BC22E50924576BC"
+    },
+    {
+      "path": "examples/apps/firefox/Repair.ps1",
+      "sha256": "6E242679AD753BBAC24C9049084B0C13FA83E7FE51F65B95073BE8E0AB2A9512"
+    },
+    {
+      "path": "examples/apps/firefox/Uninstall.ps1",
+      "sha256": "35EBE626C42EBB72B6446425E05B7ADF7E8C2E5033FDB0C1BAE314FDD80A7A54"
+    },
+    {
+      "path": "examples/apps/notepadplusplus/actions.json",
+      "sha256": "02749F03D1287F3967E3431F577AB23671CFAF41831A1453583F986D2BF12CA1"
+    },
+    {
+      "path": "examples/apps/notepadplusplus/Detect.ps1",
+      "sha256": "CAA26AA5609DA8A42D6689EA48AF014940A6F0DEF39A27E58363DC0CFE6D92E7"
+    },
+    {
+      "path": "examples/apps/notepadplusplus/Install.ps1",
+      "sha256": "082ACA4C914EEEA3693C35D283AE90E593D7BE3B239891F14A02B22D55FC53D6"
+    },
+    {
+      "path": "examples/apps/notepadplusplus/metadata.json",
+      "sha256": "243D4237BD69C7C69B21B80B15DB2E47A3F92836DD9497A63A264B91C0D4EF9A"
+    },
+    {
+      "path": "examples/apps/notepadplusplus/Post.ps1",
+      "sha256": "10835221CD516A92C3A284FDD6F373C3E02F785ABD137EB1D083E539EE2B0FF2"
+    },
+    {
+      "path": "examples/apps/notepadplusplus/Pre.ps1",
+      "sha256": "BCDA200BBFA30ECFB8C82193775943F9EEFD8E8B1C27AD4FE913BFCCBF8A6E3B"
+    },
+    {
+      "path": "examples/apps/notepadplusplus/Repair.ps1",
+      "sha256": "CDF93B0E47DB87CD5DC2A4556F7A77779075A9A0F9055B2454A7D031614081E7"
+    },
+    {
+      "path": "examples/apps/notepadplusplus/Uninstall.ps1",
+      "sha256": "B6AF3D690E63D400B9E8E698E8D6D3F10165BFA5BAE59CC4F7A3B3052D0794E6"
+    },
+    {
+      "path": "examples/recipes/firefox.json",
+      "sha256": "C9B39A4D7CBFF6C9416933926C7F9C21BC9BB5585498A8E61B8F7516BD38AFBE"
+    },
+    {
+      "path": "examples/recipes/notepadplusplus.json",
+      "sha256": "12C4F45BBE5A1BDC659E9EECB15044D6F43585D04FA1FE40C18DC9B05B208E48"
+    }
+  ]
+}

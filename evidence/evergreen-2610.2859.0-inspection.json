@@ -1,0 +1,97 @@
+{
+  "checkedAtUtc": "2026-11-04T05:14:14.7548681Z",
+  "workstationDate": "2026-11-03",
+  "workstationTimezone": "America/Los_Angeles",
+  "publishedModule": {
+    "version": "2610.2859.0",
+    "packageUrl": "https://www.powershellgallery.com/api/v2/package/Evergreen/2610.2859.0",
+    "packageMetadataUrl": "https://www.powershellgallery.com/packages/Evergreen/2610.2859.0",
+    "installedGlobally": false,
+    "sha256": "366747BCDFC0CB19D7F3F3A7583D1E74A426B32C259E51C59A4A26EF1B9C7FFE",
+    "documentedSupport": "Windows PowerShell 5.1 and PowerShell 7+",
+    "declaredMinimumPowerShell": "4.0"
+  },
+  "definitions": {
+    "publishedDigestMatched": true,
+    "individualManifestHashesVerified": 1200,
+    "url": "https://github.com/EUCPilots/evergreen-apps/releases/download/v26.11.03.146/evergreen-apps.zip",
+    "sha256": "F2355D3BD3EBF5A46374B414B6776D20AD2C612E79FEA61C9EC083B86A12B41B",
+    "autoUpdated": false,
+    "release": "v26.11.03.146"
+  },
+  "defaultBranch": {
+    "url": "https://github.com/EUCPilots/evergreen-module/tree/56699ec976e77a8031f1d93fc8c5eda22ceae085",
+    "differences": [
+      "Main Save-EvergreenApp adds VerifyChecksum, retry/timeouts and partial-file safeguards not present in published package",
+      "Published Save-EvergreenApp creates destination directories before ShouldProcess, uses download ErrorAction Continue and may return a file merely because it exists",
+      "Main and published Get-GitHubRepoRelease differ; output properties used by the two examples were validated against published package"
+    ],
+    "commit": "56699ec976e77a8031f1d93fc8c5eda22ceae085",
+    "sameAsPublished": false,
+    "manifestVersion": "2610.2859.0"
+  },
+  "inspectedPublishedFiles": [
+    {
+      "path": "Public/Get-EvergreenApp.ps1",
+      "sha256": "0CCD1DCCDE058A3C6E55E03818D2DCF8FDC61273D1C9DEC5653FBA5F2B9C171E"
+    },
+    {
+      "path": "Public/Save-EvergreenApp.ps1",
+      "sha256": "31BE84081AEB48AC40295B0AF6464A1E5C03528FE0AF78D0B9059FF6949D465E"
+    },
+    {
+      "path": "Public/Update-Evergreen.ps1",
+      "sha256": "E9115DBE09871FEF5AA513C0EAF3B25660F167EC0B02C2E845D287228C950F2A"
+    },
+    {
+      "path": "Public/Get-EvergreenAppsPath.ps1",
+      "sha256": "CC1609DCF8104352038814801D95F650740F173ECB8802CBD1CEB0925D04CEFC"
+    },
+    {
+      "path": "Shared/Get-GitHubRepoRelease.ps1",
+      "sha256": "E01686B78FE3BB6A97F7AA09FC040D0461D42A0AD074F20E71CB407138B3A686"
+    },
+    {
+      "path": "Private/Get-InstallerType.ps1",
+      "sha256": "149CC1336BA3EC6FB055FAE2DC0FD13B4F054DAD98B94065CF8C78BE035B25C0"
+    }
+  ],
+  "discoveryTest": {
+    "installersDownloaded": false,
+    "installersExecuted": false,
+    "executed": true,
+    "tenantContacted": false,
+    "notepadResultCount": 1,
+    "moduleVersion": "2610.2859.0",
+    "hostPowerShell": "7.6.9",
+    "warning": "Manually extracted definition archive has no .evergreen_version marker; module import warned, but no Update-Evergreen was run.",
+    "firefoxResultCount": 1
+  },
+  "observedReleaseMetadata": {
+    "Firefox": [
+      {
+        "Version": "159.0.1",
+        "Channel": "Current",
+        "Language": "en-US",
+        "Sha256": "5e9e344fcf409d07351c20814b17214d59c39e3669142b8b7267556bb394577b",
+        "Architecture": "x64",
+        "Type": "msi",
+        "Filename": "Firefox Setup 159.0.1.msi",
+        "URI": "https://archive.mozilla.org/pub/firefox/releases/159.0.1/win64/en-US/Firefox%20Setup%20159.0.1.msi"
+      }
+    ],
+    "NotepadPlusPlus": [
+      {
+        "Version": "8.9.8.1",
+        "Date": "9/24/2026",
+        "Size": 6963432,
+        "Sha256": "26f3bcced788fadbac4e7e577b430ea2ce6060cf3bcad993ef4612ecd7d743da",
+        "Architecture": "x64",
+        "InstallerType": "Default",
+        "Type": "exe",
+        "URI": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.8.1/npp.8.9.8.1.Installer.x64.exe"
+      }
+    ],
+    "ModuleVersion": "2610.2859.0"
+  }
+}

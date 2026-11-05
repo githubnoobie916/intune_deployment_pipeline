@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 2,
+  "exampleOnly": true,
+  "state": "IllustrativeNotBuilt",
+  "applicationId": "mozilla.firefox.current.x64.en-us",
+  "buildId": null,
+  "vendorVersionRaw": "159.0.1",
+  "versionComparator": "application-specific-numeric-version",
+  "variant": { "architecture": "x64", "language": "en-US", "channel": "Current", "installerType": "msi" },
+  "discovery": {
+    "provider": "Evergreen",
+    "moduleVersion": "2610.2859.0",
+    "modulePackageSha256": "366747bcdfc0cb19d7f3f3a7583d1e74a426b32c259e51c59a4a26ef1b9c7ffe",
+    "definitionsRelease": "v26.11.03.146",
+    "definitionsArchiveSha256": null,
+    "rawRecordPath": null,
+    "originalUri": null,
+    "finalUri": null,
+    "retrievedAtUtc": null
+  },
+  "installer": {
+    "path": null,
+    "sha256": null,
+    "vendorSha256": "5e9e344fcf409d07351c20814b17214d59c39e3669142b8b7267556bb394577b",
+    "authenticodeStatus": "NotChecked",
+    "signerSubject": null,
+    "identityApproved": false,
+    "msiProperties": null
+  },
+  "inputs": {
+    "recipeRevision": "2",
+    "recipeSha256": null,
+    "actionHashes": [],
+    "supportFileHashes": [],
+    "detectionSha256": null,
+    "toolkitVersion": "4.1.8",
+    "templateRevision": "official-4.1.8-native-v2",
+    "appRevision": "02",
+    "appScriptVersion": "1.1.0",
+    "omitCompletionPrompt": true,
+    "toolkitArchiveSha256": "50cb8d32973fc7648060a48cad63912ecb5caca5a70754f37e83aa06bd380283",
+    "intuneWin32AppVersion": "1.5.0",
+    "contentPrepRelease": "v1.8.7",
+    "contentPrepSha256": "c1ba45b5cb939e84af064bb7ff4b38fb3dfe33c8dc1078fd9b157672eae671f6"
+  },
+  "deployment": {
+    "context": "system",
+    "mode": "Auto",
+    "processes": [{ "name": "firefox", "description": "Mozilla Firefox" }],
+    "deferral": { "policy": "template-default", "deadline": null },
+    "externalPolicyPrerequisites": [{ "provider": "Intune", "setting": "DisableAppUpdate", "requiredValue": true, "verificationStatus": "pending", "policyId": null }]
+  },
+  "update": { "strategy": "new-app-per-release", "downgradeHandling": "vendor-default" },
+  "output": {
+    "setupFile": "Invoke-AppDeployToolkit.exe",
+    "installCommand": "Invoke-AppDeployToolkit.exe -DeploymentType Install -DeployMode Auto",
+    "uninstallCommand": "Invoke-AppDeployToolkit.exe -DeploymentType Uninstall -DeployMode Auto",
+    "maximumInstallationTimeInMinutes": 120,
+    "effectiveReturnCodes": [
+      { "returnCode": 0, "type": "success" },
+      { "returnCode": 1707, "type": "success" },
+      { "returnCode": 3010, "type": "softReboot" },
+      { "returnCode": 1641, "type": "hardReboot" },
+      { "returnCode": 1618, "type": "retry" },
+      { "returnCode": 60001, "type": "failed" },
+      { "returnCode": 60008, "type": "failed" },
+      { "returnCode": 69001, "type": "failed" },
+      { "returnCode": 1602, "type": "retry" }
+    ],
+    "packagePath": null,
+    "packageSha256": null,
+    "generatedScriptSha256": null,
+    "allowedChangeReportPath": null
+  },
+  "acceptance": { "staticValidated": false, "endpointValidated": false, "businessAccepted": false, "evidencePaths": [], "approvedBy": null },
+  "publication": { "tenantId": null, "cloud": null, "intuneAppId": null, "contentVersion": null, "assignmentIds": [], "lastReconciledAtUtc": null },
+  "deploymentObservations": [],
+  "note": "Null values are deliberately unresolved. This is a manifest shape example, not evidence of a download, build, publication or deployment. Compute the build ID from accepted behavioral inputs, not timestamps."
+}

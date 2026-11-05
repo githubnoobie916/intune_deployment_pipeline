@@ -1,0 +1,703 @@
+{
+  "inspectedAtUtc": "2026-11-04T05:08:51.6894792Z",
+  "scope": "Static source, archive hash, and signature inspection only. No module import, authentication, binary execution, or tenant call.",
+  "package": {
+    "name": "IntuneWin32App",
+    "version": "1.5.0",
+    "publishedDate": "2026-01-25",
+    "sourceUrl": "https://www.powershellgallery.com/api/v2/package/IntuneWin32App/1.5.0",
+    "sha256": "2CB7137BA5039981D35E43E3CFD7C75128CB37CE1EC1BBF5248376D42CFC738B",
+    "minimumPowerShell": "5.0",
+    "externalModuleDependencies": []
+  },
+  "sourceSnapshot": {
+    "repository": "MSEndpointMgr/IntuneWin32App",
+    "branch": "master",
+    "commit": "cff3196000e5bab3943c6c1e1937f05817fd0908",
+    "manifestVersion": "1.5.0",
+    "note": "Version equality alone does not establish file equality; see source-parity evidence."
+  },
+  "contentPrepTool": {
+    "releaseTag": "v1.8.7",
+    "sourceUrl": "https://raw.githubusercontent.com/microsoft/Microsoft-Win32-Content-Prep-Tool/v1.8.7/IntuneWinAppUtil.exe",
+    "sha256": "C1BA45B5CB939E84AF064BB7FF4B38FB3DFE33C8DC1078FD9B157672EAE671F6",
+    "length": 62520,
+    "fileVersion": "6.2509.50.0",
+    "productVersion": "6.2509.50.0.a25536f15f8e8fe8b6587e2baa9aaedeec7a407f Intune-Svc-EMSAgent.develop (c36c2262c00001D.250812-2037)",
+    "signatureStatus": "Valid",
+    "signerSubject": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "signerThumbprint": "3F56A45111684D454E231CFDC4DA5C8D370F9816",
+    "executed": false,
+    "prerequisite": ".NET Framework 4.7.2 per official README"
+  },
+  "parser": {
+    "engine": "7.6.9",
+    "parseErrors": []
+  },
+  "functions": [
+    {
+      "name": "Connect-MSIntuneGraph",
+      "parameters": [
+        "TenantID",
+        "ClientID",
+        "ClientSecret",
+        "ClientCert",
+        "RedirectUri",
+        "Interactive",
+        "DeviceCode",
+        "Refresh",
+        "Scopes"
+      ],
+      "shouldProcessCalls": 0,
+      "parseErrors": []
+    },
+    {
+      "name": "New-IntuneWin32AppPackage",
+      "parameters": [
+        "SourceFolder",
+        "SetupFile",
+        "OutputFolder",
+        "Force",
+        "IntuneWinAppUtilPath"
+      ],
+      "shouldProcessCalls": 0,
+      "parseErrors": []
+    },
+    {
+      "name": "Get-MSIMetaData",
+      "parameters": [
+        "Path",
+        "Property"
+      ],
+      "shouldProcessCalls": 0,
+      "parseErrors": []
+    },
+    {
+      "name": "Add-IntuneWin32App",
+      "parameters": [
+        "FilePath",
+        "DisplayName",
+        "Description",
+        "Publisher",
+        "AppVersion",
+        "Developer",
+        "Owner",
+        "Notes",
+        "InformationURL",
+        "PrivacyURL",
+        "CompanyPortalFeaturedApp",
+        "CategoryName",
+        "InstallCommandLine",
+        "UninstallCommandLine",
+        "InstallExperience",
+        "RestartBehavior",
+        "MaximumInstallationTimeInMinutes",
+        "AllowAvailableUninstall",
+        "DetectionRule",
+        "RequirementRule",
+        "AdditionalRequirementRule",
+        "ReturnCode",
+        "Icon",
+        "ScopeTagName",
+        "UseAzCopy",
+        "AzCopyWindowStyle",
+        "UnattendedInstall",
+        "UnattendedUninstall"
+      ],
+      "shouldProcessCalls": 0,
+      "parseErrors": []
+    },
+    {
+      "name": "Set-IntuneWin32App",
+      "parameters": [
+        "ID",
+        "DisplayName",
+        "Description",
+        "Publisher",
+        "AppVersion",
+        "Developer",
+        "Owner",
+        "Notes",
+        "InformationURL",
+        "PrivacyURL",
+        "CompanyPortalFeaturedApp",
+        "AllowAvailableUninstall",
+        "DetectionRule",
+        "CategoryName",
+        "Icon",
+        "InstallCommandLine",
+        "UninstallCommandLine",
+        "RestartBehavior",
+        "MaximumInstallationTimeInMinutes",
+        "RequirementRule",
+        "AdditionalRequirementRule",
+        "ReturnCode"
+      ],
+      "shouldProcessCalls": 0,
+      "parseErrors": []
+    },
+    {
+      "name": "Update-IntuneWin32AppPackageFile",
+      "parameters": [
+        "ID",
+        "FilePath"
+      ],
+      "shouldProcessCalls": 0,
+      "parseErrors": []
+    },
+    {
+      "name": "Add-IntuneWin32AppAssignmentGroup",
+      "parameters": [
+        "Include",
+        "Exclude",
+        "ID",
+        "GroupID",
+        "Intent",
+        "Notification",
+        "AvailableTime",
+        "DeadlineTime",
+        "UseLocalTime",
+        "DeliveryOptimizationPriority",
+        "AutoUpdateSupersededApps",
+        "EnableRestartGracePeriod",
+        "RestartGracePeriod",
+        "RestartCountDownDisplay",
+        "RestartNotificationSnooze",
+        "FilterName",
+        "FilterMode"
+      ],
+      "shouldProcessCalls": 0,
+      "parseErrors": []
+    },
+    {
+      "name": "Get-IntuneWin32AppAssignment",
+      "parameters": [
+        "DisplayName",
+        "ID",
+        "GroupName",
+        "Intent"
+      ],
+      "shouldProcessCalls": 0,
+      "parseErrors": []
+    },
+    {
+      "name": "New-IntuneWin32AppDetectionRuleScript",
+      "parameters": [
+        "ScriptFile",
+        "EnforceSignatureCheck",
+        "RunAs32Bit"
+      ],
+      "shouldProcessCalls": 0,
+      "parseErrors": []
+    },
+    {
+      "name": "New-IntuneWin32AppDetectionRuleMSI",
+      "parameters": [
+        "ProductCode",
+        "ProductVersionOperator",
+        "ProductVersion"
+      ],
+      "shouldProcessCalls": 0,
+      "parseErrors": []
+    },
+    {
+      "name": "New-IntuneWin32AppRequirementRule",
+      "parameters": [
+        "Architecture",
+        "MinimumSupportedWindowsRelease",
+        "MinimumFreeDiskSpaceInMB",
+        "MinimumMemoryInMB",
+        "MinimumNumberOfProcessors",
+        "MinimumCPUSpeedInMHz"
+      ],
+      "shouldProcessCalls": 0,
+      "parseErrors": []
+    },
+    {
+      "name": "New-IntuneWin32AppReturnCode",
+      "parameters": [
+        "ReturnCode",
+        "Type"
+      ],
+      "shouldProcessCalls": 0,
+      "parseErrors": []
+    }
+  ],
+  "fileInventory": [
+    {
+      "path": "[Content_Types].xml",
+      "length": 723,
+      "sha256": "FB8D58E06FE512358DE6ADC022AA8D51A73668C7B5CBE249F75FD814B2293A8D"
+    },
+    {
+      "path": "IntuneWin32App.nuspec",
+      "length": 3937,
+      "sha256": "D5D188BF5EBEB5C7206E33F991EBED329BD58C0DE6252FBA5B32E5FE4F3E37E0"
+    },
+    {
+      "path": "IntuneWin32App.psd1",
+      "length": 6480,
+      "sha256": "18C0CC5C58B4CB2EBC83DE01464B256E0A78A0540FCC4494EA8F8D34D6E41C39"
+    },
+    {
+      "path": "IntuneWin32App.psm1",
+      "length": 1033,
+      "sha256": "D7DB7A990E4BAAF9E90975A13DDC2B6787F7868EC40918D0DA89330F47A5CB5A"
+    },
+    {
+      "path": "LICENSE",
+      "length": 1091,
+      "sha256": "EA5434076A9C608BE0AEF73EE151E7DF22A7EB05ABD12A509D54A9AFF206DCCE"
+    },
+    {
+      "path": "README.md",
+      "length": 20183,
+      "sha256": "CAE88BBF246AE0B46B063AAFBA31689ABC8589CF5C422B4081E627ABFE463344"
+    },
+    {
+      "path": "ReleaseNotes.md",
+      "length": 25595,
+      "sha256": "043079A9EE25D54E3BB7ECA5B17322299DC70E870CD347E631218A151B8F8696"
+    },
+    {
+      "path": "Development/Save-IntuneWin32AppContent.ps1",
+      "length": 6379,
+      "sha256": "0E68929CDC8E5DAFB274B8028D9D2ECCF62910F937777ABDCCE6DC73B023EA44"
+    },
+    {
+      "path": "Development/Set-IntuneWin32AppDetectionRule.ps1",
+      "length": 51,
+      "sha256": "BEE05AB7D6CE9677CCAE820F84FC932C09A2D61769181D0AF3CD3EF4B9CDF18D"
+    },
+    {
+      "path": "Development/Set-IntuneWin32AppIcon.ps1",
+      "length": 42,
+      "sha256": "0E43F420237263AED71ED651D59E67A17C7496662929EE5110EC57152153B786"
+    },
+    {
+      "path": "Development/Set-IntuneWin32AppRequirementRule.ps1",
+      "length": 53,
+      "sha256": "667034F351FFFD58010DFA5C3BEA0D87C41605695E775921E74B6FDC47B7A816"
+    },
+    {
+      "path": "package/services/metadata/core-properties/9f1cab4696614471b4aac1f84c9dfdaf.psmdcp",
+      "length": 3938,
+      "sha256": "4A49036EE11709D880CCCBD1A5CD93108C2454E0744AE8F16BE10815BA6CB304"
+    },
+    {
+      "path": "Private/ConvertTo-JSONDate.ps1",
+      "length": 1217,
+      "sha256": "5C5163657C7BDADEE06F71BEF047E6F35DBB727688F7C50573FF41DAEBBA075D"
+    },
+    {
+      "path": "Private/Expand-IntuneWin32AppCompressedFile.ps1",
+      "length": 4799,
+      "sha256": "BAB73FF6F5FE9EE1154F96BAB06B492F0F1CB228D5247F9AB200F4158FB14255"
+    },
+    {
+      "path": "Private/Get-ErrorResponseBody.ps1",
+      "length": 917,
+      "sha256": "9832F6C330BD954537869C1F3071BD99045621D057F2548ADE1C97CEA11D8607"
+    },
+    {
+      "path": "Private/Get-IntuneWin32AppDefaultReturnCode.ps1",
+      "length": 842,
+      "sha256": "BF4C3A6BED1C266AB7BCA9049CCCB663B30EE64CD5AA64DC93CAFB265CD52DEC"
+    },
+    {
+      "path": "Private/Invoke-AzureADGraphRequest.ps1",
+      "length": 2194,
+      "sha256": "285CFB8A3931E4E44DD3D9AE826B838F298A59594BE64CCBE09E5FF935A1A6BD"
+    },
+    {
+      "path": "Private/Invoke-AzureCopyUtility.ps1",
+      "length": 5449,
+      "sha256": "D2161E61B27AA43D0AB0B6118AECA9B722E3EC681CBF435669D14CE9D3F1314D"
+    },
+    {
+      "path": "Private/Invoke-AzureStorageBlobUpload.ps1",
+      "length": 7603,
+      "sha256": "AF0395D437653506F81CC7CF2D8982D8D6835D8095A8D241CB0F17BE176DEB05"
+    },
+    {
+      "path": "Private/Invoke-AzureStorageBlobUploadChunk.ps1",
+      "length": 2078,
+      "sha256": "857DBB56A56AE2B68AA491F5F499F12ACAF5E8BD1E46C3ADED266ADC57D8AB5D"
+    },
+    {
+      "path": "Private/Invoke-AzureStorageBlobUploadFinalize.ps1",
+      "length": 1897,
+      "sha256": "24599A221C308D6B79E3700DEFA59D613C8CD03F3694C7EA6CD41200B3D7BF05"
+    },
+    {
+      "path": "Private/Invoke-AzureStorageBlobUploadRenew.ps1",
+      "length": 1809,
+      "sha256": "71FC9F2EE8EE3BD1E341813F54FD7C4F3ECDD7EEBAB9BFEA4DF20F7DF7DCD0CA"
+    },
+    {
+      "path": "Private/Invoke-Executable.ps1",
+      "length": 2517,
+      "sha256": "35FACB5F1CDAB7C251BCC1450B2A349FD51C38DE946CE8D0A8C08FFE83A4F896"
+    },
+    {
+      "path": "Private/Invoke-IntuneGraphRequest.ps1",
+      "length": 5484,
+      "sha256": "43F801870B8E32F37EEC55C97737CDB7418F614EDA1488B46A087C90199552CF"
+    },
+    {
+      "path": "Private/Invoke-MSGraphOperation.ps1",
+      "length": 23074,
+      "sha256": "BAE6179DD66235F08E40DFA9FE78B383F13EF8B28F1C5D4A6C38AE9EA197C1FC"
+    },
+    {
+      "path": "Private/New-AuthenticationHeader.ps1",
+      "length": 1851,
+      "sha256": "46C9B16FCAFBB380E8E3DA176253BBB2E9EABAD5C071A709151DB5A0D32AB687"
+    },
+    {
+      "path": "Private/New-ClientCertificateAccessToken.ps1",
+      "length": 11642,
+      "sha256": "055A4B7081BC63468BCFEB7A583AE7587D6001EDC5BF8494B32E6883DF7A1494"
+    },
+    {
+      "path": "Private/New-ClientCredentialsAccessToken.ps1",
+      "length": 2862,
+      "sha256": "71C70A0D8C594CD616BA837D467F87F70C1408E110FD125614FBA7133E37129C"
+    },
+    {
+      "path": "Private/New-DelegatedAccessToken.ps1",
+      "length": 11968,
+      "sha256": "0A6477EA74A4AC53857CAC341C5E2B3CA2A177FB4D0DB0E1EB0045DFDBBE8BEE"
+    },
+    {
+      "path": "Private/New-DeviceCodeAccessToken.ps1",
+      "length": 7021,
+      "sha256": "23A3C0392A4BD72A9821E5E32DBF424A9B11530F800029020D06C6B0C7159A2B"
+    },
+    {
+      "path": "Private/New-IntuneWin32AppBody.ps1",
+      "length": 22425,
+      "sha256": "8EC836067CF0415E9766AAC1666858D3FAF9DB63B9DDCD7FCE341D8F877BF97A"
+    },
+    {
+      "path": "Private/Start-DownloadFile.ps1",
+      "length": 2732,
+      "sha256": "93699EA52DD0066EDB5A4C573849A01F78885A1BDE5094746E25340B2F042969"
+    },
+    {
+      "path": "Private/Test-AuthenticationState.ps1",
+      "length": 1240,
+      "sha256": "DAEB0608F9F8F897A1741617EBDE2476643F3A2E865C5761BB76A05C721099CA"
+    },
+    {
+      "path": "Private/Test-IntuneGraphRequest.ps1",
+      "length": 1189,
+      "sha256": "71BA4B31A83AE3407FAD2F95E7C01F7820B1B988291B0E12771916B8500339F3"
+    },
+    {
+      "path": "Private/Test-IntuneWin32AppAssignment.ps1",
+      "length": 4353,
+      "sha256": "4DE93A347DA15AED6129264EC6C64A9C543C59101EC3FAECC4C7E733567AFFFD"
+    },
+    {
+      "path": "Private/Update-AccessTokenFromRefreshToken.ps1",
+      "length": 4245,
+      "sha256": "7BB943C2B834B35DF84E2F1D5F1DCC888BA74C202EB7452707151C3C6E796812"
+    },
+    {
+      "path": "Private/Wait-IntuneWin32AppFileProcessing.ps1",
+      "length": 2253,
+      "sha256": "75E3124F31E6C992813D0FC9BF99E24F56070A2164AC9B9E54B6AFBF505EB227"
+    },
+    {
+      "path": "Public/Add-IntuneWin32App.ps1",
+      "length": 42714,
+      "sha256": "7B2F60AD97E49899533F4AA2D445FC273875EBA331E53ADCCDEDFB1F5CF9156A"
+    },
+    {
+      "path": "Public/Add-IntuneWin32AppAssignmentAllDevices.ps1",
+      "length": 16170,
+      "sha256": "DEBE7BCA976585D340D628E72A1B454A28D69187D396C778B9F63FDFF72C5DF2"
+    },
+    {
+      "path": "Public/Add-IntuneWin32AppAssignmentAllUsers.ps1",
+      "length": 16163,
+      "sha256": "062FF6404E84C7D9DED7594A4322643AB5ADBB434E796B0A6A89BD5BC7E5DD15"
+    },
+    {
+      "path": "Public/Add-IntuneWin32AppAssignmentGroup.ps1",
+      "length": 19411,
+      "sha256": "EAE02A30ECA7384B7011F60877A231FCB1C10108D4000AA13712172DB6A249B0"
+    },
+    {
+      "path": "Public/Add-IntuneWin32AppDependency.ps1",
+      "length": 4455,
+      "sha256": "A660521323D3BD25F4B42CEECF4C81C5CF7552549FDEA819F61208472D844623"
+    },
+    {
+      "path": "Public/Add-IntuneWin32AppSupersedence.ps1",
+      "length": 4585,
+      "sha256": "DE91F2041729B55A6719F68F3025766F7662FECC4A81AF5E08B42C43C9E18AAA"
+    },
+    {
+      "path": "Public/Connect-MSIntuneGraph.ps1",
+      "length": 13114,
+      "sha256": "2E38B999B8EC581E8997EEA8B8F066B1B4333580BCFFC391A7F82BBE0FA10A11"
+    },
+    {
+      "path": "Public/Expand-IntuneWin32AppPackage.ps1",
+      "length": 12532,
+      "sha256": "11FB8E67723ECDB08585653BE78C8AA8E05318567328D690231EA12D75CDCFB8"
+    },
+    {
+      "path": "Public/Get-IntuneWin32App.ps1",
+      "length": 6120,
+      "sha256": "9AB9478BD48F6F342946F53AF7CFB482C6D37C18F7CBB1CBD8D8F4361BF488F7"
+    },
+    {
+      "path": "Public/Get-IntuneWin32AppAssignment.ps1",
+      "length": 14131,
+      "sha256": "73239AA4B200A00C4D69473F78B543800586348A695B9A555543BD5521864F51"
+    },
+    {
+      "path": "Public/Get-IntuneWin32AppCategory.ps1",
+      "length": 3696,
+      "sha256": "7BAA8CE3B91158A97895F4A279B59F8763D079F0B7B749A539942972E726596C"
+    },
+    {
+      "path": "Public/Get-IntuneWin32AppDependency.ps1",
+      "length": 3323,
+      "sha256": "64077A3658A457A2B37C5CB47FC71D23F663FF3D02230508BB2C8EA32166AA79"
+    },
+    {
+      "path": "Public/Get-IntuneWin32AppMetaData.ps1",
+      "length": 4670,
+      "sha256": "505E878A7FE542042771F50161A29F8B516511943667CEE6BD10A4AC561945DE"
+    },
+    {
+      "path": "Public/Get-IntuneWin32AppRelationExistence.ps1",
+      "length": 3447,
+      "sha256": "3E192C72B1C50A86615E70C1E63D3703CAA949BFAE3BB349792AAC89AD73679E"
+    },
+    {
+      "path": "Public/Get-IntuneWin32AppSupersedence.ps1",
+      "length": 3428,
+      "sha256": "35661FC5AD77EC955413CF9865620E73F015957EC1BD43AC292DBE67C0F8D4BE"
+    },
+    {
+      "path": "Public/Get-MSIMetaData.ps1",
+      "length": 2698,
+      "sha256": "192A7F159D2FD0B6C44BCD92D262A55A5E68FED2542B5FA6B6FDAA3D81636017"
+    },
+    {
+      "path": "Public/New-IntuneWin32AppDependency.ps1",
+      "length": 3173,
+      "sha256": "A2B6DD711642F84FF939589A2B37DB9B06E8B15D52BFB4C16B2DE44C45457881"
+    },
+    {
+      "path": "Public/New-IntuneWin32AppDetectionRuleFile.ps1",
+      "length": 10457,
+      "sha256": "DBD1602B49CED0C6AEF145533800DAAB829051ADEA260BDF4DB1ED367FA011AE"
+    },
+    {
+      "path": "Public/New-IntuneWin32AppDetectionRuleMSI.ps1",
+      "length": 2273,
+      "sha256": "ED173BAFA8B9F2DC5BECB41B0D9042B56E897D2879618FDCAFC7EB644B4DB179"
+    },
+    {
+      "path": "Public/New-IntuneWin32AppDetectionRuleRegistry.ps1",
+      "length": 9820,
+      "sha256": "B185323ACA7251D86CD13D11DF6668D5213D174F899A19EC93C8A35F4917DD4D"
+    },
+    {
+      "path": "Public/New-IntuneWin32AppDetectionRuleScript.ps1",
+      "length": 3824,
+      "sha256": "46AED9D048117308CECC8300E1AEA1BBA0DE3CF318030B4BDABDB7F0859D82B3"
+    },
+    {
+      "path": "Public/New-IntuneWin32AppIcon.ps1",
+      "length": 2590,
+      "sha256": "0CC8EB6E1B6C9A3F10266CE683E300AAFBD23C3D973D14ABDEC413F97715BE60"
+    },
+    {
+      "path": "Public/New-IntuneWin32AppPackage.ps1",
+      "length": 9458,
+      "sha256": "8640BED3318C9E22C0A3B179672D2570433069C315F2E99BB8371CC47FE69383"
+    },
+    {
+      "path": "Public/New-IntuneWin32AppRequirementRule.ps1",
+      "length": 6270,
+      "sha256": "CBD8269F79EAD7DBB7231F14E22728A188AEF30B163B0794AA03531AAF59BE7B"
+    },
+    {
+      "path": "Public/New-IntuneWin32AppRequirementRuleFile.ps1",
+      "length": 10519,
+      "sha256": "1DD2D633BB38BDC5A7D948511A521923F4E6DD49C9A8378A18183C635A0BD48B"
+    },
+    {
+      "path": "Public/New-IntuneWin32AppRequirementRuleRegistry.ps1",
+      "length": 9872,
+      "sha256": "1091A88D48F05339512CD85E69FE9F60D98DF3D95F0886DD86357E9729E65669"
+    },
+    {
+      "path": "Public/New-IntuneWin32AppRequirementRuleScript.ps1",
+      "length": 18334,
+      "sha256": "5C7A514E44EE4E83FC5445D40F4FB15EB07921C7397D6CD2318A8B454FB991F3"
+    },
+    {
+      "path": "Public/New-IntuneWin32AppReturnCode.ps1",
+      "length": 1527,
+      "sha256": "7CBD7A0EDBBB7468AC9AFA7D05A1905AD55CFCB06832B8D7C94FE7992B5270C4"
+    },
+    {
+      "path": "Public/New-IntuneWin32AppSupersedence.ps1",
+      "length": 3105,
+      "sha256": "49BFEFE9CAF4CCBC70B5DC82E034069030D95684C08F732877D163A7FBD142BC"
+    },
+    {
+      "path": "Public/Remove-IntuneWin32App.ps1",
+      "length": 3770,
+      "sha256": "C80CEE873FD3E2011D9FD67072D13DDC651AECCAB2D19DA8FAE989C22E2AF002"
+    },
+    {
+      "path": "Public/Remove-IntuneWin32AppAssignment.ps1",
+      "length": 5771,
+      "sha256": "DD16DC6DBF7165A5093B9338C3DF8F134B926DB799660F0A4F222EB4280EEAA9"
+    },
+    {
+      "path": "Public/Remove-IntuneWin32AppAssignmentAllDevices.ps1",
+      "length": 6284,
+      "sha256": "5D1F91EF3724B17D14A4BBDC68937F4880AEB37FF6486BC55196E14C2C086659"
+    },
+    {
+      "path": "Public/Remove-IntuneWin32AppAssignmentAllUsers.ps1",
+      "length": 6222,
+      "sha256": "2B030A24617CBCD3B141FADB74BC6C6877F71FD774461FB7122A1A8809A6ECD8"
+    },
+    {
+      "path": "Public/Remove-IntuneWin32AppAssignmentGroup.ps1",
+      "length": 5218,
+      "sha256": "57B44B6F271C790D8D729C0EE1AE89EDDFD9708FE93F79F6C1CECBB45C40448C"
+    },
+    {
+      "path": "Public/Remove-IntuneWin32AppDependency.ps1",
+      "length": 3258,
+      "sha256": "9EBF2DF0FFEF56B0C0F2A6999E4B7C098FDB88DB3B205FAC4DA972270AE1CEEF"
+    },
+    {
+      "path": "Public/Remove-IntuneWin32AppSupersedence.ps1",
+      "length": 3334,
+      "sha256": "8F84A2165FE6A98E42B3C7543574547717347E5B8BE5C780B59A814D738680D9"
+    },
+    {
+      "path": "Public/Set-IntuneWin32App.ps1",
+      "length": 24098,
+      "sha256": "9E65659F1907A4328255D45A3D138FC20FB4AFB2DF3E1DF5B430CA32F8EBAFC6"
+    },
+    {
+      "path": "Public/Test-AccessToken.ps1",
+      "length": 3508,
+      "sha256": "2C4DC365AE5D3A0E8E703032BC7E18F6999E86108E00D6C2DC64F9AFDC0768A8"
+    },
+    {
+      "path": "Public/Update-IntuneWin32AppPackageFile.ps1",
+      "length": 10958,
+      "sha256": "51A3D08E6BE19F700528698CDE13CFD51CFC8B5617A40C30D17C41C9E1FFF778"
+    },
+    {
+      "path": "Samples/1-Overview.ps1",
+      "length": 1311,
+      "sha256": "9923C4623EE40D18433C61BB44941B09E6E953AB368C921F6D67202AA8E800FC"
+    },
+    {
+      "path": "Samples/10-Auth client certificate.ps1",
+      "length": 11021,
+      "sha256": "3C28F926C625463FFB0415F299ECF99A9A782B076652BD597BF60DEE5FF70A3E"
+    },
+    {
+      "path": "Samples/11-ARM64 example.ps1",
+      "length": 3890,
+      "sha256": "1267DB38D54DC3B2EDD8A790C86EF3F68B15B69D6F8DA6819AD4BFF932EEBC78"
+    },
+    {
+      "path": "Samples/2-Get apps.ps1",
+      "length": 474,
+      "sha256": "B99BC429B6F65900E265297C4551346607E43E3D5011E309DB2D44990B68E9EA"
+    },
+    {
+      "path": "Samples/3-Package.ps1",
+      "length": 1799,
+      "sha256": "9B1A7359E4A5B4582DFB7B0FBC95D72BAB76AA484717F76A54F6F7D11C67B2E4"
+    },
+    {
+      "path": "Samples/4-Create app.ps1",
+      "length": 2023,
+      "sha256": "E8F4070420E90125C8FB07FF1569B6852F2A4371C28E9C76CF239A68B32C2986"
+    },
+    {
+      "path": "Samples/5-Additional.ps1",
+      "length": 3542,
+      "sha256": "FA4BE370C797A0D488A9CEAF60DE0F66E79704B18E0B5F7584EFC8825B819D89"
+    },
+    {
+      "path": "Samples/6-Assignments.ps1",
+      "length": 3392,
+      "sha256": "FD41C711BAC19D00F6EFA45E614F1E71DA0E364A49E97C9AC5F9E319114AFB49"
+    },
+    {
+      "path": "Samples/7-Relations.ps1",
+      "length": 1088,
+      "sha256": "09616616054BE681759734217897BF6F549FBC5744AA329471A91015E31F8A64"
+    },
+    {
+      "path": "Samples/8-Full example.ps1",
+      "length": 5521,
+      "sha256": "7C82103E8E5DBBB363F2B54A60914A925E85DC8F834898A0D02E92A1559B9D73"
+    },
+    {
+      "path": "Samples/9-Token refresh.ps1",
+      "length": 199,
+      "sha256": "4743B79C385CAEBFF478C56749D4ED5898A251350560099D540BC46236DBD2A5"
+    },
+    {
+      "path": "Tests/HOW-TO-RUN-TESTS.md",
+      "length": 4544,
+      "sha256": "C14066F38F56725C1644395C5404673118F802FCAEB9C962020E1CE7C0638387"
+    },
+    {
+      "path": "Tests/Invoke-IntuneWin32AppTests.ps1",
+      "length": 5163,
+      "sha256": "97633EA54F54B56DDBB826DBC25E0840813DD4551F4CC770B4274207F648CC83"
+    },
+    {
+      "path": "Tests/README.md",
+      "length": 12882,
+      "sha256": "2EEFE54EEA8BA65E23FD0B7F5A0FD0AECA22128EDEB800B730ED06CC048FE295"
+    },
+    {
+      "path": "Tests/Test-CertificateAuthentication.ps1",
+      "length": 6721,
+      "sha256": "DA73C326275892CE9EF1FFFF40DF40A7A091DF4979F3E8A5DC262D6BFD7ABF16"
+    },
+    {
+      "path": "Tests/Test-ComprehensiveFunctionality.ps1",
+      "length": 72163,
+      "sha256": "D095D1D9D9DF7A0A32842D3C5592B7EDCBECEB437814CCF2CB333E40A2B8190D"
+    },
+    {
+      "path": "Tests/Test-RefreshToken.ps1",
+      "length": 7236,
+      "sha256": "9F7D7F65DF490E9AF776E097827FE83B7B5C7BC775C327D7C787E245A8F796BB"
+    },
+    {
+      "path": "Tests/Test-Win32AppLifecycle.ps1",
+      "length": 28055,
+      "sha256": "538135B87607FAFA8D324B445898EE4B52940926C1BCB9FADBB00410099E34AA"
+    },
+    {
+      "path": "_rels/.rels",
+      "length": 508,
+      "sha256": "462D8B5680DF857D552327DF59DAD6BD01A5A961AE3B12BBC492A42496204A71"
+    }
+  ]
+}

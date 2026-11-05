@@ -1,0 +1,2342 @@
+{
+  "schemaVersion": 1,
+  "version": "4.1.8",
+  "retrievedUtc": "2026-11-04T05:05:38.9113090Z",
+  "releaseUrl": "https://github.com/PSAppDeployToolkit/PSAppDeployToolkit/releases/tag/4.1.8",
+  "archiveUrl": "https://github.com/PSAppDeployToolkit/PSAppDeployToolkit/releases/download/4.1.8/PSAppDeployToolkit_Template_v4.zip",
+  "archiveSha256": "50cb8d32973fc7648060a48cad63912ecb5caca5a70754f37e83aa06bd380283",
+  "archiveLength": 9447412,
+  "fileCount": 222,
+  "files": [
+    {
+      "path": "Assets/AppIcon.png",
+      "length": 378783,
+      "sha256": "76188486017bcb8594d23ccc6309c655361941b603122d523975d9d44b3dbff8"
+    },
+    {
+      "path": "Assets/Banner.Classic.png",
+      "length": 28325,
+      "sha256": "bcb556d5310a924083869bf79172f2d95a6a3efac6dd4c9dbeebc8c7e46b63f3"
+    },
+    {
+      "path": "Config/config.psd1",
+      "length": 7033,
+      "sha256": "32aeddf00c3b30ff3efbe56c56eccf0d94739d386db84d99f20be7a1f1d48f7e"
+    },
+    {
+      "path": "Files/Add Setup Files Here.txt",
+      "length": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Invoke-AppDeployToolkit.exe",
+      "length": 216152,
+      "sha256": "8c32e7970a953d2f28e15d29076ef0578ccc18770ff23b752361b9271ad3cdab"
+    },
+    {
+      "path": "Invoke-AppDeployToolkit.ps1",
+      "length": 13040,
+      "sha256": "3e6db6941a332e1212ad88ec1a715d3d56a7a94f31f1cbfa0c261fe3cecff67a"
+    },
+    {
+      "path": "PSAppDeployToolkit.Extensions/PSAppDeployToolkit.Extensions.psd1",
+      "length": 4322,
+      "sha256": "c4db1b745234d8cbd9e9f88c3c3754d5c292fac3668f50ad9a27a7db950828f0"
+    },
+    {
+      "path": "PSAppDeployToolkit.Extensions/PSAppDeployToolkit.Extensions.psm1",
+      "length": 2670,
+      "sha256": "56e168a99b5f83874de42b98f631ecf96a062830ce2b65368c507f4f2f11a2d3"
+    },
+    {
+      "path": "PSAppDeployToolkit/!README.txt",
+      "length": 591,
+      "sha256": "d7d8f0088e6ed09078c68db4eafa213491f8ea68368d029e9d4ae6483b8c0ece"
+    },
+    {
+      "path": "PSAppDeployToolkit/ADMX/en-US/PSAppDeployToolkit.adml",
+      "length": 15142,
+      "sha256": "85a067a96dc7e26c51cd051fd2f2e5d810c2bf2599819321e59d82ab252d2ec6"
+    },
+    {
+      "path": "PSAppDeployToolkit/ADMX/PSAppDeployToolkit.admx",
+      "length": 25276,
+      "sha256": "07480bea80406b48a290def4cd320bf09bf7fbc4741d3be9f0bea9f2868c9f93"
+    },
+    {
+      "path": "PSAppDeployToolkit/Assets/AppIcon.png",
+      "length": 378783,
+      "sha256": "76188486017bcb8594d23ccc6309c655361941b603122d523975d9d44b3dbff8"
+    },
+    {
+      "path": "PSAppDeployToolkit/Assets/Banner.Classic.png",
+      "length": 28325,
+      "sha256": "bcb556d5310a924083869bf79172f2d95a6a3efac6dd4c9dbeebc8c7e46b63f3"
+    },
+    {
+      "path": "PSAppDeployToolkit/Config/config.psd1",
+      "length": 23938,
+      "sha256": "f430f54bf3eb666cce7a8d86959df2927b65b06bfd08a7e716333e8c3ca1f396"
+    },
+    {
+      "path": "PSAppDeployToolkit/COPYING.Lesser",
+      "length": 7817,
+      "sha256": "7d3a95e5e06978064ed3f8e2b7c8f845e7fd8a405294727cc708f94cb83b8059"
+    },
+    {
+      "path": "PSAppDeployToolkit/Frontend/v3/AppDeployToolkit/AppDeployToolkitExtensions.ps1",
+      "length": 18298,
+      "sha256": "e6dc67bcfc2e3b422a85ed50490ea122b3cc3c29d6fe8108fdd5097fd644fd8f"
+    },
+    {
+      "path": "PSAppDeployToolkit/Frontend/v3/AppDeployToolkit/AppDeployToolkitMain.ps1",
+      "length": 206398,
+      "sha256": "9ecd432bfa1b53d0fd8c3527d0855a0c18a164668a7a8ed83a83c51243ad8824"
+    },
+    {
+      "path": "PSAppDeployToolkit/Frontend/v3/AppDeployToolkit/COPYING.Lesser",
+      "length": 7817,
+      "sha256": "7d3a95e5e06978064ed3f8e2b7c8f845e7fd8a405294727cc708f94cb83b8059"
+    },
+    {
+      "path": "PSAppDeployToolkit/Frontend/v3/Deploy-Application.exe",
+      "length": 216152,
+      "sha256": "b876abd380a10b1be1fab42ea2c6458ba3eda2ada91447c3d8afeba4945b0405"
+    },
+    {
+      "path": "PSAppDeployToolkit/Frontend/v4/Invoke-AppDeployToolkit.exe",
+      "length": 216152,
+      "sha256": "8c32e7970a953d2f28e15d29076ef0578ccc18770ff23b752361b9271ad3cdab"
+    },
+    {
+      "path": "PSAppDeployToolkit/Frontend/v4/Invoke-AppDeployToolkit.ps1",
+      "length": 29967,
+      "sha256": "792931ff8d784ac3b27efcdc7575d0f0ce65fc48a3bcf8f02fa55d8cc551163c"
+    },
+    {
+      "path": "PSAppDeployToolkit/Frontend/v4/PSAppDeployToolkit.Extensions/PSAppDeployToolkit.Extensions.psd1",
+      "length": 21227,
+      "sha256": "bc7032410870f9b2eea214b3ec0a8436dd71bc69b48a5c5aea539d54d84f8d2d"
+    },
+    {
+      "path": "PSAppDeployToolkit/Frontend/v4/PSAppDeployToolkit.Extensions/PSAppDeployToolkit.Extensions.psm1",
+      "length": 19575,
+      "sha256": "6e95ccd03bb141c25f84cbbbd2854ee49f07fe6b60c20e56e6d8737562634dcd"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/af-ZA/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "7d166df226749103147fc6f75ed6e1f3c38d14977cfe5636e4f43369e29e55a1"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/am-ET/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 24152,
+      "sha256": "b8fbf297f21b2a9a932206fbd289a8f5f8ee5ca13b05eadcd78786fe92d7b821"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ar-SA/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 24152,
+      "sha256": "ec3dc751fa8a0dc02f336af263a5e4191a1910dbb1f2fc501a6f12f6f2ce4d7c"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/as-IN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 19544,
+      "sha256": "0bb6e869ee28e8ee42aff798e17e282d9bff8b8f29a652144a7416fdab57b0a5"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/az-Latn-AZ/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 24152,
+      "sha256": "a5bab0ed084a93c49e9041033e7706fa9483fa950eaee93f185d932d72fdb21b"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/be-BY/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 20568,
+      "sha256": "d2f13d2ee24dc41c118bf77a2beaa65e268a67fe6bcd2ded1cd81d7bf655acf1"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/bg-BG/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 24664,
+      "sha256": "136b8ec66164811cf980bea22895b0801ee67fc9327c584036f7badded9cc9ee"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/bn-BD/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 20568,
+      "sha256": "29042a9be6a367abb1e4bd15f38dbff3eaa76de48f9805f1c4661e84999d49aa"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/bn-IN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 19544,
+      "sha256": "12b1abffbc6ba0127c9e6f38cbfa53d88bd61c8e61ad23ffbdc5699cb9051e20"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/bs-Latn-BA/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "d8e3bd28350ec20a5bdefe05ab7139fcd3467a936fdfdcbc6d95e0b106f428f8"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ca-ES/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "9c05a07325f1afed32c42766dc93fbac790b8e1798f7f32315f26dcff9218630"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/cs-CZ/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "c2dff5cdc42a5d9507f2c33ca02f526fe4d66c54191c33d51da09ce9eac4ba62"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/cs-CZ/iNKORE.UI.WPF.Modern.resources.dll",
+      "length": 16984,
+      "sha256": "a6800e5eede93a7ca5aab509378569d5588d0e07b0dffc3b7a8db8b93797339a"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/cs/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 16984,
+      "sha256": "63038bc26ef8499fd36d3bf30470fab90545695a5bd8d542a56149156cfbfc0b"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/cy-GB/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 19032,
+      "sha256": "6d893003beacb6a8007b64552b47768748de37c2fb88bc1c1766e0bd942291a2"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/da-DK/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "49c44998b12f0fb8a77685de10952c51487ef950a8ac86191d481ffc66f1d995"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/de-DE/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "bcb70eb68da294222816c9d779bd33d380aab6bec636107a7fbb9090c107670a"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/de-DE/iNKORE.UI.WPF.Modern.resources.dll",
+      "length": 16984,
+      "sha256": "2f5077b178634e4741d558bb3493118083d7f83c38a144a741740f045a9eb937"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/de/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 16984,
+      "sha256": "7c3e0be8e6e1c9c83e87f9cc52bf53c935a54b4afd616b09bc3c00e03c9e4439"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/el-GR/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 24664,
+      "sha256": "98202ea8751d36d6b11aba2b0a8d19fb645d42cc5462e4c0fd58675823f4ccda"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/en-GB/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "838376af1d3666ff96117565596ca9ecfd54cb708d31ccc23997dac8d8f19475"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/es-ES/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "0ae985c5d999330e90a0844811b69a8a83c4c2b9650bb05d112a4bd909914623"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/es-ES/iNKORE.UI.WPF.Modern.resources.dll",
+      "length": 16984,
+      "sha256": "69af77ffe42327262012998369e503f055f94e730c6a008e2a2fc51f45187a31"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/es-MX/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "ada806700a9fcd57b2812596221ee818dcd4eaf9a0525abfb7b4a5c3cec9bec2"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/es-MX/iNKORE.UI.WPF.Modern.resources.dll",
+      "length": 16984,
+      "sha256": "39180ad5603bbf4318de5c1fab8379ec462758849f4eaf63ad2e0018cda91a5e"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/es/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 16984,
+      "sha256": "549e0195d2d7d3dbdd84633ad5e64a31a98fe9222b794d6eb3d351f605d88589"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/et-EE/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "1a748715b4fa70a1cfc09ab1a6bde11160fc9f8966ed8de6507814794a062d56"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/eu-ES/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "82085b1ff67b3e96681b3f8f01a48f760ad04147cb169ba3e72662e565044736"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/fa-IR/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 24152,
+      "sha256": "4a98bd1152d07bf7d67fc57c96dd7240c1f4d866cb8eacb80cc8944b98f77fcd"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/fa-IR/iNKORE.UI.WPF.Modern.resources.dll",
+      "length": 16984,
+      "sha256": "94c35f5ecbf7a1c11e1d71f50e166719a0c89804d0d5f7a4bac0a8a6b9fa61e2"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/fa/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 16984,
+      "sha256": "08fea57cef12d09b0adb38b356842dcacb0710edd1abf1bc09ba85d1d4cc3b1e"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/fi-FI/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "79b3478a9b754f255ab3c73fae3af620fee95d99772fbacb77f3795217281cae"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/fil-PH/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "5a6b24bc5a5c7ec2dee9508fce49e0e1e238d77cbcd0b364451fe2d1517a3a55"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/fr-CA/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 24152,
+      "sha256": "58d4567a518b01fdbb622d3564cddb53443169402abd02ab821ab12b349e1661"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/fr-CA/iNKORE.UI.WPF.Modern.resources.dll",
+      "length": 16984,
+      "sha256": "80c42b6baf8acfd39c9046a40549e2e62951f22c9b2c8c868635bac4f35577f3"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/fr-FR/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 24152,
+      "sha256": "8bb77e469728463fa60cf5bc55238c4e75b6596c3b9023712aaa726dcb3b7505"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/fr-FR/iNKORE.UI.WPF.Modern.resources.dll",
+      "length": 16984,
+      "sha256": "38d22ef25c34bc7541aa4e67efe1d505a5365272ed198638ce484c624d8e68a1"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/fr/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 16984,
+      "sha256": "6071f4dad71694e9282ae3e76db241c2b0f9fd3c8a9a20dea5b5530575642860"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ga-IE/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 19032,
+      "sha256": "341b769ccef85fa6fd05e1e198dfda4da7ea21186f60efe41e79c141b330e526"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/gd-gb/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 19544,
+      "sha256": "b7dc143469a5f472311d51263812f151deb26a6fb9cf3425b29a781fc560caaa"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/gl-ES/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "8eb6aec19585192e6314065a0f9165ed46b8d969822a02283dd590b81cc302be"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/gu-IN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 19544,
+      "sha256": "92191de98365b80eef81f6b1d6b9747d8e2618af800cc605212ee7e39a1a1dd9"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ha-Latn-NG/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 19032,
+      "sha256": "85da03d8b4dba5fa7e45119b9559c36b1adb21a50a81aa5d762fce4dd30798da"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/he-IL/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 24152,
+      "sha256": "e404a4f1a44de88594cfc74c888e8f3e421e37d02c958da423511d53333cae2c"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/hi-IN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 24664,
+      "sha256": "85a5b9f2fa3cb0d0685704b3c8eba1f6f6e337f091911bb0f3221795ccdc6372"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/hr-HR/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "76b1711b4056213ca2fd211cf3faead6e869195f1f84076729cf32cebf6aee04"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/hu-HU/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 24152,
+      "sha256": "f15560fc4d15cc551d900ff62051ea36333554a90d4c2fa6289ebebdc1fd982a"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/hy-AM/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 19544,
+      "sha256": "15cdc4810be3d726fe97eecb9479810f7b6909d29a30a62eb826d70c23eecf8a"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/id-ID/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "9973a6f29343a91c20c3753cb12a532ef3858a797607f524c9b291cccd1c5232"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/iNKORE.UI.WPF.dll",
+      "length": 585304,
+      "sha256": "47a1536a47ea4cb2f24f6b97fff5d4b36d227ce00473c0c9ff15a82c87370481"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/iNKORE.UI.WPF.Modern.Controls.dll",
+      "length": 1209432,
+      "sha256": "1e51ce206d770067f07a1e97957bf1a8ca353bcfcbb9139940f032e388367dfe"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/iNKORE.UI.WPF.Modern.dll",
+      "length": 7411800,
+      "sha256": "c86efb4641397e7b4ee8c507cfd5160733931b086373cf609a995b7491ae7177"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/is-IS/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "2b924deba2ffb2abfe211f87c17df638094e1c5035cb705e9ac7a5093d873449"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/it-IT/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 24152,
+      "sha256": "51b090fa91e762dd3d7aefee31eef5be0938dbd59398a6d53a0ffeec2a20f6d1"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/it-IT/iNKORE.UI.WPF.Modern.resources.dll",
+      "length": 16984,
+      "sha256": "c05dca0f883c870e9f570283557c271c40ac103541bba24dc802915bf3a7a720"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/it/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 16984,
+      "sha256": "8bce132d2ecaa8ec593fb02ea1e92f942305360c30181f01fe3a619d78aaa097"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ja-JP/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 24152,
+      "sha256": "e51b79aca4724386a3a6cb3262c11438d57f6781175897eaea44c39ae0c4d2c2"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ja-JP/iNKORE.UI.WPF.Modern.resources.dll",
+      "length": 16984,
+      "sha256": "926ee7c3a8516ebe9b3daf5690d433c408d50daa17d030368313dd0698c0f349"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ja/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 16984,
+      "sha256": "490a399827420745ed37a7916a1034fc5ed2c18fffdbb7828d3720561eb440c9"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ka-GE/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 25176,
+      "sha256": "87574eb549c6e7e17622ff49343b9351817d93d1ef2eee0ad92844afbec62455"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/kk-KZ/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 24152,
+      "sha256": "18e4f3618d124f8c3c042f80d0dda73673d8cf66f2d492bb219dcebd9f97a938"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/km-KH/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 25176,
+      "sha256": "b7494702d7eb36ac516c98899cdbf2502fda2b33c55195312194d3ee513dbcf4"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/kn-IN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 24664,
+      "sha256": "29aa915be4f7c2861c47592a9464c324b7cc2661c066993b24da61290048df85"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ko-KR/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "2f10cf95934eb6461cf1b39f684579189f701e2985a4476817d08dc170abaee2"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ko-KR/iNKORE.UI.WPF.Modern.resources.dll",
+      "length": 16984,
+      "sha256": "6fb754962c6dc4cc1c4749e2d1548dc3654c147165c5c8e46190908d4a9104d6"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ko/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 16984,
+      "sha256": "a88e3ae5c3518858e16ca5319873a3fd38a10ef3007862551f0cf5cdcf029f18"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/kok-IN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 19544,
+      "sha256": "df859d2c6b2f1b47632d5d75d217282f14802d28dacb19011dbc3ba154769001"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/lb-LU/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 19032,
+      "sha256": "12ce0e24fce0c86360fc1e88fc5420382c44a259a1768352508644b448b34bda"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/lo-LA/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 25176,
+      "sha256": "bdc54d695f263fa9f91fa47b737f6b5c68c1462ef34cda58617b941f51550261"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/lt-LT/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 24152,
+      "sha256": "e6a7c94ed9d02d2ef3ed72a23bf4a400c1a1dd3e8bbf9923e3cbef7219b158bc"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/lv-LV/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 24152,
+      "sha256": "06632a0d9cabe0ddf6eec76d62027120034393aa0f95f273c6c7fb6a6681d05c"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/mi-NZ/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 19032,
+      "sha256": "95b9ce6b52f3ee6a672c2546beb69f33952a51153bb4811b805ab9614ca9da24"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/mk-MK/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 24664,
+      "sha256": "ce194b5bcd3691df1916c01c05ad77dbfe03503dcfab14424f62eccc444b9a1a"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ml-IN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 25176,
+      "sha256": "dcdf3cef32571955f821ba38c999fa1d65aa0de742e5a7b639fb2aef8e138ff5"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/mr-IN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 19544,
+      "sha256": "892299c1b82d2f6cfb1248ab96985a015e37b1ede072e127f040886e7756d191"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ms-MY/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "a77c253d25e72fd308f6d58212428858b52b04a02c8e33e134523565a6e6bf6a"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/mt-MT/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 19032,
+      "sha256": "709978283d7a7b513565277bd41f8399cf0aacbf950a4dae0d894b0a842a8dc7"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/nb-NO/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "241d4d80dbb71255cb29dc604b53fb22a1e1cb31f05a4b255b742dd6b66f758a"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ne-NP/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 20056,
+      "sha256": "9039ee7cd38e9aa31bb8911f0be031ead80bde1d6ed30c012e0da15159bf9164"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/Newtonsoft.Json.dll",
+      "length": 721320,
+      "sha256": "f0c07af0e84d4dd4da4bd7823ba4535bc0481b3bf623ed40b659b68147a6bb75"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/nl-NL/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "dc67a4f2edac131747d945d10bd95e74ea027cef07e69c44cf3aef402727ebac"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/nn-NO/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "53ba3f141772d202082ab5fbd73cd2d7da9594277b620d4b8f17e35a16a3fe44"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/or-IN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 20056,
+      "sha256": "f07fd91fc31bba47a6db4682a6662a7f5e1cbd9e8d0a4426fe926e6a4660657e"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/pa-IN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 19544,
+      "sha256": "9b5e3a6ffa55d8e1220ccd18f10205cf28d578620b60a67caec670eb09497746"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/pl-PL/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "07c2800a20077a03bb45fe0ba2d5c1e57b0f27418ee5139a00abfe102dfa5732"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/pl-PL/iNKORE.UI.WPF.Modern.resources.dll",
+      "length": 16984,
+      "sha256": "8add612ff0e534a9cf9a2bce78e984c627eadc3220c9d9f41f6cf3193bdf613d"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/pl/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 16984,
+      "sha256": "c7bb1845421ac7bda3861951dbf7e421ca12dd6bd8ad4fa581ed3f20f21655d6"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/PSADT.ClientServer.Client.exe",
+      "length": 233560,
+      "sha256": "b8b8826fb203af7e655b73dea7badb8f6558ce8b91318b7243dedae347fd0aec"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/PSADT.ClientServer.Client.exe.config",
+      "length": 435,
+      "sha256": "cab01fe7aa4e7e7dda406114c2242defa8f30f83c3748f95ac48665908e09f4b"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/PSADT.ClientServer.Client.Launcher.exe",
+      "length": 206936,
+      "sha256": "3dac4edfdc531959c3d69e6ddce11cbb114eb6410f97474388e001a7a9fa9385"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/PSADT.ClientServer.Client.Launcher.exe.config",
+      "length": 435,
+      "sha256": "cab01fe7aa4e7e7dda406114c2242defa8f30f83c3748f95ac48665908e09f4b"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/PSADT.ClientServer.Client.Launcher.pdb",
+      "length": 22016,
+      "sha256": "acb2088b6db05f155b47ac1d11fb984608f22173ea350447a2134006a6ac0909"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/PSADT.ClientServer.Client.pdb",
+      "length": 42496,
+      "sha256": "a1f23e178a3c9cbf798180e27d908287371895b8e5067470acd95b5694503232"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/PSADT.ClientServer.Server.dll",
+      "length": 42072,
+      "sha256": "70025a26589890a2ea04bfc18e933e6404afd2be8a0d2dbd281a64e31794811b"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/PSADT.ClientServer.Server.pdb",
+      "length": 52736,
+      "sha256": "04ccbf3f0ac0c3d9a2548c9f678102b14c030c213318cdcc911139b4f54d2244"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/PSADT.dll",
+      "length": 687192,
+      "sha256": "413f4ea3c82b5c0184eece7a9f36b88aede9989142863df758a56beecdecc4c1"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/PSADT.pdb",
+      "length": 2721280,
+      "sha256": "54b6935595289524bceacc8b7b42afe247a2ebf3fb2bde11be2f73206ffd4382"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/PSADT.UserInterface.dll",
+      "length": 179288,
+      "sha256": "c5746964da5bcc046fcb54a5c66246484b21d26b1b91106dc5747d8270fb1ae4"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/PSADT.UserInterface.pdb",
+      "length": 325120,
+      "sha256": "0a5e2152512b8b1545c71bc0c9f0be2caa5e66d44a5da4fe97716266cc1af171"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/pt-BR/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 24152,
+      "sha256": "562b649eaa2ea56a14dc9879a8196bfc7bbf67ffb15aada7231e4475ba05fbd5"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/pt-BR/iNKORE.UI.WPF.Modern.resources.dll",
+      "length": 16984,
+      "sha256": "23dfda33ef0a139918a79db0178707613bd61988cf0a48f2119bec0f28286939"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/pt-PT/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "16161fd5b5a4bd798ca31774a70d5a168d13b9550c2ed2cec9ccf23380166d97"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/pt-PT/iNKORE.UI.WPF.Modern.resources.dll",
+      "length": 16984,
+      "sha256": "be5276702e76986753981888e8a2ac0acf64a85faeb34b3e0197c5ef94c90e86"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/quz-PE/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 19032,
+      "sha256": "50f73f2216cb245db84d04d90ff44eac0d14b77d87e331db56fd5874d185ad90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ro-RO/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "d72aaf1765bfb781ec79d3441114403ce5130f370e7e64b3cf3786e75d33d084"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ru-RU/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 24664,
+      "sha256": "3a61371dce8dfff82d6fed95b33d19360df6af8d4ea144017e74744f7f0bb0e2"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ru-RU/iNKORE.UI.WPF.Modern.resources.dll",
+      "length": 16984,
+      "sha256": "b6dffe3f893140b12e9fe7e8d3943d95c74121e181c60a1ac1b4a63eb0cb9b42"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ru/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 16984,
+      "sha256": "c9e3eb504c08f38406d4c96f862eb1a7de486a0907c0e69b7dc444f94aeb09ba"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/sk-SK/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 24152,
+      "sha256": "f0cf800b32cb4bc2d921c5fb31c88868bb8ce2ceafaf3ad81a0d305a6a0d2803"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/sl-SI/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "c749e14ca2ac733120e46a49e8e8cec8705f8fb24d58fc5cbaa20dc88e28df24"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/sq-AL/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "307c4bcaf79fdfb493127001c12e9ce33b1893b420875357637c62219b6be7ba"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/sr-Cyrl-BA/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 19544,
+      "sha256": "9fc5677aa881bbdc68dad78c41e02f73f90e9ad7b68437e8df7abb51e6c7c8e8"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/sr-Cyrl-RS/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 19544,
+      "sha256": "3dfd27ae7814845693af2c84edc4b97ce21964c0ffc6982a39d391ff8b8ea6d2"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/sr-Latn-RS/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "5572a1f76b7fe897edb5aa21001d3ab518f2e37702ec6af389007cf9f88efd1d"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/sv-SE/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "6febf77ddc1a0a22946e7e5b0d6f652833027233f72250d794a36b219d1817c0"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/sw-KE/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 20056,
+      "sha256": "bdef60b46b525152c86c9583b7be50dcb537f1902e6907da312f22de2db68ed9"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/System.Buffers.dll",
+      "length": 23816,
+      "sha256": "2d78d770c9cb997199154ae8c018b9f1d1efbc86729f7264dde6dbad2a12cac3"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/System.IO.FileSystem.AccessControl.dll",
+      "length": 28552,
+      "sha256": "e6026501ad4056ff2f1655b0afdfe8923bc6e8fbad67e1e9ef56e3002f49fbb9"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/System.Memory.dll",
+      "length": 145200,
+      "sha256": "d5e8e4866f9cfa66f7765660f84b210198893e55335487afe5ebda342c0e913d"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/System.Numerics.Vectors.dll",
+      "length": 110344,
+      "sha256": "20c2fa81b8c70d651099d762954f285fd4f942e63b2d7217c145dab8d4b2f4c9"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/System.Runtime.CompilerServices.Unsafe.dll",
+      "length": 19256,
+      "sha256": "08cbd7278b66f1e68425a82d4b97181a4130d93e3dd91831407aba7212ccdacf"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/System.Security.AccessControl.dll",
+      "length": 33672,
+      "sha256": "1fda491eebdb19ea0a83cf6c16ab5dd004a1bfdfc845ede017ebe0945beb927f"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/System.Security.Principal.Windows.dll",
+      "length": 18312,
+      "sha256": "b4d8e15adc235d0e858e39b5133e5d00a4baa8c94f4f39e3b5e791b0f9c0c806"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ta-IN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 25176,
+      "sha256": "fffa7762c418ecd40bf1327226c40dd12981c9bad40ca79357e51c883bf3dbf4"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/te-IN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 25176,
+      "sha256": "bc4bbabf3fd80911f8a753376afb57cb903aa59f3be3138c3a9266672c101d0a"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/th-TH/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 25176,
+      "sha256": "5f00fff2d4c32f0d346643c0e65aeb97cadd3d44c11d48e0ff0ecf316b1552c3"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/tr-TR/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "ec64da1851270f592df859da2353dde6a835f13b57dc341a25f35c8f7ecf83c0"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/tr-TR/iNKORE.UI.WPF.Modern.resources.dll",
+      "length": 16984,
+      "sha256": "150d23cdda7b1edebcd10e025f349b706886da599920fb76af1cbe2c5d7e3ee7"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/tr/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 16984,
+      "sha256": "f6a2ca3a45d861e0dfd3d62704f5e6cdc817512af7c7e8fdccdc288ce787ca5a"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/tt-RU/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 19544,
+      "sha256": "5a4b3cf3fb62b9f4340ceeb8b5b6007503a4e45401bc55a22bd14aebfde430c5"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ug-CN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 19544,
+      "sha256": "1ddd5cde8ba3c9151432232a4ffb5c2747478a6feccab5ad86a285ccd28ec072"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/uk-UA/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 24664,
+      "sha256": "283ac03968149703bb290f4c729fa0cad00e3fd8002c80f93328f0a226104b36"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ur-PK/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 19544,
+      "sha256": "6e049963e7c389c0aeca917e1233acf917fec916923b3bfd9b968a07333ab616"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/uz-Latn-UZ/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23128,
+      "sha256": "bae836d6dcace0db28da74021708b4b89d3b5a550ff23bd2ca09b33b70cc6216"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/vi-VN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 24152,
+      "sha256": "2ff55f655437965c02e37f2e877b6704f9713764b26a32d42acff5aa2e0fe81b"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/zh-CN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "f2b9de92858d878563ccfbbead63d5cbe534748cb6d2bc58646a0e9bef105814"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/zh-CN/iNKORE.UI.WPF.Modern.resources.dll",
+      "length": 19544,
+      "sha256": "7b29fc12eb4c8645bd094cb86e3415781164bc05d03f584220d384018cb1f3eb"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/zh-Hans/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 16984,
+      "sha256": "7f0b3f99ce9c826467cfe3c0cc8a052480ec13b20cd5305d7f2e7981f05f6d36"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/zh-Hant/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 16984,
+      "sha256": "c92abcda6950173cefb3e64be2b94296d8e5776fd3aba83968b49ffe5d77a7df"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/zh-TW/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "length": 23640,
+      "sha256": "56b0a9f6d31728d9a382a677977cdc7ef353d941c781bccad3e7e59b47897dd5"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/zh-TW/iNKORE.UI.WPF.Modern.resources.dll",
+      "length": 19544,
+      "sha256": "4041c5daa330e45ee2582013675490e21dbb85a9e05d54a848fab89a87e8a027"
+    },
+    {
+      "path": "PSAppDeployToolkit/PSAppDeployToolkit.cer",
+      "length": 2626,
+      "sha256": "2aa1bd630fad470c1e566407eeae5054a73259b0e6c8d2291c25a1115e21ac11"
+    },
+    {
+      "path": "PSAppDeployToolkit/PSAppDeployToolkit.psd1",
+      "length": 26301,
+      "sha256": "05be3f31300f51abfda0679619f9cbbf177e2a9362acbaab0a148ab6a8ed7063"
+    },
+    {
+      "path": "PSAppDeployToolkit/PSAppDeployToolkit.psm1",
+      "length": 1299098,
+      "sha256": "b6cfbcd88c0ff8b03e0940cd695d6055f2eb1980ee8f09fdfb1192234547c35f"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/ar/strings.psd1",
+      "length": 27689,
+      "sha256": "74439ba0288f4f44a55d1871f0bd8f3c36fe013a5e42ec67eae15f4631de80c0"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/bg/strings.psd1",
+      "length": 30115,
+      "sha256": "be78fe7e11d0a46046cc52170d77ca900d69e2bba43f8572637914acefadcd5e"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/cs/strings.psd1",
+      "length": 25665,
+      "sha256": "b14e60c98c3695f4a967585219d7f61becf02029bcfcc39f38bd0f5da49e6169"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/da/strings.psd1",
+      "length": 25498,
+      "sha256": "a0aa6be6ea500f2bac4f5b277bd429e904ad31965e51307d7aca98f74555c963"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/de/strings.psd1",
+      "length": 26534,
+      "sha256": "f6471beb03d4f5178f158e4650b51c6429d14d002026977750095013665b0af9"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/el/strings.psd1",
+      "length": 30318,
+      "sha256": "a4ce3c7967c4cbf5f330eb2adaac353714bc2818d5b36e2244a400b189fbe735"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/es/strings.psd1",
+      "length": 26126,
+      "sha256": "dbef5815e7af7475f159fe72af0ba55ec42a589c624de7240c5beb05b3ab63b2"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/fi/strings.psd1",
+      "length": 25506,
+      "sha256": "eee2e6ac632edecc9f8e6fbcf07e680536ba0b18b0bd0da722ee482f6e83e237"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/fr/strings.psd1",
+      "length": 26528,
+      "sha256": "bbff5830dbecbb511c52c607490818710ef1ab9e10568330e0cc9681b8447db3"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/he/strings.psd1",
+      "length": 26786,
+      "sha256": "d362118df3e18258dbe8cfb56c9414930f2506a6d9a3fe41da9bbce4d6d605a0"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/hu/strings.psd1",
+      "length": 26204,
+      "sha256": "93a76257341cd3140e10c4b0e408e2b0621af2f9f563107fe60790546b3f7ba2"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/it/strings.psd1",
+      "length": 26108,
+      "sha256": "2a0c64e4bf4000de95ac4df41d40221238645086f07e83a774f0056ef4ca7011"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/ja/strings.psd1",
+      "length": 27571,
+      "sha256": "470b11da18adcd4726e4e1ef1bb4e863a5d2c21cc431c2421c4b27b8e0966a1b"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/ko/strings.psd1",
+      "length": 25673,
+      "sha256": "10f0295694ee9da5ba0c6b917ddf584db674a70b6cb3ed85f991b27714ac3d4d"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/lv/strings.psd1",
+      "length": 25926,
+      "sha256": "2c467b036d32cda5f7ad6d3880c55723d24c438b30cf896341807fca475ec9f3"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/nb/strings.psd1",
+      "length": 25478,
+      "sha256": "b025594795bc5cfdc7250e666a20ce6a784be75733846c5ec3bf3f93f5dba538"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/nl/strings.psd1",
+      "length": 25939,
+      "sha256": "3eb96d88ddd2ab72eb9e28cfe03164dbaf2166933dae734bc35fa974301b6e88"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/pl/strings.psd1",
+      "length": 26097,
+      "sha256": "e2b64d9abfe166269fdba9ea14357933ecbaf278fc33c2a801e6889c326acf02"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/pt-BR/strings.psd1",
+      "length": 26120,
+      "sha256": "bd6c4d3c890e780e936004e6bf60c9743a99efd160d91eac0db1e3dd7058991e"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/pt/strings.psd1",
+      "length": 26182,
+      "sha256": "ca605e46919ba9da2505c1a0adbfa8a65aede102fd8f1ec25b15dd86d4676bd0"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/ru/strings.psd1",
+      "length": 29910,
+      "sha256": "46a4ff7378df3ba5f164f637a6ea2452332010d1cf25cd4dbe7fb7ac1bb50d07"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/sk/strings.psd1",
+      "length": 25869,
+      "sha256": "bc3e4d35add01ea11998726b6de99ff402b8ee84686e4ccf1835301d5f4b534d"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/strings.psd1",
+      "length": 29304,
+      "sha256": "7bf4e232cee48a88c7b4cc1f3a8bfa4a73c381174cb31d92721f8bb645c99b73"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/sv/strings.psd1",
+      "length": 25936,
+      "sha256": "b2c986abe8d31b8c7bb5e63dd10613e75fb106e99b2ac5e6034bfe77818b99e7"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/tr/strings.psd1",
+      "length": 25989,
+      "sha256": "b23e7a0cb2caba4e13f53553a202ba203485addf395d268873375f0a6027c1bd"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/zh-CN/strings.psd1",
+      "length": 24637,
+      "sha256": "eeb2ebc5591e918320cad8fd835300e7bef5b9f019c5e4a64b3e9e516bf305a4"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/zh-HK/strings.psd1",
+      "length": 24568,
+      "sha256": "5099a56c206cb445392e2a568d0b4e378395153be171592435314850b6326120"
+    },
+    {
+      "path": "Strings/ar/strings.psd1",
+      "length": 10784,
+      "sha256": "7e4a83fa9580703f57ac02b32405e31a4408dd540f16d05066c7a6fdbce5a759"
+    },
+    {
+      "path": "Strings/bg/strings.psd1",
+      "length": 13210,
+      "sha256": "f21b31c39e67acb301562c2436ccd7750c9919a92fa3dcb9c55079911ff06923"
+    },
+    {
+      "path": "Strings/cs/strings.psd1",
+      "length": 8760,
+      "sha256": "fcd3d983a0e4797fef2dc5d21cf570a66ec6337918777d12cce96f38c9b0a495"
+    },
+    {
+      "path": "Strings/da/strings.psd1",
+      "length": 8593,
+      "sha256": "bfe73af8c40c9dc1a3d61f2f725e49eeb22ba5b240f3c16a12de319519751bb2"
+    },
+    {
+      "path": "Strings/de/strings.psd1",
+      "length": 9629,
+      "sha256": "4acbeb5c6328b07dbaa2c56fa4abe17181276476e7f8a57bdb89bfcf3bd6a0cf"
+    },
+    {
+      "path": "Strings/el/strings.psd1",
+      "length": 13413,
+      "sha256": "0f62b5873cec759e4209a94a494ad6542b8c964250fbec35d178086c6051ded4"
+    },
+    {
+      "path": "Strings/es/strings.psd1",
+      "length": 9221,
+      "sha256": "9342b24d6048585f801566b349b590c1f8abf0bb6bce1e504eb28f5a49b31c68"
+    },
+    {
+      "path": "Strings/fi/strings.psd1",
+      "length": 8601,
+      "sha256": "2d8aa9f8e70fa7843c942070e1d679a5fe57b67b66acf0e59d52c4674aec254a"
+    },
+    {
+      "path": "Strings/fr/strings.psd1",
+      "length": 9623,
+      "sha256": "1b4994e2716c785f3406b74da3f063a5205e7fedaf186b282d266dfbfef33033"
+    },
+    {
+      "path": "Strings/he/strings.psd1",
+      "length": 9881,
+      "sha256": "377a5a11658ed6609d9524e829165b94a7af5fbc5c589fd2a713d40fd55a6bdb"
+    },
+    {
+      "path": "Strings/hu/strings.psd1",
+      "length": 9299,
+      "sha256": "a3c799164518e3d815b606215d8802356be572e11284a747b83fc805fbec438f"
+    },
+    {
+      "path": "Strings/it/strings.psd1",
+      "length": 9203,
+      "sha256": "aca694f1edee93b572dbef13857dfa1509602b83ce1ca091c960f1147617a8d4"
+    },
+    {
+      "path": "Strings/ja/strings.psd1",
+      "length": 10666,
+      "sha256": "0f399843b7f0d2e094cf51523aab4686c16c2291f6e2cd3a1469195f0aec6a39"
+    },
+    {
+      "path": "Strings/ko/strings.psd1",
+      "length": 8768,
+      "sha256": "c89f093b8aab04c119cb582ac73a7d7e02291a857107668e70472a3b045ccbe4"
+    },
+    {
+      "path": "Strings/lv/strings.psd1",
+      "length": 9021,
+      "sha256": "f4342d6d3ec183a24400eaebbf4826b26e263800350867ed5a70cf94f8eb1e8b"
+    },
+    {
+      "path": "Strings/nb/strings.psd1",
+      "length": 8573,
+      "sha256": "8f0e545afa23569295fb44e85f4023e455525b61e782229747d8d8571a998afc"
+    },
+    {
+      "path": "Strings/nl/strings.psd1",
+      "length": 9034,
+      "sha256": "9f557e1c88be51d085ab87f9340ff25708b2d7779ea2758700224391c3a0f742"
+    },
+    {
+      "path": "Strings/pl/strings.psd1",
+      "length": 9192,
+      "sha256": "82d2b1041a2e90262a8866deeaa3e217fccd8dd381a4f7d4d9d3cd6a28273144"
+    },
+    {
+      "path": "Strings/pt-BR/strings.psd1",
+      "length": 9215,
+      "sha256": "20914f96f635905ca656b2bc5dee6774831143b08eadc7122ee9b6071a420fe5"
+    },
+    {
+      "path": "Strings/pt/strings.psd1",
+      "length": 9277,
+      "sha256": "a0f6cf16fc83ee4ef1b5f04e30c7bf265917eeb97e0736b9049054e72872bbf0"
+    },
+    {
+      "path": "Strings/ru/strings.psd1",
+      "length": 13005,
+      "sha256": "f5486060fd5ce26ad598d9e3aad3f4293e18a2a7087e775c278e5f195b62e442"
+    },
+    {
+      "path": "Strings/sk/strings.psd1",
+      "length": 8964,
+      "sha256": "5e1b766f94f96c16f193a0f7462a35cb1ca7704a9714a2ff846a11be2017ec2d"
+    },
+    {
+      "path": "Strings/strings.psd1",
+      "length": 12399,
+      "sha256": "501934c7be485e7924f94617bc27c2751cd3b85bdab725fca0703d322ba1ab33"
+    },
+    {
+      "path": "Strings/sv/strings.psd1",
+      "length": 9031,
+      "sha256": "17624b45d42d83cbd7599efc8742b8c93007cfee708f58338277b60aecbdf4c5"
+    },
+    {
+      "path": "Strings/tr/strings.psd1",
+      "length": 9084,
+      "sha256": "e4bdcb80f381d2fd957d197a1ef20de2f25d87d96bbcc5a790bcdcf7afe046b6"
+    },
+    {
+      "path": "Strings/zh-CN/strings.psd1",
+      "length": 7732,
+      "sha256": "37f4e960583386e3e5083e4bf397a0ee019b51d0f3d23e21c2de08ca88037ad4"
+    },
+    {
+      "path": "Strings/zh-HK/strings.psd1",
+      "length": 7663,
+      "sha256": "65ac0ff231f8ae298d35b605beac4518e51ee70f30eb8117e130981b66657e3c"
+    },
+    {
+      "path": "SupportFiles/Add Supporting Files Here.txt",
+      "length": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "signatures": [
+    {
+      "path": "Invoke-AppDeployToolkit.exe",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "Invoke-AppDeployToolkit.ps1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Config/config.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "PSAppDeployToolkit/PSAppDeployToolkit.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/PSAppDeployToolkit.psm1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Config/config.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Frontend/v3/Deploy-Application.exe",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Frontend/v3/AppDeployToolkit/AppDeployToolkitExtensions.ps1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Frontend/v3/AppDeployToolkit/AppDeployToolkitMain.ps1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Frontend/v4/Invoke-AppDeployToolkit.exe",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Frontend/v4/Invoke-AppDeployToolkit.ps1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Frontend/v4/PSAppDeployToolkit.Extensions/PSAppDeployToolkit.Extensions.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Frontend/v4/PSAppDeployToolkit.Extensions/PSAppDeployToolkit.Extensions.psm1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/iNKORE.UI.WPF.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/iNKORE.UI.WPF.Modern.Controls.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/iNKORE.UI.WPF.Modern.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/Newtonsoft.Json.dll",
+      "status": "Valid",
+      "subject": "CN=Json.NET (.NET Foundation), O=Json.NET (.NET Foundation), L=Redmond, S=Washington, C=US, SERIALNUMBER=603 389 068, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Washington, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "1A9FF7E5BDC4E3E5E2F14E4B2DA6029C5AE58DBF"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/PSADT.ClientServer.Client.exe",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/PSADT.ClientServer.Client.Launcher.exe",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/PSADT.ClientServer.Server.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/PSADT.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/PSADT.UserInterface.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/System.Buffers.dll",
+      "status": "Valid",
+      "subject": "CN=.NET, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "thumbprint": "7C1760F1B98F13AB36FC603FE08C3AD2117C6E9C"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/System.IO.FileSystem.AccessControl.dll",
+      "status": "Valid",
+      "subject": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "thumbprint": "2485A7AFA98E178CB8F30C9838346B514AEA4769"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/System.Memory.dll",
+      "status": "Valid",
+      "subject": "CN=.NET, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "thumbprint": "A3FF353E77E624540BEEB83335690535BE8DF56B"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/System.Numerics.Vectors.dll",
+      "status": "Valid",
+      "subject": "CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "thumbprint": "BAC13DF18B37E808208A39D3A54CCE975FAC8C1D"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/System.Runtime.CompilerServices.Unsafe.dll",
+      "status": "Valid",
+      "subject": "CN=.NET, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "thumbprint": "A3FF353E77E624540BEEB83335690535BE8DF56B"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/System.Security.AccessControl.dll",
+      "status": "Valid",
+      "subject": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "thumbprint": "2485A7AFA98E178CB8F30C9838346B514AEA4769"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/System.Security.Principal.Windows.dll",
+      "status": "Valid",
+      "subject": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "thumbprint": "2485A7AFA98E178CB8F30C9838346B514AEA4769"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/af-ZA/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/am-ET/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ar-SA/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/as-IN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/az-Latn-AZ/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/be-BY/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/bg-BG/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/bn-BD/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/bn-IN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/bs-Latn-BA/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ca-ES/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/cs/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/cs-CZ/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/cs-CZ/iNKORE.UI.WPF.Modern.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/cy-GB/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/da-DK/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/de/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/de-DE/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/de-DE/iNKORE.UI.WPF.Modern.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/el-GR/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/en-GB/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/es/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/es-ES/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/es-ES/iNKORE.UI.WPF.Modern.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/es-MX/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/es-MX/iNKORE.UI.WPF.Modern.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/et-EE/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/eu-ES/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/fa/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/fa-IR/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/fa-IR/iNKORE.UI.WPF.Modern.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/fi-FI/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/fil-PH/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/fr/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/fr-CA/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/fr-CA/iNKORE.UI.WPF.Modern.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/fr-FR/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/fr-FR/iNKORE.UI.WPF.Modern.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ga-IE/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/gd-gb/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/gl-ES/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/gu-IN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ha-Latn-NG/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/he-IL/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/hi-IN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/hr-HR/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/hu-HU/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/hy-AM/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/id-ID/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/is-IS/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/it/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/it-IT/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/it-IT/iNKORE.UI.WPF.Modern.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ja/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ja-JP/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ja-JP/iNKORE.UI.WPF.Modern.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ka-GE/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/kk-KZ/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/km-KH/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/kn-IN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ko/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ko-KR/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ko-KR/iNKORE.UI.WPF.Modern.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/kok-IN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/lb-LU/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/lo-LA/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/lt-LT/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/lv-LV/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/mi-NZ/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/mk-MK/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ml-IN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/mr-IN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ms-MY/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/mt-MT/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/nb-NO/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ne-NP/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/nl-NL/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/nn-NO/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/or-IN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/pa-IN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/pl/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/pl-PL/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/pl-PL/iNKORE.UI.WPF.Modern.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/pt-BR/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/pt-BR/iNKORE.UI.WPF.Modern.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/pt-PT/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/pt-PT/iNKORE.UI.WPF.Modern.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/quz-PE/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ro-RO/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ru/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ru-RU/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ru-RU/iNKORE.UI.WPF.Modern.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/sk-SK/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/sl-SI/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/sq-AL/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/sr-Cyrl-BA/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/sr-Cyrl-RS/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/sr-Latn-RS/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/sv-SE/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/sw-KE/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ta-IN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/te-IN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/th-TH/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/tr/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/tr-TR/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/tr-TR/iNKORE.UI.WPF.Modern.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/tt-RU/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ug-CN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/uk-UA/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/ur-PK/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/uz-Latn-UZ/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/vi-VN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/zh-CN/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/zh-CN/iNKORE.UI.WPF.Modern.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/zh-Hans/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/zh-Hant/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/zh-TW/iNKORE.UI.WPF.Modern.Controls.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/lib/zh-TW/iNKORE.UI.WPF.Modern.resources.dll",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/ar/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/bg/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/cs/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/da/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/de/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/el/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/es/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/fi/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/fr/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/he/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/hu/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/it/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/ja/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/ko/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/lv/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/nb/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/nl/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/pl/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/pt/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/pt-BR/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/ru/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/sk/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/sv/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/tr/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/zh-CN/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit/Strings/zh-HK/strings.psd1",
+      "status": "Valid",
+      "subject": "CN=\"Patch My PC, LLC\", O=\"Patch My PC, LLC\", L=Castle Rock, S=Colorado, C=US, SERIALNUMBER=20131638327, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=Colorado, OID.1.3.6.1.4.1.311.60.2.1.3=US",
+      "thumbprint": "06A30284EAA7D941557778FDB215FB5010455C90"
+    },
+    {
+      "path": "PSAppDeployToolkit.Extensions/PSAppDeployToolkit.Extensions.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "PSAppDeployToolkit.Extensions/PSAppDeployToolkit.Extensions.psm1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/ar/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/bg/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/cs/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/da/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/de/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/el/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/es/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/fi/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/fr/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/he/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/hu/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/it/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/ja/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/ko/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/lv/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/nb/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/nl/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/pl/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/pt/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/pt-BR/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/ru/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/sk/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/sv/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/tr/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/zh-CN/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    },
+    {
+      "path": "Strings/zh-HK/strings.psd1",
+      "status": "NotSigned",
+      "subject": null,
+      "thumbprint": null
+    }
+  ]
+}

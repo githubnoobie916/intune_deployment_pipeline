@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "recordType": "ReleaseAcceptance",
+  "applicationId": "replace.with.application.id",
+  "buildId": "0000000000000000000000000000000000000000000000000000000000000000",
+  "packageSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "detectionSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "endpoint": {
+    "passed": false,
+    "approvedBy": null,
+    "approvedAtUtc": null,
+    "evidence": null
+  },
+  "business": {
+    "passed": false,
+    "approvedBy": null,
+    "approvedAtUtc": null,
+    "evidence": null
+  },
+  "prerequisites": []
+}

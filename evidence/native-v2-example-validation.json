@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "checkedAtUtc": "2026-11-04T06:38:12.5543455Z",
+  "revision": "official-4.1.8-native-v2",
+  "recipeSchemaVersion": 2,
+  "scope": "Static and offline validation of native application examples; endpoint behavior remains pending",
+  "checks": {
+    "recipesValidated": 2,
+    "legacySchemaAndRemovedGuaranteesRejected": true,
+    "powershellParsers": [
+      "5.1.26100.9711",
+      "7.6.9"
+    ],
+    "parsedOwnedScripts": 9,
+    "parseErrors": 0,
+    "nativeMainSnippets": 6,
+    "nativeCommandCalls": 8,
+    "allowedCommands": [
+      "Start-ADTMsiProcess",
+      "Start-ADTProcess",
+      "Write-ADTLogEntry",
+      "Close-ADTSession"
+    ],
+    "allParameterNamesVerifiedAgainstPristine418": true,
+    "customSnippetFunctionsConditionsLoopsMethodsPresent": false,
+    "actionsMainOnly": true,
+    "nativeProcessMetadataVerified": true,
+    "applicationRevision": "02",
+    "applicationScriptVersion": "1.1.0",
+    "discoveryInputSchema2GuardAcceptedOffline": true,
+    "resolvedReleaseOutputSchemaRemains": 1
+  },
+  "detection": [
+    {
+      "path": "examples/apps/firefox/Detect.ps1",
+      "beforeSha256": "E8BB3888329E74FFC9633F7FFCE825900860F2543E0149CF76E3F8F5422AA1C6",
+      "afterSha256": "E8BB3888329E74FFC9633F7FFCE825900860F2543E0149CF76E3F8F5422AA1C6",
+      "unchanged": true,
+      "utf8Bom": true
+    },
+    {
+      "path": "examples/apps/notepadplusplus/Detect.ps1",
+      "beforeSha256": "CAA26AA5609DA8A42D6689EA48AF014940A6F0DEF39A27E58363DC0CFE6D92E7",
+      "afterSha256": "CAA26AA5609DA8A42D6689EA48AF014940A6F0DEF39A27E58363DC0CFE6D92E7",
+      "unchanged": true,
+      "utf8Bom": true
+    }
+  ],
+  "removedFiles": [
+    "examples/apps/firefox/Pre.ps1",
+    "examples/apps/firefox/Post.ps1",
+    "examples/apps/firefox/policies.json",
+    "examples/apps/notepadplusplus/Pre.ps1",
+    "examples/apps/notepadplusplus/Post.ps1"
+  ],
+  "generatedReviewPaths": [
+    "generated-examples/psadt-4.1.8-auto-v2/firefox",
+    "generated-examples/psadt-4.1.8-auto-v2/notepadplusplus"
+  ],
+  "generationEvidence": "See the adapter population manifests and adapter validation evidence; generation is verified separately.",
+  "firefoxPolicy": {
+    "provider": "Intune",
+    "setting": "DisableAppUpdate",
+    "requiredValue": true,
+    "verificationStatus": "pending",
+    "policyId": null,
+    "payloadIncluded": false,
+    "endpointPolicyWritten": false
+  },
+  "notPerformed": [
+    "Installer downloads or Authenticode publisher approval",
+    "Installation, uninstall, repair or endpoint process/UI execution",
+    "Standalone detection execution on installed endpoints",
+    "Firefox Intune policy creation, assignment or effective-policy verification",
+    "Notepad++ legacy-updater migration",
+    "Actual .intunewin creation",
+    "Intune publication or assignment",
+    "Live discovery rerun after the schema2 input-guard change"
+  ],
+  "fileHashes": [
+    {
+      "path": "schemas/application-recipe.schema.json",
+      "sha256": "9320C545AFB6A18B1ADD9F4BF91640C5D9320475B735906489811991950E6C47"
+    },
+    {
+      "path": "docs/Worked-examples.md",
+      "sha256": "515051ABD52B73F0DD1DC1008A9383693F540A2B934A6A9A0B90FAF8C1EF014A"
+    },
+    {
+      "path": "examples/Discover-Application.example.ps1",
+      "sha256": "3ACE21E5359A767E38CBC88568B33EB4FCA6C57F252B1CACA166EB7958AE2593"
+    },
+    {
+      "path": "examples/apps/firefox/actions.json",
+      "sha256": "7A70FB690E7FAE7FB2BDD94DC54C59D59E5A8109E17FDB5B44A6DA150DA7252F"
+    },
+    {
+      "path": "examples/apps/firefox/Detect.ps1",
+      "sha256": "E8BB3888329E74FFC9633F7FFCE825900860F2543E0149CF76E3F8F5422AA1C6"
+    },
+    {
+      "path": "examples/apps/firefox/Install.ps1",
+      "sha256": "F0254F76BF0C16F7871A4F1876174B86588A3B9CCBAF9B3671E0AC708DC2CB3A"
+    },
+    {
+      "path": "examples/apps/firefox/metadata.json",
+      "sha256": "0E16585B88CA24694BAE613FC79699BB2393D137AFF5C583CCFFE84578F4B090"
+    },
+    {
+      "path": "examples/apps/firefox/Repair.ps1",
+      "sha256": "6E242679AD753BBAC24C9049084B0C13FA83E7FE51F65B95073BE8E0AB2A9512"
+    },
+    {
+      "path": "examples/apps/firefox/Uninstall.ps1",
+      "sha256": "F0039A169823636271429845B3A998BC471890C08737BD8B14703C5349E5215B"
+    },
+    {
+      "path": "examples/apps/notepadplusplus/actions.json",
+      "sha256": "7A70FB690E7FAE7FB2BDD94DC54C59D59E5A8109E17FDB5B44A6DA150DA7252F"
+    },
+    {
+      "path": "examples/apps/notepadplusplus/Detect.ps1",
+      "sha256": "CAA26AA5609DA8A42D6689EA48AF014940A6F0DEF39A27E58363DC0CFE6D92E7"
+    },
+    {
+      "path": "examples/apps/notepadplusplus/Install.ps1",
+      "sha256": "79BBE7E9567CFF29656FCBE6CC1EF65B5FC3654AD5D151A0D8854502787941F4"
+    },
+    {
+      "path": "examples/apps/notepadplusplus/metadata.json",
+      "sha256": "EFFF0F0B4C2756CD549036356EECBB5065AB1FD724D5A785BED38B9774088F44"
+    },
+    {
+      "path": "examples/apps/notepadplusplus/Repair.ps1",
+      "sha256": "CDF93B0E47DB87CD5DC2A4556F7A77779075A9A0F9055B2454A7D031614081E7"
+    },
+    {
+      "path": "examples/apps/notepadplusplus/Uninstall.ps1",
+      "sha256": "D2A01A3E85EBDC0CB693DEAE5085E7B4E2F67248F0003F10060E758F72396F60"
+    },
+    {
+      "path": "examples/recipes/firefox.json",
+      "sha256": "63EB01D88F4AAEF86AF75CE0214AC7708C7E28B6BA6AE21B235FD549A86AC398"
+    },
+    {
+      "path": "examples/recipes/notepadplusplus.json",
+      "sha256": "8FC5B3E0BF99EC84972DA4E07AFB339CE5BF47CE8BACDD5AFD7528B870E8C2C1"
+    }
+  ]
+}

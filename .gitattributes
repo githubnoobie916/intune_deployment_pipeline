@@ -1,0 +1,2 @@
+# Preserve exact source and fixture bytes used by recorded integrity checks.
+* -text whitespace=cr-at-eol

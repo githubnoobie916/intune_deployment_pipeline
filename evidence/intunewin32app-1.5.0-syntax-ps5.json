@@ -1,0 +1,278 @@
+﻿{
+    "inspectedAtUtc":  "2026-11-04T05:15:22.8355150Z",
+    "engine":  "5.1.26100.9711",
+    "moduleScriptsParsed":  86,
+    "examplesParsed":  2,
+    "parseErrors":  [
+
+                    ],
+    "commandParameterChecks":  [
+                                   {
+                                       "Example":  "Publish-Unassigned.example.ps1",
+                                       "Command":  "Get-IntuneWin32AppMetaData",
+                                       "Parameters":  [
+                                                          "FilePath",
+                                                          "WarningAction"
+                                                      ]
+                                   },
+                                   {
+                                       "Example":  "Publish-Unassigned.example.ps1",
+                                       "Command":  "New-IntuneWin32AppDetectionRuleScript",
+                                       "Parameters":  [
+                                                          "ScriptFile",
+                                                          "EnforceSignatureCheck",
+                                                          "RunAs32Bit"
+                                                      ]
+                                   },
+                                   {
+                                       "Example":  "Publish-Unassigned.example.ps1",
+                                       "Command":  "New-IntuneWin32AppRequirementRule",
+                                       "Parameters":  [
+                                                          "Architecture",
+                                                          "MinimumSupportedWindowsRelease"
+                                                      ]
+                                   },
+                                   {
+                                       "Example":  "Publish-Unassigned.example.ps1",
+                                       "Command":  "New-IntuneWin32AppReturnCode",
+                                       "Parameters":  [
+                                                          "ReturnCode",
+                                                          "Type"
+                                                      ]
+                                   },
+                                   {
+                                       "Example":  "Publish-Unassigned.example.ps1",
+                                       "Command":  "New-IntuneWin32AppReturnCode",
+                                       "Parameters":  [
+                                                          "ReturnCode",
+                                                          "Type"
+                                                      ]
+                                   },
+                                   {
+                                       "Example":  "Publish-Unassigned.example.ps1",
+                                       "Command":  "New-IntuneWin32AppReturnCode",
+                                       "Parameters":  [
+                                                          "ReturnCode",
+                                                          "Type"
+                                                      ]
+                                   },
+                                   {
+                                       "Example":  "Publish-Unassigned.example.ps1",
+                                       "Command":  "Connect-MSIntuneGraph",
+                                       "Parameters":  [
+                                                          "TenantID",
+                                                          "ClientID",
+                                                          "Interactive",
+                                                          "Scopes",
+                                                          "WarningAction"
+                                                      ]
+                                   },
+                                   {
+                                       "Example":  "Publish-Unassigned.example.ps1",
+                                       "Command":  "Get-IntuneWin32App",
+                                       "Parameters":  [
+                                                          "WarningAction"
+                                                      ]
+                                   },
+                                   {
+                                       "Example":  "Publish-Unassigned.example.ps1",
+                                       "Command":  "Add-IntuneWin32App",
+                                       "Parameters":  [
+                                                          "FilePath",
+                                                          "DisplayName",
+                                                          "Description",
+                                                          "Publisher",
+                                                          "AppVersion",
+                                                          "Notes",
+                                                          "InstallExperience",
+                                                          "RestartBehavior",
+                                                          "InstallCommandLine",
+                                                          "UninstallCommandLine",
+                                                          "DetectionRule",
+                                                          "RequirementRule",
+                                                          "ReturnCode",
+                                                          "WarningAction"
+                                                      ]
+                                   },
+                                   {
+                                       "Example":  "Publish-Unassigned.example.ps1",
+                                       "Command":  "Get-IntuneWin32App",
+                                       "Parameters":  [
+                                                          "ID",
+                                                          "WarningAction"
+                                                      ]
+                                   },
+                                   {
+                                       "Example":  "Assign-Pilot.example.ps1",
+                                       "Command":  "Connect-MSIntuneGraph",
+                                       "Parameters":  [
+                                                          "TenantID",
+                                                          "ClientID",
+                                                          "Interactive",
+                                                          "Scopes",
+                                                          "WarningAction"
+                                                      ]
+                                   },
+                                   {
+                                       "Example":  "Assign-Pilot.example.ps1",
+                                       "Command":  "Get-IntuneWin32App",
+                                       "Parameters":  [
+                                                          "ID",
+                                                          "WarningAction"
+                                                      ]
+                                   },
+                                   {
+                                       "Example":  "Assign-Pilot.example.ps1",
+                                       "Command":  "Add-IntuneWin32AppAssignmentGroup",
+                                       "Parameters":  [
+                                                          "Include",
+                                                          "ID",
+                                                          "GroupID",
+                                                          "Intent",
+                                                          "Notification",
+                                                          "WarningAction"
+                                                      ]
+                                   }
+                               ],
+    "literalEnumChecks":  [
+                              {
+                                  "Example":  "Publish-Unassigned.example.ps1",
+                                  "Command":  "New-IntuneWin32AppRequirementRule",
+                                  "Parameter":  "Architecture",
+                                  "Value":  "x64",
+                                  "AllowedValues":  [
+                                                        "x64",
+                                                        "x86",
+                                                        "arm64",
+                                                        "x64x86",
+                                                        "AllWithARM64"
+                                                    ]
+                              },
+                              {
+                                  "Example":  "Publish-Unassigned.example.ps1",
+                                  "Command":  "New-IntuneWin32AppRequirementRule",
+                                  "Parameter":  "MinimumSupportedWindowsRelease",
+                                  "Value":  "W11_22H2",
+                                  "AllowedValues":  [
+                                                        "W10_1607",
+                                                        "W10_1703",
+                                                        "W10_1709",
+                                                        "W10_1803",
+                                                        "W10_1809",
+                                                        "W10_1903",
+                                                        "W10_1909",
+                                                        "W10_2004",
+                                                        "W10_20H2",
+                                                        "W10_21H1",
+                                                        "W10_21H2",
+                                                        "W10_22H2",
+                                                        "W11_21H2",
+                                                        "W11_22H2"
+                                                    ]
+                              },
+                              {
+                                  "Example":  "Publish-Unassigned.example.ps1",
+                                  "Command":  "New-IntuneWin32AppReturnCode",
+                                  "Parameter":  "Type",
+                                  "Value":  "failed",
+                                  "AllowedValues":  [
+                                                        "success",
+                                                        "softReboot",
+                                                        "hardReboot",
+                                                        "retry",
+                                                        "failed"
+                                                    ]
+                              },
+                              {
+                                  "Example":  "Publish-Unassigned.example.ps1",
+                                  "Command":  "New-IntuneWin32AppReturnCode",
+                                  "Parameter":  "Type",
+                                  "Value":  "failed",
+                                  "AllowedValues":  [
+                                                        "success",
+                                                        "softReboot",
+                                                        "hardReboot",
+                                                        "retry",
+                                                        "failed"
+                                                    ]
+                              },
+                              {
+                                  "Example":  "Publish-Unassigned.example.ps1",
+                                  "Command":  "New-IntuneWin32AppReturnCode",
+                                  "Parameter":  "Type",
+                                  "Value":  "failed",
+                                  "AllowedValues":  [
+                                                        "success",
+                                                        "softReboot",
+                                                        "hardReboot",
+                                                        "retry",
+                                                        "failed"
+                                                    ]
+                              },
+                              {
+                                  "Example":  "Publish-Unassigned.example.ps1",
+                                  "Command":  "Add-IntuneWin32App",
+                                  "Parameter":  "InstallExperience",
+                                  "Value":  "system",
+                                  "AllowedValues":  [
+                                                        "system",
+                                                        "user"
+                                                    ]
+                              },
+                              {
+                                  "Example":  "Publish-Unassigned.example.ps1",
+                                  "Command":  "Add-IntuneWin32App",
+                                  "Parameter":  "RestartBehavior",
+                                  "Value":  "basedOnReturnCode",
+                                  "AllowedValues":  [
+                                                        "allow",
+                                                        "basedOnReturnCode",
+                                                        "suppress",
+                                                        "force"
+                                                    ]
+                              },
+                              {
+                                  "Example":  "Assign-Pilot.example.ps1",
+                                  "Command":  "Add-IntuneWin32AppAssignmentGroup",
+                                  "Parameter":  "Intent",
+                                  "Value":  "required",
+                                  "AllowedValues":  [
+                                                        "required",
+                                                        "available",
+                                                        "uninstall"
+                                                    ]
+                              },
+                              {
+                                  "Example":  "Assign-Pilot.example.ps1",
+                                  "Command":  "Add-IntuneWin32AppAssignmentGroup",
+                                  "Parameter":  "Notification",
+                                  "Value":  "showAll",
+                                  "AllowedValues":  [
+                                                        "showAll",
+                                                        "showReboot",
+                                                        "hideAll"
+                                                    ]
+                              }
+                          ],
+    "inspectedSourceSignatures":  [
+                                      {
+                                          "Path":  "IntuneWin32App.psd1",
+                                          "Status":  "NotSigned",
+                                          "Signer":  null
+                                      },
+                                      {
+                                          "Path":  "Public\\Connect-MSIntuneGraph.ps1",
+                                          "Status":  "NotSigned",
+                                          "Signer":  null
+                                      },
+                                      {
+                                          "Path":  "Public\\Add-IntuneWin32App.ps1",
+                                          "Status":  "NotSigned",
+                                          "Signer":  null
+                                      }
+                                  ],
+    "moduleImported":  false,
+    "tenantConnected":  false,
+    "binariesExecuted":  false,
+    "limitation":  "Static parsing and declared parameter-name checks only; no runtime cmdlet binding or tenant behavior validation."
+}

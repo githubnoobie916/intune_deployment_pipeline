@@ -1,0 +1,420 @@
+{
+  "schemaVersion": 1,
+  "recordType": "ConfigurationMigrationValidation",
+  "recordedAtUtc": "2026-11-05T07:41:34.1431728Z",
+  "status": "CompleteWithDocumentedSkips",
+  "executionPolicy": "PS5 test processes used process-only ExecutionPolicy Bypass; no persistent policy change.",
+  "suites": [
+    {
+      "passed": 48,
+      "scope": "Schema only",
+      "name": "ApplicationDefinitionSchema",
+      "runtimes": [
+        "7.6.9"
+      ]
+    },
+    {
+      "name": "ApplicationCore",
+      "passedPerRuntime": 16,
+      "runtimes": [
+        "5.1.26100.9711",
+        "7.6.9"
+      ]
+    },
+    {
+      "name": "ApplicationResolver",
+      "passedPerRuntime": 22,
+      "runtimes": [
+        "5.1.26100.9711",
+        "7.6.9"
+      ]
+    },
+    {
+      "runtimes": [
+        "5.1.26100.9711",
+        "7.6.9"
+      ],
+      "name": "ApplicationIdentityScope",
+      "passedPerRuntime": 20,
+      "casesPerRuntime": 7
+    },
+    {
+      "passed": 3,
+      "scope": "Child engines resolve same fake inputs and verify each other record",
+      "name": "CrossRuntimeRecords",
+      "runtimes": [
+        "5.1.26100.9711",
+        "7.6.9"
+      ]
+    },
+    {
+      "name": "ApplicationBuild",
+      "passedPerRuntime": 31,
+      "runtimes": [
+        "5.1.26100.9711",
+        "7.6.9"
+      ]
+    },
+    {
+      "name": "NativeExampleContract",
+      "passedPerRuntime": 97,
+      "runtimes": [
+        "5.1.26100.9711",
+        "7.6.9"
+      ]
+    },
+    {
+      "applications": [
+        "firefox",
+        "notepadplusplus"
+      ],
+      "passedPerApplicationRuntime": 11,
+      "scope": "Content Prep and module execution mocked",
+      "name": "ManifestPackaging",
+      "runtimes": [
+        "5.1.26100.9711",
+        "7.6.9"
+      ]
+    },
+    {
+      "scope": "Signatures, authentication and Graph calls mocked",
+      "name": "ApplicationPublication",
+      "passedPerRuntime": 50,
+      "runtimes": [
+        "5.1.26100.9711",
+        "7.6.9"
+      ]
+    },
+    {
+      "name": "ExamplePreviews",
+      "checkedAddParameters": 14,
+      "effectiveReturnCodes": 9,
+      "boundaryCalls": 0,
+      "runtimes": [
+        "5.1.26100.9711",
+        "7.6.9"
+      ],
+      "passed": true
+    },
+    {
+      "runtimes": [
+        "5.1.26100.9711",
+        "7.6.9"
+      ],
+      "name": "TemplatePopulation",
+      "passedPerRuntime": 31,
+      "skippedPerRuntime": 0
+    },
+    {
+      "skips": [
+        "Junction creation access denied",
+        "Symbolic-link creation requires administrator privileges"
+      ],
+      "runtimes": [
+        "5.1.26100.9711",
+        "7.6.9"
+      ],
+      "name": "TemplateHooks",
+      "passedPerRuntime": 34,
+      "skippedPerRuntime": 2
+    },
+    {
+      "scope": "Provider mocked; no vendor requests",
+      "name": "ApplicationDiscovery",
+      "passedPerRuntime": 34,
+      "runtimes": [
+        "5.1.26100.9711",
+        "7.6.9"
+      ]
+    },
+    {
+      "name": "DetectionBinding",
+      "passedPerRuntime": 49,
+      "runtimes": [
+        "5.1.26100.9711",
+        "7.6.9"
+      ]
+    }
+  ],
+  "documentation": {
+    "passed": true,
+    "runtimes": [
+      "5.1.26100.9711",
+      "7.6.9"
+    ],
+    "documents": 18,
+    "localLinks": 173,
+    "powerShellBlocks": 40,
+    "scope": "Target existence and block parsing; external links/anchors not checked"
+  },
+  "referenceSyntax": {
+    "passed": true,
+    "runtimes": [
+      "5.1.26100.9711",
+      "7.6.9"
+    ],
+    "powerShellFiles": 39,
+    "jsonFiles": 28,
+    "documentationBlocks": 39
+  },
+  "codeSnapshot": [
+    {
+      "path": "examples/apps/firefox/app.json",
+      "sha256": "78e72d9a7f145b40c141d8a488155e2f36cd7bea3e3d2ddcda797904dff4bc76"
+    },
+    {
+      "path": "examples/apps/firefox/Detect.template.ps1",
+      "sha256": "0a2c239b9b1079446847bf8342ab204e553f5b30d185cb614baf36151449aea8"
+    },
+    {
+      "path": "examples/apps/firefox/Install.ps1",
+      "sha256": "f0254f76bf0c16f7871a4f1876174b86588a3b9ccbaf9b3671e0ac708dc2cb3a"
+    },
+    {
+      "path": "examples/apps/firefox/Repair.ps1",
+      "sha256": "6e242679ad753bbac24c9049084b0c13fa83e7fe51f65b95073be8e0ab2a9512"
+    },
+    {
+      "path": "examples/apps/firefox/Uninstall.ps1",
+      "sha256": "f0039a169823636271429845b3a998bc471890c08737bd8b14703c5349e5215b"
+    },
+    {
+      "path": "examples/apps/notepadplusplus/app.json",
+      "sha256": "e8c24e2ebbad618b872f60a854f3839e3f620c06ce2b70e59b04e898f2caac1f"
+    },
+    {
+      "path": "examples/apps/notepadplusplus/Detect.template.ps1",
+      "sha256": "05dc207289895001fa59ceac793a6c384e156b59ff6fcb8219579857ec1999cf"
+    },
+    {
+      "path": "examples/apps/notepadplusplus/Install.ps1",
+      "sha256": "79bbe7e9567cff29656fcbe6cc1ef65b5fc3654ad5d151a0d8854502787941f4"
+    },
+    {
+      "path": "examples/apps/notepadplusplus/Repair.ps1",
+      "sha256": "cdf93b0e47db87cd5dc2a4556f7a77779075a9a0f9055b2454a7d031614081e7"
+    },
+    {
+      "path": "examples/apps/notepadplusplus/Uninstall.ps1",
+      "sha256": "d2a01a3e85ebdc0cb693deae5085e7b4e2f67248f0003f10060e758f72396f60"
+    },
+    {
+      "path": "examples/Assign-Pilot.example.ps1",
+      "sha256": "8a93e9c7e83fe40421257cb301db3c070c15385fe4defd703124cf4188dbfc6d"
+    },
+    {
+      "path": "examples/build-manifest.example.json",
+      "sha256": "5c00d679ce8f44f91e4db2fa4cd63880675d0ef6d66568503c462a0bb3426512"
+    },
+    {
+      "path": "examples/Discover-Application.example.ps1",
+      "sha256": "b6385105817aa5679b9b342fe8290742792c189e809a311337b17b5091978a6f"
+    },
+    {
+      "path": "examples/installer-evidence.example.json",
+      "sha256": "f5beb41805d750674a7ef0ed5791f247fbe83b853fd50b3292656fd73f0f4361"
+    },
+    {
+      "path": "examples/operational-record.example.json",
+      "sha256": "e7879053dbae9b364839250cc38c53e723e897e147891efd92798fd54ef1057f"
+    },
+    {
+      "path": "examples/Package-Application.example.ps1",
+      "sha256": "f06d3827c2335b281b73dce3b063e214bf70818633ec97b1a07a32540c9220ef"
+    },
+    {
+      "path": "examples/Publish-Unassigned.example.ps1",
+      "sha256": "ceb6b87df40ad24f0c9add30993e423a33b07d8d588310d28a847d6df42bfbf0"
+    },
+    {
+      "path": "examples/release-acceptance.example.json",
+      "sha256": "2c4586917f97b9a167fc5a76ef81b0eeef05e4dc0ba29a66210091fb50b63f4a"
+    },
+    {
+      "path": "schemas/application-build.v1.schema.json",
+      "sha256": "b5173990892a94f789553596c5670ea261cb300d651a50efcd35aeead4a53084"
+    },
+    {
+      "path": "schemas/application-definition.v3.schema.json",
+      "sha256": "fdaed66066e582f5aa305c02650fb61e5cda382e718f1b4c998a05575a6bd96f"
+    },
+    {
+      "path": "schemas/application-recipe.schema.json",
+      "sha256": "9320c545afb6a18b1add9f4bf91640c5d9320475b735906489811991950e6c47"
+    },
+    {
+      "path": "schemas/discovered-release.v1.schema.json",
+      "sha256": "a066753b86d044c1b148559f1ee229cd9aad7c47a255eefc8c84250c057d622f"
+    },
+    {
+      "path": "schemas/installer-evidence.v1.schema.json",
+      "sha256": "15c07e4a8ef62cde7fc074b5f9b22329e2298323c6b92113e19ce99919e65236"
+    },
+    {
+      "path": "schemas/release-acceptance.v1.schema.json",
+      "sha256": "28b3397948125d18f20c3e99b1f8170bdbfe67e466c091cdbaed365e16098ca4"
+    },
+    {
+      "path": "schemas/resolved-build.v1.schema.json",
+      "sha256": "66cb77b6860af6e7268111028380ad71d365574154191aee208dc051a86ab0a9"
+    },
+    {
+      "path": "scripts/Application.Core.ps1",
+      "sha256": "484f19c2f274040d4e5099ba5b5b992a6c5514ead97f787fd3001797652b6e95"
+    },
+    {
+      "path": "scripts/Artifact.Core.ps1",
+      "sha256": "84e305126e6dbe91bcd7e3e692108e69ee18a8c61a8c67b3fcfe0e64200b19ee"
+    },
+    {
+      "path": "scripts/Bind-ApplicationDetection.ps1",
+      "sha256": "f29e516b132c6856a5bbf0890618f2f60e973e32f113295843863af9ed7a3476"
+    },
+    {
+      "path": "scripts/Build-Application.ps1",
+      "sha256": "5c3a55669db3e02dc9dc43eaf2efc31c08ff0e34d0f859d6931febf01411cf50"
+    },
+    {
+      "path": "scripts/Populate-PSADTTemplate.ps1",
+      "sha256": "c40c7ace0579c87f25a4305d061eef4140f41a384c826d990ae54de4ea0cfba6"
+    },
+    {
+      "path": "scripts/Prepare-ApplicationPublication.ps1",
+      "sha256": "c114d3cfe0956a0a5697b5a68bfea50a0641aa7295931baa45e5dd8e30a13666"
+    },
+    {
+      "path": "scripts/Resolve-Application.ps1",
+      "sha256": "25491d07b747f4e22f77c915372c29c3a8a77f3c83865b7631449e6d85c12f4a"
+    },
+    {
+      "path": "scripts/Test-JsonContract.ps1",
+      "sha256": "5b6e709ba4213f1d86d68bcbb646885ed2e4001bf8556bd0cf3de5a65f519aa1"
+    },
+    {
+      "path": "tests/ApplicationTest.Fixtures.ps1",
+      "sha256": "f04b14a0de21b6d021737695420124bde3944001e5037b6b380ce514002fc9d2"
+    },
+    {
+      "path": "tests/fixtures/legacy-v2/apps/firefox/actions.json",
+      "sha256": "7a70fb690e7fae7fb2bdd94dc54c59d59e5a8109e17fdb5b44a6da150da7252f"
+    },
+    {
+      "path": "tests/fixtures/legacy-v2/apps/firefox/Detect.ps1",
+      "sha256": "e8bb3888329e74ffc9633f7ffce825900860f2543e0149cf76e3f8f5422aa1c6"
+    },
+    {
+      "path": "tests/fixtures/legacy-v2/apps/firefox/metadata.json",
+      "sha256": "0e16585b88ca24694bae613fc79699bb2393d137aff5c583ccffe84578f4b090"
+    },
+    {
+      "path": "tests/fixtures/legacy-v2/apps/notepadplusplus/actions.json",
+      "sha256": "7a70fb690e7fae7fb2bdd94dc54c59d59e5a8109e17fdb5b44a6da150da7252f"
+    },
+    {
+      "path": "tests/fixtures/legacy-v2/apps/notepadplusplus/Detect.ps1",
+      "sha256": "caa26aa5609da8a42d6689ea48af014940a6f0def39a27e58363dc0cfe6d92e7"
+    },
+    {
+      "path": "tests/fixtures/legacy-v2/apps/notepadplusplus/metadata.json",
+      "sha256": "efff0f0b4c2756cd549036356eecbb5065ab1fd724d5a785bed38b9774088f44"
+    },
+    {
+      "path": "tests/fixtures/legacy-v2/build-manifest.example.json",
+      "sha256": "9860371c3ee7cd320a05266ab7eec17563fe53544461c3067d2ff064718c75be"
+    },
+    {
+      "path": "tests/fixtures/legacy-v2/migration-manifest.json",
+      "sha256": "3cb503850ddc5afe13dab185569b524268d431eb56636f868d985d5ee92887c9"
+    },
+    {
+      "path": "tests/fixtures/legacy-v2/recipes/firefox.json",
+      "sha256": "63eb01d88f4aaef86af75ce0214ac7708c7e28b6ba6ae21b235fd549a86ac398"
+    },
+    {
+      "path": "tests/fixtures/legacy-v2/recipes/notepadplusplus.json",
+      "sha256": "8fc5b3e0bf99ec84972da4e07afb339ce5bf47ce8bacdd5afd7528b870e8c2c1"
+    },
+    {
+      "path": "tests/Test-ApplicationBuild.ps1",
+      "sha256": "d625760c08dcf7c7079a2ca630e7bf43604a88a5be95c232c657dd18a3ab0a1a"
+    },
+    {
+      "path": "tests/Test-ApplicationCore.ps1",
+      "sha256": "cc01d276441ac90bf37524d1469f3113d3a9555c485058fb5a2d8cea7522bb5f"
+    },
+    {
+      "path": "tests/Test-ApplicationDefinitionSchema.ps1",
+      "sha256": "a9883973135e5d8a5444e81d5d23859a8ec545ffedd454a87bc59e0731447630"
+    },
+    {
+      "path": "tests/Test-ApplicationDiscovery.ps1",
+      "sha256": "da69daef17053fd556091d63900a25135abda412a2b3e296f6d5cd75bf4cca09"
+    },
+    {
+      "path": "tests/Test-ApplicationIdentityScope.ps1",
+      "sha256": "ffd68086588a9e46fd55ac5d1595bbfc99bf62ff5170189d33ce8c23597bb82c"
+    },
+    {
+      "path": "tests/Test-ApplicationPublication.ps1",
+      "sha256": "ad53c2de1e87241d7672f431ada915dd89cc68862e6df59840eeeeb36d03ba2f"
+    },
+    {
+      "path": "tests/Test-ApplicationResolver.ps1",
+      "sha256": "e02623b32fafaca2dde1d8dff2ac6ed759a47575632b5f13544db0dd16fd9422"
+    },
+    {
+      "path": "tests/Test-CrossRuntimeRecords.ps1",
+      "sha256": "ac3b4fea756f4bb7d992a1f5fa3dd12aed200ea08df739f1a44fd69a67985930"
+    },
+    {
+      "path": "tests/Test-DetectionBinding.ps1",
+      "sha256": "4a98d4dee19b9c9c02116c7c8f4cbe5f8a6f5363d97f447f3e56b0afa5ca77fa"
+    },
+    {
+      "path": "tests/Test-Documentation.ps1",
+      "sha256": "e8754cc040bcf5fb250ff676b4dbfe566723b20601ac39b3e156b2ded177af76"
+    },
+    {
+      "path": "tests/Test-ExamplePreviews.ps1",
+      "sha256": "7298e0e4a6f69866d7dbecd56eb7679dfd8426d3c2109b7d2a6d2bc07796f546"
+    },
+    {
+      "path": "tests/Test-ManifestPackaging.ps1",
+      "sha256": "83944a70c594f7ed8626131533150eb8133e0d22e39025a3377b9dc344460082"
+    },
+    {
+      "path": "tests/Test-NativeExampleContract.ps1",
+      "sha256": "7179aff73eb996b091dfc1e57074dc3c6df697f31fcf5b9ab6f969bf8d9f32f7"
+    },
+    {
+      "path": "tests/Test-ReferenceSyntax.ps1",
+      "sha256": "a637e4dcabab72970102b7b51d55bb952e0a34c5bcacc49904b32ab1aade89fb"
+    },
+    {
+      "path": "tests/Test-TemplateHooks.ps1",
+      "sha256": "1e45139558e1e183cfd90592cf5e1c533d761b4d59e32f14653c5e71bf15a685"
+    },
+    {
+      "path": "tests/Test-TemplatePopulation.ps1",
+      "sha256": "05473527adca20c9c4e75afd3a7641c8f220d59ff0ffdf28724b672fdc1366bf"
+    }
+  ],
+  "codeSnapshotSha256": "9da3ae13fa2143dd2e7c09b3212e240906cc27511be57105d40783c5aa464716",
+  "reviews": {
+    "buildAndArtifact": "No remaining blocking findings; identity coverage gap closed",
+    "publication": "Authentication-window drift reproduced and fixed; seven mutation cases reject before create; independently reviewed"
+  },
+  "samples": [
+    "generated-examples/psadt-4.1.8-config-v3/firefox/build",
+    "generated-examples/psadt-4.1.8-config-v3/notepadplusplus/build"
+  ],
+  "unperformed": [
+    "Real vendor installer acceptance",
+    "Content Prep execution",
+    "Endpoint installation/uninstallation/repair",
+    "Real signing and endpoint trust",
+    "Intune authentication/publication/assignments",
+    "Business acceptance"
+  ],
+  "evidenceBoundary": "Offline fixtures and mocks only. Hashes are not authenticated approvals. Earlier research evidence remains historical."
+}

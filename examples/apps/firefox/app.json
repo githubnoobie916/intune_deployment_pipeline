@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 3,
+  "id": "mozilla.firefox.current.x64.en-us",
+  "publisher": "Mozilla",
+  "productName": "Firefox",
+  "displayName": "Mozilla Firefox (x64 en-US)",
+  "description": "Current-channel Firefox; application update policy must be managed separately through Intune.",
+  "ownership": {
+    "team": "Endpoint Engineering (example owner; replace before use)",
+    "contact": null,
+    "recipeRevision": "3"
+  },
+  "source": {
+    "provider": "Evergreen",
+    "application": "MozillaFirefox",
+    "moduleVersion": "2610.2859.0",
+    "definitionsRelease": "v26.11.03.146",
+    "selectionMap": {
+      "Architecture": "architecture",
+      "Type": "installerType",
+      "Channel": "channel",
+      "Language": "language"
+    },
+    "selectionConstants": {},
+    "parameterMap": {
+      "Language": "language"
+    }
+  },
+  "variant": {
+    "edition": "Firefox Release",
+    "channel": "Current",
+    "language": "en-US",
+    "architecture": "x64",
+    "installerType": "msi",
+    "versionPolicy": "latest",
+    "targetVersion": null
+  },
+  "validation": {
+    "allowedDownloadHosts": [
+      "archive.mozilla.org"
+    ],
+    "requireVendorSha256": true,
+    "requireAuthenticode": true,
+    "approvedSignerSubjects": [],
+    "expectedProductName": "Mozilla Firefox",
+    "msiPropertiesToRecord": [
+      "ProductName",
+      "ProductVersion",
+      "ProductCode",
+      "UpgradeCode",
+      "Manufacturer",
+      "ProductLanguage"
+    ]
+  },
+  "toolkit": {
+    "version": "4.1.8",
+    "profile": "official-4.1.8-native-v2",
+    "packageRevision": "02",
+    "scriptVersion": "1.1.0",
+    "scriptDate": "2026-11-03",
+    "scriptAuthor": "Endpoint Engineering — illustrative sample",
+    "requireAdmin": true,
+    "successExitCodes": [
+      0
+    ],
+    "rebootExitCodes": [
+      1641,
+      3010
+    ]
+  },
+  "deployment": {
+    "context": "system",
+    "mode": "Auto",
+    "processes": [
+      {
+        "name": "firefox",
+        "description": "Mozilla Firefox"
+      }
+    ],
+    "deferral": {
+      "policy": "template-default"
+    },
+    "repair": {
+      "supported": false,
+      "reason": "Mozilla MSI is an EXE wrapper and does not implement MSI repair or uninstall."
+    },
+    "prerequisites": [],
+    "externalPolicyPrerequisites": [
+      {
+        "provider": "Intune",
+        "setting": "DisableAppUpdate",
+        "requiredValue": true
+      }
+    ]
+  },
+  "actions": {
+    "Install": {
+      "Main": "Install.ps1"
+    },
+    "Uninstall": {
+      "Main": "Uninstall.ps1"
+    },
+    "Repair": {
+      "Main": "Repair.ps1"
+    }
+  },
+  "payloads": {
+    "installer": {
+      "destination": "Firefox.msi"
+    },
+    "support": []
+  },
+  "detection": {
+    "source": "Detect.template.ps1",
+    "binding": "MinimumVersion",
+    "versionFormat": "numeric",
+    "runAs32Bit": false,
+    "enforceSignatureCheck": false
+  },
+  "intune": {
+    "requirements": {
+      "minimumSupportedOperatingSystem": "W11_22H2",
+      "applicability": "fresh-or-upgrade"
+    },
+    "returnCodes": [
+      {
+        "code": 0,
+        "type": "success"
+      },
+      {
+        "code": 3010,
+        "type": "softReboot"
+      },
+      {
+        "code": 1641,
+        "type": "hardReboot"
+      },
+      {
+        "code": 1618,
+        "type": "retry"
+      },
+      {
+        "code": 1602,
+        "type": "retry"
+      },
+      {
+        "code": 60001,
+        "type": "failed"
+      },
+      {
+        "code": 69001,
+        "type": "failed"
+      },
+      {
+        "code": 1707,
+        "type": "success"
+      },
+      {
+        "code": 60008,
+        "type": "failed"
+      }
+    ],
+    "maximumInstallationTimeInMinutes": 120
+  },
+  "targets": {
+    "pilotGroupId": null,
+    "productionGroupId": null
+  },
+  "update": {
+    "strategy": "new-app-per-release",
+    "selfUpdater": "centrally-controlled",
+    "retainedSuccessfulReleases": 3,
+    "productionApprovalRequired": true,
+    "downgradeHandling": "vendor-default"
+  }
+}

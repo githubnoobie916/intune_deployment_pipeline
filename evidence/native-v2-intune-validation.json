@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "revision": "native-v2",
+  "recordedAtUtc": "2026-11-04 06:38:22 UTC",
+  "scope": "Offline Intune example previews and static published-module contract checks; no application deployment or tenant operations.",
+  "testScript": "tests/Test-ExamplePreviews.ps1",
+  "checkedFileSha256": {
+    "examples/Publish-Unassigned.example.ps1": "BA8CACAB978C64DCF8AE106E12A870660D9A5F0684F10FCA96ECD283EE6E1E81",
+    "examples/Assign-Pilot.example.ps1": "8A93E9C7E83FE40421257CB301DB3C070C15385FE4DEFD703124CF4188DBFC6D",
+    "tests/Test-ExamplePreviews.ps1": "6C63E4E1314B2C2D287424143234CADDA63393F367CD55977FB8824F78966251",
+    "examples/build-manifest.example.json": "9860371C3EE7CD320A05266AB7EEC17563FE53544461C3067D2FF064718C75BE"
+  },
+  "publishedModule": {
+    "name": "IntuneWin32App",
+    "version": "1.5.0",
+    "packageSha256": "2CB7137BA5039981D35E43E3CFD7C75128CB37CE1EC1BBF5248376D42CFC738B",
+    "addFunctionSha256": "7B2F60AD97E49899533F4AA2D445FC273875EBA331E53ADCCDEDFB1F5CF9156A",
+    "defaultReturnCodeFunctionSha256": "BF4C3A6BED1C266AB7BCA9049CCCB663B30EE64CD5AA64DC93CAFB265CD52DEC",
+    "timeoutParameter": {
+      "name": "MaximumInstallationTimeInMinutes",
+      "type": "System.Int32",
+      "minimum": 1,
+      "maximum": 1440,
+      "publishedDefault": 60,
+      "exampleValue": 120
+    },
+    "sourceUrls": [
+      "https://www.powershellgallery.com/packages/IntuneWin32App/1.5.0",
+      "https://www.powershellgallery.com/packages/IntuneWin32App/1.5.0/Content/Public%5CAdd-IntuneWin32App.ps1",
+      "https://www.powershellgallery.com/packages/IntuneWin32App/1.5.0/Content/Private%5CGet-IntuneWin32AppDefaultReturnCode.ps1"
+    ]
+  },
+  "runs": [
+    {
+      "host": "Windows PowerShell",
+      "command": "powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command '& ./tests/Test-ExamplePreviews.ps1 | ConvertTo-Json -Depth 6'",
+      "exitCode": 0,
+      "result": {
+        "Passed": true,
+        "PowerShellVersion": "5.1.26100.9711",
+        "Checks": [
+          "Publish default returns one local plan",
+          "Publication has zero assignments",
+          "Exact PSADT Auto commands",
+          "120-minute preview and execution timeout",
+          "Nine unique return codes including 1602/1618 retry and 69001 failed",
+          "Published Add parameter names and timeout integer/range/default match AST",
+          "Five published default return codes match preview",
+          "Unbuilt v2 manifest agrees with publication preview",
+          "Assignment default returns explicit pilot plan",
+          "No module import, authentication, HTTP, mutation or file-write sentinel reached"
+        ],
+        "EffectiveReturnCodes": [
+          {
+            "returnCode": 0,
+            "type": "success"
+          },
+          {
+            "returnCode": 1707,
+            "type": "success"
+          },
+          {
+            "returnCode": 3010,
+            "type": "softReboot"
+          },
+          {
+            "returnCode": 1641,
+            "type": "hardReboot"
+          },
+          {
+            "returnCode": 1618,
+            "type": "retry"
+          },
+          {
+            "returnCode": 60001,
+            "type": "failed"
+          },
+          {
+            "returnCode": 60008,
+            "type": "failed"
+          },
+          {
+            "returnCode": 69001,
+            "type": "failed"
+          },
+          {
+            "returnCode": 1602,
+            "type": "retry"
+          }
+        ],
+        "AddNamedParametersChecked": 14,
+        "MaximumInstallationTimeInMinutes": 120,
+        "PublishedTimeoutRange": [
+          1,
+          1440
+        ],
+        "PreviewBoundaryCalls": 0,
+        "NotTested": "Execute paths, module runtime, Graph authentication, upload and assignment behavior"
+      }
+    },
+    {
+      "host": "PowerShell",
+      "command": "pwsh.exe -NoProfile -NonInteractive -Command '& ./tests/Test-ExamplePreviews.ps1 | ConvertTo-Json -Depth 6'",
+      "exitCode": 0,
+      "result": {
+        "Passed": true,
+        "PowerShellVersion": "7.6.9",
+        "Checks": [
+          "Publish default returns one local plan",
+          "Publication has zero assignments",
+          "Exact PSADT Auto commands",
+          "120-minute preview and execution timeout",
+          "Nine unique return codes including 1602/1618 retry and 69001 failed",
+          "Published Add parameter names and timeout integer/range/default match AST",
+          "Five published default return codes match preview",
+          "Unbuilt v2 manifest agrees with publication preview",
+          "Assignment default returns explicit pilot plan",
+          "No module import, authentication, HTTP, mutation or file-write sentinel reached"
+        ],
+        "EffectiveReturnCodes": [
+          {
+            "returnCode": 0,
+            "type": "success"
+          },
+          {
+            "returnCode": 1707,
+            "type": "success"
+          },
+          {
+            "returnCode": 3010,
+            "type": "softReboot"
+          },
+          {
+            "returnCode": 1641,
+            "type": "hardReboot"
+          },
+          {
+            "returnCode": 1618,
+            "type": "retry"
+          },
+          {
+            "returnCode": 60001,
+            "type": "failed"
+          },
+          {
+            "returnCode": 60008,
+            "type": "failed"
+          },
+          {
+            "returnCode": 69001,
+            "type": "failed"
+          },
+          {
+            "returnCode": 1602,
+            "type": "retry"
+          }
+        ],
+        "AddNamedParametersChecked": 14,
+        "MaximumInstallationTimeInMinutes": 120,
+        "PublishedTimeoutRange": [
+          1,
+          1440
+        ],
+        "PreviewBoundaryCalls": 0,
+        "NotTested": "Execute paths, module runtime, Graph authentication, upload and assignment behavior"
+      }
+    }
+  ],
+  "executionPolicyNote": "The first Windows PowerShell invocation without a process override was blocked by its execution policy. The successful test used process-only ExecutionPolicy Bypass; no persistent execution policy was changed.",
+  "boundaries": {
+    "intuneModuleImported": false,
+    "authenticationAttempted": false,
+    "tenantCallsMade": false,
+    "publicationAttempted": false,
+    "assignmentAttempted": false,
+    "contentPrepExecuted": false,
+    "applicationInstallerExecuted": false,
+    "previewSentinelCalls": 0
+  },
+  "limitations": [
+    "AST checks verify named parameters and constant values against inspected source; they do not establish runtime binding or service behavior.",
+    "Preview sentinels cover named import, authentication, HTTP, mutation and filesystem commands; this is a conformance test, not a security sandbox.",
+    "Execute paths, Graph beta behavior, token handling, upload/commit, assignment, native UI/deferral, actual installer outcomes and endpoint detection remain untested.",
+    "The manifest remains illustrative and unbuilt; package/build identifiers, generated artifact hashes and endpoint acceptance are unresolved."
+  ],
+  "historicalEvidencePreserved": true
+}

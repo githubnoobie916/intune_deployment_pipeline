@@ -1,0 +1,458 @@
+{
+  "schemaVersion": 1,
+  "recordedUtc": "2026-11-04T05:21:32.7929624Z",
+  "adapterSha256": "d438555638bd56f12af40f0c1461784951b89968e46008e0564737ffcdfc3af9",
+  "testScriptSha256": "211145813672001398dc71b27a944c9fe0ab81396bd36cf8353c4d117483551c",
+  "suites": [
+    {
+      "runUtc": "2026-11-04T05:19:46.6788894Z",
+      "powershell": "5.1.26100.9711",
+      "testRoot": ".research/psadt/tests-d29a09680afb4e7ca38052fc032b8f55",
+      "passed": 11,
+      "failed": 0,
+      "tests": [
+        {
+          "name": "Populates a full copy; generated script parses; complete pristine source unchanged",
+          "passed": true
+        },
+        {
+          "name": "Metadata is literal data even with apostrophes, newline, dollar expansion and command text",
+          "passed": true
+        },
+        {
+          "name": "UTF8 without BOM preserves non-ASCII metadata on Windows PowerShell",
+          "passed": true
+        },
+        {
+          "name": "Missing required metadata fails before destination is created",
+          "passed": true
+        },
+        {
+          "name": "Unknown metadata field is rejected",
+          "passed": true
+        },
+        {
+          "name": "Existing destination is never overwritten",
+          "passed": true
+        },
+        {
+          "name": "Previously populated template is rejected by exact pristine hash",
+          "passed": true
+        },
+        {
+          "name": "Invalid snippet is rejected before output creation",
+          "passed": true
+        },
+        {
+          "name": "Snippet paths cannot escape reviewed action directory",
+          "passed": true
+        },
+        {
+          "name": "Unexpected mutation to a bundled upstream file is rejected",
+          "passed": true
+        },
+        {
+          "name": "Repair behavior must be explicit even when unsupported",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "runUtc": "2026-11-04T05:19:46.3147388Z",
+      "powershell": "7.6.9",
+      "testRoot": ".research/psadt/tests-3205a1cdcba1427aa6aa057b94439cfd",
+      "passed": 11,
+      "failed": 0,
+      "tests": [
+        {
+          "name": "Populates a full copy; generated script parses; complete pristine source unchanged",
+          "passed": true
+        },
+        {
+          "name": "Metadata is literal data even with apostrophes, newline, dollar expansion and command text",
+          "passed": true
+        },
+        {
+          "name": "UTF8 without BOM preserves non-ASCII metadata on Windows PowerShell",
+          "passed": true
+        },
+        {
+          "name": "Missing required metadata fails before destination is created",
+          "passed": true
+        },
+        {
+          "name": "Unknown metadata field is rejected",
+          "passed": true
+        },
+        {
+          "name": "Existing destination is never overwritten",
+          "passed": true
+        },
+        {
+          "name": "Previously populated template is rejected by exact pristine hash",
+          "passed": true
+        },
+        {
+          "name": "Invalid snippet is rejected before output creation",
+          "passed": true
+        },
+        {
+          "name": "Snippet paths cannot escape reviewed action directory",
+          "passed": true
+        },
+        {
+          "name": "Unexpected mutation to a bundled upstream file is rejected",
+          "passed": true
+        },
+        {
+          "name": "Repair behavior must be explicit even when unsupported",
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "name": "firefox",
+      "powershell": "5.1.26100.9711",
+      "result": {
+        "Passed": true,
+        "TemplateVersion": "4.1.8",
+        "DestinationPath": ".research/psadt/final-examples-ps51-65b73c56182a45eab6855c7b55731da8/firefox",
+        "PristineScriptSha256": "3e6db6941a332e1212ad88ec1a715d3d56a7a94f31f1cbfa0c261fe3cecff67a",
+        "GeneratedScriptSha256": "a8f44415b3843086e3d6e38f4905023987c08509695f2449fe0a3bbe5f99f9ce",
+        "UnchangedUpstreamFileCount": 221,
+        "AllowedEdits": [
+          {
+            "Kind": "Metadata.AppVendor",
+            "Start": 3544,
+            "Length": 2,
+            "GeneratedStart": 3544
+          },
+          {
+            "Kind": "Metadata.AppName",
+            "Start": 3562,
+            "Length": 2,
+            "GeneratedStart": 3569
+          },
+          {
+            "Kind": "Metadata.AppVersion",
+            "Start": 3583,
+            "Length": 2,
+            "GeneratedStart": 3597
+          },
+          {
+            "Kind": "Metadata.AppArch",
+            "Start": 3601,
+            "Length": 2,
+            "GeneratedStart": 3622
+          },
+          {
+            "Kind": "Metadata.AppLang",
+            "Start": 3619,
+            "Length": 4,
+            "GeneratedStart": 3643
+          },
+          {
+            "Kind": "Metadata.AppRevision",
+            "Start": 3643,
+            "Length": 4,
+            "GeneratedStart": 3670
+          },
+          {
+            "Kind": "Metadata.AppSuccessExitCodes",
+            "Start": 3675,
+            "Length": 4,
+            "GeneratedStart": 3702
+          },
+          {
+            "Kind": "Metadata.AppRebootExitCodes",
+            "Start": 3706,
+            "Length": 13,
+            "GeneratedStart": 3733
+          },
+          {
+            "Kind": "Metadata.AppProcessesToClose",
+            "Start": 3747,
+            "Length": 3,
+            "GeneratedStart": 3774
+          },
+          {
+            "Kind": "Metadata.AppScriptVersion",
+            "Start": 3853,
+            "Length": 7,
+            "GeneratedStart": 3880
+          },
+          {
+            "Kind": "Metadata.AppScriptDate",
+            "Start": 3882,
+            "Length": 12,
+            "GeneratedStart": 3909
+          },
+          {
+            "Kind": "Metadata.AppScriptAuthor",
+            "Start": 3918,
+            "Length": 15,
+            "GeneratedStart": 3945
+          },
+          {
+            "Kind": "Metadata.RequireAdmin",
+            "Start": 3954,
+            "Length": 5,
+            "GeneratedStart": 4010
+          },
+          {
+            "Kind": "Install.Pre",
+            "Start": 5207,
+            "Length": 0,
+            "GeneratedStart": 5263
+          },
+          {
+            "Kind": "Install.Main",
+            "Start": 6001,
+            "Length": 0,
+            "GeneratedStart": 7193
+          },
+          {
+            "Kind": "Install.Post",
+            "Start": 6262,
+            "Length": 0,
+            "GeneratedStart": 7909
+          },
+          {
+            "Kind": "Uninstall.Pre",
+            "Start": 7305,
+            "Length": 0,
+            "GeneratedStart": 10256
+          },
+          {
+            "Kind": "Uninstall.Main",
+            "Start": 7964,
+            "Length": 0,
+            "GeneratedStart": 12051
+          },
+          {
+            "Kind": "Repair.Main",
+            "Start": 9606,
+            "Length": 0,
+            "GeneratedStart": 14371
+          }
+        ],
+        "Snippets": [
+          {
+            "section": "Install.Pre",
+            "path": "Pre.ps1",
+            "sha256": "aa014c63eb23c04123262ee018856c71758a52e74499a1d83bc22e50924576bc"
+          },
+          {
+            "section": "Install.Main",
+            "path": "Install.ps1",
+            "sha256": "18fce2e108237341ab92bbe662a22ad2baf3bccba7cd54121ec36d104df50652"
+          },
+          {
+            "section": "Install.Post",
+            "path": "Post.ps1",
+            "sha256": "1ec589b20209227887fb50d5227850cbeae847cf99110669bba338f2a3e9fc46"
+          },
+          {
+            "section": "Uninstall.Pre",
+            "path": "Pre.ps1",
+            "sha256": "aa014c63eb23c04123262ee018856c71758a52e74499a1d83bc22e50924576bc"
+          },
+          {
+            "section": "Uninstall.Main",
+            "path": "Uninstall.ps1",
+            "sha256": "35ebe626c42ebb72b6446425e05b7adf7e8c2e5033fdb0c1bae314fdd80a7a54"
+          },
+          {
+            "section": "Repair.Main",
+            "path": "Repair.ps1",
+            "sha256": "6e242679ad753bbac24c9049084b0c13fa83e7fe51f65b95073be8e0ab2a9512"
+          }
+        ],
+        "Limitation": "Offline structural validation only; no deployment, installer or tenant test performed."
+      },
+      "metadataSha256": "73a808fbaf9b7201447f95b98f3f1b75559ed71ee29df1843f0d7f32981d88b1",
+      "actionsSha256": "02749f03d1287f3967e3431f577ab23671cfaf41831a1453583f986d2bf12ca1"
+    },
+    {
+      "name": "notepadplusplus",
+      "powershell": "5.1.26100.9711",
+      "result": {
+        "Passed": true,
+        "TemplateVersion": "4.1.8",
+        "DestinationPath": ".research/psadt/final-examples-ps51-65b73c56182a45eab6855c7b55731da8/notepadplusplus",
+        "PristineScriptSha256": "3e6db6941a332e1212ad88ec1a715d3d56a7a94f31f1cbfa0c261fe3cecff67a",
+        "GeneratedScriptSha256": "25d4c47a56e2562bfd4ecf7ee4d3174776bdb1640abfc9053e9099a4670b58e1",
+        "UnchangedUpstreamFileCount": 221,
+        "AllowedEdits": [
+          {
+            "Kind": "Metadata.AppVendor",
+            "Start": 3544,
+            "Length": 2,
+            "GeneratedStart": 3544
+          },
+          {
+            "Kind": "Metadata.AppName",
+            "Start": 3562,
+            "Length": 2,
+            "GeneratedStart": 3571
+          },
+          {
+            "Kind": "Metadata.AppVersion",
+            "Start": 3583,
+            "Length": 2,
+            "GeneratedStart": 3601
+          },
+          {
+            "Kind": "Metadata.AppArch",
+            "Start": 3601,
+            "Length": 2,
+            "GeneratedStart": 3626
+          },
+          {
+            "Kind": "Metadata.AppLang",
+            "Start": 3619,
+            "Length": 4,
+            "GeneratedStart": 3647
+          },
+          {
+            "Kind": "Metadata.AppRevision",
+            "Start": 3643,
+            "Length": 4,
+            "GeneratedStart": 3674
+          },
+          {
+            "Kind": "Metadata.AppSuccessExitCodes",
+            "Start": 3675,
+            "Length": 4,
+            "GeneratedStart": 3706
+          },
+          {
+            "Kind": "Metadata.AppRebootExitCodes",
+            "Start": 3706,
+            "Length": 13,
+            "GeneratedStart": 3737
+          },
+          {
+            "Kind": "Metadata.AppProcessesToClose",
+            "Start": 3747,
+            "Length": 3,
+            "GeneratedStart": 3778
+          },
+          {
+            "Kind": "Metadata.AppScriptVersion",
+            "Start": 3853,
+            "Length": 7,
+            "GeneratedStart": 3884
+          },
+          {
+            "Kind": "Metadata.AppScriptDate",
+            "Start": 3882,
+            "Length": 12,
+            "GeneratedStart": 3913
+          },
+          {
+            "Kind": "Metadata.AppScriptAuthor",
+            "Start": 3918,
+            "Length": 15,
+            "GeneratedStart": 3949
+          },
+          {
+            "Kind": "Metadata.RequireAdmin",
+            "Start": 3954,
+            "Length": 5,
+            "GeneratedStart": 4014
+          },
+          {
+            "Kind": "Install.Pre",
+            "Start": 5207,
+            "Length": 0,
+            "GeneratedStart": 5267
+          },
+          {
+            "Kind": "Install.Main",
+            "Start": 6001,
+            "Length": 0,
+            "GeneratedStart": 7107
+          },
+          {
+            "Kind": "Install.Post",
+            "Start": 6262,
+            "Length": 0,
+            "GeneratedStart": 7824
+          },
+          {
+            "Kind": "Uninstall.Pre",
+            "Start": 7305,
+            "Length": 0,
+            "GeneratedStart": 9469
+          },
+          {
+            "Kind": "Uninstall.Main",
+            "Start": 7964,
+            "Length": 0,
+            "GeneratedStart": 11174
+          },
+          {
+            "Kind": "Repair.Main",
+            "Start": 9606,
+            "Length": 0,
+            "GeneratedStart": 13389
+          }
+        ],
+        "Snippets": [
+          {
+            "section": "Install.Pre",
+            "path": "Pre.ps1",
+            "sha256": "bcda200bbfa30ecfb8c82193775943f9eefd8e8b1c27ad4fe913bfccbf8a6e3b"
+          },
+          {
+            "section": "Install.Main",
+            "path": "Install.ps1",
+            "sha256": "082aca4c914eeea3693c35d283ae90e593d7be3b239891f14a02b22d55fc53d6"
+          },
+          {
+            "section": "Install.Post",
+            "path": "Post.ps1",
+            "sha256": "10835221cd516a92c3a284fdd6f373c3e02f785abd137eb1d083e539ee2b0ff2"
+          },
+          {
+            "section": "Uninstall.Pre",
+            "path": "Pre.ps1",
+            "sha256": "bcda200bbfa30ecfb8c82193775943f9eefd8e8b1c27ad4fe913bfccbf8a6e3b"
+          },
+          {
+            "section": "Uninstall.Main",
+            "path": "Uninstall.ps1",
+            "sha256": "b6af3d690e63d400b9e8e698e8d6d3f10165bfa5bae59cc4f7a3b3052d0794e6"
+          },
+          {
+            "section": "Repair.Main",
+            "path": "Repair.ps1",
+            "sha256": "cdf93b0e47db87cd5dc2a4556f7a77779075a9a0f9055b2454a7d031614081e7"
+          }
+        ],
+        "Limitation": "Offline structural validation only; no deployment, installer or tenant test performed."
+      },
+      "metadataSha256": "243d4237bd69c7c69b21b80b15db2e47a3f92836dd9497a63a264b91c0d4ef9a",
+      "actionsSha256": "02749f03d1287f3967e3431f577ab23671cfaf41831a1453583f986d2bf12ca1"
+    }
+  ],
+  "staticExampleReview": {
+    "scriptCount": 12,
+    "psadtCallCount": 16,
+    "distinctPsadtCommands": 4,
+    "unknownNamedParameters": 0,
+    "method": "Parsed example and official release-module ASTs; no PSADT import.",
+    "limitation": "Named parameter presence verified; endpoint runtime and installer semantics still require lab acceptance."
+  },
+  "installerExecution": false,
+  "toolkitImported": false,
+  "tenantOperations": false,
+  "limitations": [
+    "Offline AST, exact-release hash and file-integrity checks only.",
+    "No application installers were staged in generated template copies.",
+    "No package, installation, endpoint, reboot, deferral, functionality or tenant test was performed."
+  ]
+}

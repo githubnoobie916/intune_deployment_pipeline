@@ -1,0 +1,74 @@
+{
+  "inspectedAtUtc": "2026-11-04T05:09:13.1836049Z",
+  "comparison": "UTF-8 text with CRLF normalized to LF; no other normalization",
+  "commit": "cff3196000e5bab3943c6c1e1937f05817fd0908",
+  "files": [
+    {
+      "path": "IntuneWin32App.psd1",
+      "sourceUrl": "https://raw.githubusercontent.com/MSEndpointMgr/IntuneWin32App/cff3196000e5bab3943c6c1e1937f05817fd0908/IntuneWin32App.psd1",
+      "equalAfterLineEndingNormalization": true,
+      "packageFileSha256": "18C0CC5C58B4CB2EBC83DE01464B256E0A78A0540FCC4494EA8F8D34D6E41C39"
+    },
+    {
+      "path": "Public/Connect-MSIntuneGraph.ps1",
+      "sourceUrl": "https://raw.githubusercontent.com/MSEndpointMgr/IntuneWin32App/cff3196000e5bab3943c6c1e1937f05817fd0908/Public/Connect-MSIntuneGraph.ps1",
+      "equalAfterLineEndingNormalization": true,
+      "packageFileSha256": "2E38B999B8EC581E8997EEA8B8F066B1B4333580BCFFC391A7F82BBE0FA10A11"
+    },
+    {
+      "path": "Public/New-IntuneWin32AppPackage.ps1",
+      "sourceUrl": "https://raw.githubusercontent.com/MSEndpointMgr/IntuneWin32App/cff3196000e5bab3943c6c1e1937f05817fd0908/Public/New-IntuneWin32AppPackage.ps1",
+      "equalAfterLineEndingNormalization": true,
+      "packageFileSha256": "8640BED3318C9E22C0A3B179672D2570433069C315F2E99BB8371CC47FE69383"
+    },
+    {
+      "path": "Public/Add-IntuneWin32App.ps1",
+      "sourceUrl": "https://raw.githubusercontent.com/MSEndpointMgr/IntuneWin32App/cff3196000e5bab3943c6c1e1937f05817fd0908/Public/Add-IntuneWin32App.ps1",
+      "equalAfterLineEndingNormalization": false,
+      "packageFileSha256": "7B2F60AD97E49899533F4AA2D445FC273875EBA331E53ADCCDEDFB1F5CF9156A"
+    },
+    {
+      "path": "Public/Set-IntuneWin32App.ps1",
+      "sourceUrl": "https://raw.githubusercontent.com/MSEndpointMgr/IntuneWin32App/cff3196000e5bab3943c6c1e1937f05817fd0908/Public/Set-IntuneWin32App.ps1",
+      "equalAfterLineEndingNormalization": true,
+      "packageFileSha256": "9E65659F1907A4328255D45A3D138FC20FB4AFB2DF3E1DF5B430CA32F8EBAFC6"
+    },
+    {
+      "path": "Public/Update-IntuneWin32AppPackageFile.ps1",
+      "sourceUrl": "https://raw.githubusercontent.com/MSEndpointMgr/IntuneWin32App/cff3196000e5bab3943c6c1e1937f05817fd0908/Public/Update-IntuneWin32AppPackageFile.ps1",
+      "equalAfterLineEndingNormalization": true,
+      "packageFileSha256": "51A3D08E6BE19F700528698CDE13CFD51CFC8B5617A40C30D17C41C9E1FFF778"
+    },
+    {
+      "path": "Public/Add-IntuneWin32AppAssignmentGroup.ps1",
+      "sourceUrl": "https://raw.githubusercontent.com/MSEndpointMgr/IntuneWin32App/cff3196000e5bab3943c6c1e1937f05817fd0908/Public/Add-IntuneWin32AppAssignmentGroup.ps1",
+      "equalAfterLineEndingNormalization": true,
+      "packageFileSha256": "EAE02A30ECA7384B7011F60877A231FCB1C10108D4000AA13712172DB6A249B0"
+    },
+    {
+      "path": "Public/New-IntuneWin32AppRequirementRule.ps1",
+      "sourceUrl": "https://raw.githubusercontent.com/MSEndpointMgr/IntuneWin32App/cff3196000e5bab3943c6c1e1937f05817fd0908/Public/New-IntuneWin32AppRequirementRule.ps1",
+      "equalAfterLineEndingNormalization": true,
+      "packageFileSha256": "CBD8269F79EAD7DBB7231F14E22728A188AEF30B163B0794AA03531AAF59BE7B"
+    },
+    {
+      "path": "Private/Invoke-MSGraphOperation.ps1",
+      "sourceUrl": "https://raw.githubusercontent.com/MSEndpointMgr/IntuneWin32App/cff3196000e5bab3943c6c1e1937f05817fd0908/Private/Invoke-MSGraphOperation.ps1",
+      "equalAfterLineEndingNormalization": true,
+      "packageFileSha256": "BAE6179DD66235F08E40DFA9FE78B383F13EF8B28F1C5D4A6C38AE9EA197C1FC"
+    },
+    {
+      "path": "Private/New-DelegatedAccessToken.ps1",
+      "sourceUrl": "https://raw.githubusercontent.com/MSEndpointMgr/IntuneWin32App/cff3196000e5bab3943c6c1e1937f05817fd0908/Private/New-DelegatedAccessToken.ps1",
+      "equalAfterLineEndingNormalization": true,
+      "packageFileSha256": "0A6477EA74A4AC53857CAC341C5E2B3CA2A177FB4D0DB0E1EB0045DFDBBE8BEE"
+    },
+    {
+      "path": "Private/New-DeviceCodeAccessToken.ps1",
+      "sourceUrl": "https://raw.githubusercontent.com/MSEndpointMgr/IntuneWin32App/cff3196000e5bab3943c6c1e1937f05817fd0908/Private/New-DeviceCodeAccessToken.ps1",
+      "equalAfterLineEndingNormalization": true,
+      "packageFileSha256": "23A3C0392A4BD72A9821E5E32DBF424A9B11530F800029020D06C6B0C7159A2B"
+    }
+  ],
+  "reviewedDifference": "Public/Add-IntuneWin32App.ps1 differs only by an extra commented-out name assignment in the published package; git diff --no-index --ignore-space-at-eol confirmed no active-code difference."
+}

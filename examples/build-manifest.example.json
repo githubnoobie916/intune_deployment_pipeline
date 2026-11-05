@@ -1,0 +1,28 @@
+{
+  "recordType": "IllustrativeBuildManifestReference",
+  "exampleOnly": true,
+  "consumable": false,
+  "state": "NotBuilt",
+  "generatedBy": "scripts/Build-Application.ps1 -Execute",
+  "generatedRecordType": "ApplicationBuild",
+  "generatedSchemaVersion": 1,
+  "schema": "../schemas/application-build.v1.schema.json",
+  "applicationDefinition": "apps/firefox/app.json",
+  "illustratedFields": {
+    "applicationId": "Stable identity from the reviewed application definition",
+    "buildId": "Hash of accepted behavioral identity, including source content and implementation pins",
+    "definition": "Frozen authored definition used for this release",
+    "release": "Accepted discovery record and selected version",
+    "identity": "Effective PSADT metadata, action mapping, source hashes and dependency pins",
+    "inputs": "Resolved source provenance",
+    "inputSnapshots": "Retained copies of reviewed application inputs",
+    "sourceInventory": "Exact generated PSADT and staged payload file hashes",
+    "detection": "Standalone generated detector path and hash",
+    "profile": "Effective launch commands, requirements, timeout and return codes",
+    "publication": "Frozen display metadata and release version",
+    "validation": "Static validation is distinct from endpoint, packaging, tenant and business outcomes",
+    "recordHash": "Record integrity seal; not an approval or authentication signature"
+  },
+  "operationalStateExample": "operational-record.example.json",
+  "note": "This reference is deliberately not a valid ApplicationBuild record. Generate a complete build-manifest.json through the builder; do not edit or pass this illustrative file to packaging or publication. The prior v2 manifest is retained under tests/fixtures/legacy-v2."
+}

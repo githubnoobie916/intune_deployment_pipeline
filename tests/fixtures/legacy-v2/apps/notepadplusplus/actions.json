@@ -1,0 +1,11 @@
+{
+  "Install": {
+    "Main": "Install.ps1"
+  },
+  "Uninstall": {
+    "Main": "Uninstall.ps1"
+  },
+  "Repair": {
+    "Main": "Repair.ps1"
+  }
+}

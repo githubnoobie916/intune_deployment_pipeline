@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "recipeId": "notepadplusplus.stable.x64",
+  "recipeSha256": "12C4F45BBE5A1BDC659E9EECB15044D6F43585D04FA1FE40C18DC9B05B208E48",
+  "discoveredAtUtc": "2026-11-04T05:14:15.3542787Z",
+  "version": "8.9.8.1",
+  "sourceUrl": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.8.1/npp.8.9.8.1.Installer.x64.exe",
+  "vendorSha256": "26f3bcced788fadbac4e7e577b430ea2ce6060cf3bcad993ef4612ecd7d743da",
+  "evergreenModuleVersion": "2610.2859.0",
+  "definitionsRelease": "v26.11.03.146",
+  "rawMetadata": {
+    "Version": "8.9.8.1",
+    "Date": "9/24/2026",
+    "Size": 6963432,
+    "Sha256": "26f3bcced788fadbac4e7e577b430ea2ce6060cf3bcad993ef4612ecd7d743da",
+    "Architecture": "x64",
+    "InstallerType": "Default",
+    "Type": "exe",
+    "URI": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.8.1/npp.8.9.8.1.Installer.x64.exe"
+  },
+  "installerValidated": false
+}

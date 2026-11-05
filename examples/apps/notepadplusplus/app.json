@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 3,
+  "id": "notepadplusplus.stable.x64",
+  "publisher": "Notepad++",
+  "productName": "Notepad++",
+  "displayName": "Notepad++ (x64)",
+  "description": "Notepad++ full installer; updater and Plugins Admin omitted.",
+  "ownership": {
+    "team": "Endpoint Engineering (example owner; replace before use)",
+    "contact": null,
+    "recipeRevision": "3"
+  },
+  "source": {
+    "provider": "Evergreen",
+    "application": "NotepadPlusPlus",
+    "moduleVersion": "2610.2859.0",
+    "definitionsRelease": "v26.11.03.146",
+    "selectionMap": {
+      "Architecture": "architecture",
+      "Type": "installerType"
+    },
+    "selectionConstants": {
+      "InstallerType": "Default",
+      "UriSuffix": ".Installer.x64.exe"
+    },
+    "parameterMap": {}
+  },
+  "variant": {
+    "edition": "Standard",
+    "channel": "GitHub latest non-prerelease",
+    "language": "Multi",
+    "architecture": "x64",
+    "installerType": "exe",
+    "versionPolicy": "latest",
+    "targetVersion": null
+  },
+  "validation": {
+    "allowedDownloadHosts": [
+      "github.com",
+      "release-assets.githubusercontent.com"
+    ],
+    "requireVendorSha256": true,
+    "requireAuthenticode": true,
+    "approvedSignerSubjects": [],
+    "expectedProductName": "Notepad++",
+    "msiPropertiesToRecord": []
+  },
+  "toolkit": {
+    "version": "4.1.8",
+    "profile": "official-4.1.8-native-v2",
+    "packageRevision": "02",
+    "scriptVersion": "1.1.0",
+    "scriptDate": "2026-11-03",
+    "scriptAuthor": "Endpoint Engineering — illustrative sample",
+    "requireAdmin": true,
+    "successExitCodes": [
+      0
+    ],
+    "rebootExitCodes": [
+      1641,
+      3010
+    ]
+  },
+  "deployment": {
+    "context": "system",
+    "mode": "Auto",
+    "processes": [
+      {
+        "name": "notepad++",
+        "description": "Notepad++"
+      }
+    ],
+    "deferral": {
+      "policy": "template-default"
+    },
+    "repair": {
+      "supported": false,
+      "reason": "No repair operation verified for this example; do not present reinstall as repair."
+    },
+    "prerequisites": [
+      "Approve the disabled Plugins Admin behavior and a legacy-updater migration for existing installations; /noUpdater alone does not prove cleanup."
+    ],
+    "externalPolicyPrerequisites": []
+  },
+  "actions": {
+    "Install": {
+      "Main": "Install.ps1"
+    },
+    "Uninstall": {
+      "Main": "Uninstall.ps1"
+    },
+    "Repair": {
+      "Main": "Repair.ps1"
+    }
+  },
+  "payloads": {
+    "installer": {
+      "destination": "NotepadPlusPlus.exe"
+    },
+    "support": []
+  },
+  "detection": {
+    "source": "Detect.template.ps1",
+    "binding": "MinimumVersion",
+    "versionFormat": "numeric",
+    "runAs32Bit": false,
+    "enforceSignatureCheck": false
+  },
+  "intune": {
+    "requirements": {
+      "minimumSupportedOperatingSystem": "W11_22H2",
+      "applicability": "fresh-or-upgrade"
+    },
+    "returnCodes": [
+      {
+        "code": 0,
+        "type": "success"
+      },
+      {
+        "code": 3010,
+        "type": "softReboot"
+      },
+      {
+        "code": 1641,
+        "type": "hardReboot"
+      },
+      {
+        "code": 1618,
+        "type": "retry"
+      },
+      {
+        "code": 1602,
+        "type": "retry"
+      },
+      {
+        "code": 60001,
+        "type": "failed"
+      },
+      {
+        "code": 69001,
+        "type": "failed"
+      },
+      {
+        "code": 1707,
+        "type": "success"
+      },
+      {
+        "code": 60008,
+        "type": "failed"
+      }
+    ],
+    "maximumInstallationTimeInMinutes": 120
+  },
+  "targets": {
+    "pilotGroupId": null,
+    "productionGroupId": null
+  },
+  "update": {
+    "strategy": "new-app-per-release",
+    "selfUpdater": "centrally-controlled",
+    "retainedSuccessfulReleases": 3,
+    "productionApprovalRequired": true,
+    "downgradeHandling": "vendor-default"
+  }
+}

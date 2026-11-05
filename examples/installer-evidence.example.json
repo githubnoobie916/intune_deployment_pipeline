@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "recordType": "InstallerEvidence",
+  "fixture": false,
+  "applicationId": "replace.with.application.id",
+  "version": "0.0.0",
+  "sha256": null,
+  "finalUrl": null,
+  "identity": null,
+  "review": {
+    "approvedBy": null,
+    "approvedAtUtc": null
+  }
+}

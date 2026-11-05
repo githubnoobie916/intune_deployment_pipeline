@@ -1,0 +1,1626 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/intune-lifecycle/application-build.v1.schema.json",
+  "title": "application-build v1",
+  "description": "Frozen local record. Embedded definition/release schema snapshots are checked against their source schemas by tests; internal references require no external resolution. Shape validation is separate from seals, content identity, provenance and runtime acceptance.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "applicationId",
+    "buildId",
+    "fixture",
+    "definitionSha256",
+    "discoveryFingerprint",
+    "release",
+    "definition",
+    "inputs",
+    "implementations",
+    "profile",
+    "identity",
+    "publication",
+    "provenance",
+    "recordHash",
+    "recordType",
+    "status",
+    "inputSnapshots",
+    "sourceFolder",
+    "sourceInventory",
+    "detection",
+    "templateValidationPath",
+    "createdAtUtc",
+    "validation"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "applicationId": {
+      "$ref": "#/$defs/text"
+    },
+    "buildId": {
+      "$ref": "#/$defs/sha256"
+    },
+    "fixture": {
+      "type": "boolean"
+    },
+    "definitionSha256": {
+      "$ref": "#/$defs/sha256"
+    },
+    "discoveryFingerprint": {
+      "$ref": "#/$defs/sha256"
+    },
+    "release": {
+      "$ref": "#/$defs/discoveredRelease"
+    },
+    "definition": {
+      "$ref": "#/$defs/applicationDefinition"
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/input"
+      },
+      "minItems": 3,
+      "uniqueItems": true
+    },
+    "implementations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/implementation"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "profile": {
+      "$ref": "#/$defs/profile"
+    },
+    "identity": {
+      "$ref": "#/$defs/identity"
+    },
+    "publication": {
+      "$ref": "#/$defs/publication"
+    },
+    "provenance": {
+      "$ref": "#/$defs/provenance"
+    },
+    "recordHash": {
+      "$ref": "#/$defs/sha256"
+    },
+    "recordType": {
+      "const": "ApplicationBuild"
+    },
+    "status": {
+      "const": "Complete"
+    },
+    "inputSnapshots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "role",
+          "path",
+          "relativePath",
+          "sha256",
+          "originalSource"
+        ],
+        "properties": {
+          "role": {
+            "enum": [
+              "action",
+              "detection",
+              "support",
+              "installer"
+            ]
+          },
+          "path": {
+            "$ref": "#/$defs/absolutePath"
+          },
+          "relativePath": {
+            "$ref": "#/$defs/relativePath"
+          },
+          "sha256": {
+            "$ref": "#/$defs/sha256"
+          },
+          "originalSource": {
+            "$ref": "#/$defs/absolutePath"
+          }
+        }
+      },
+      "minItems": 3,
+      "uniqueItems": true
+    },
+    "sourceFolder": {
+      "$ref": "#/$defs/absolutePath"
+    },
+    "sourceInventory": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "path": {
+            "$ref": "#/$defs/relativePath"
+          },
+          "sha256": {
+            "$ref": "#/$defs/sha256"
+          }
+        }
+      },
+      "minItems": 223,
+      "uniqueItems": true
+    },
+    "detection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "sha256",
+        "sourceSha256",
+        "version"
+      ],
+      "properties": {
+        "path": {
+          "$ref": "#/$defs/absolutePath"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "sourceSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "version": {
+          "$ref": "#/$defs/numericVersion"
+        }
+      }
+    },
+    "templateValidationPath": {
+      "$ref": "#/$defs/absolutePath"
+    },
+    "createdAtUtc": {
+      "$ref": "#/$defs/dateTime"
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "static",
+        "endpoint",
+        "business",
+        "packaging",
+        "tenant"
+      ],
+      "properties": {
+        "static": {
+          "const": true
+        },
+        "endpoint": {
+          "const": false
+        },
+        "business": {
+          "const": false
+        },
+        "packaging": {
+          "const": false
+        },
+        "tenant": {
+          "const": false
+        }
+      }
+    }
+  },
+  "$defs": {
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "numericVersion": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)(\\.(0|[1-9][0-9]*)){1,3}$"
+    },
+    "absolutePath": {
+      "type": "string",
+      "pattern": "^(?:[A-Za-z]:[\\\\/]|\\\\\\\\)[^\\u0000-\\u001F]+$"
+    },
+    "relativePath": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?![\\\\/])(?!.*(?:^|[\\\\/])\\.{1,2}(?:[\\\\/]|$))[^<>:\"|?*\\u0000-\\u001F]+$"
+    },
+    "dateTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "applicationDefinition": {
+      "title": "Application definition v3 — manual PSADT 4.1.8 native-v2 profile",
+      "description": "One authored application definition. Scripts own executable commands. Release versions, validation decisions, generated metadata and tenant state are separate outputs. This schema validates supported shape; semantic, filesystem, evidence and runtime checks are separate.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "id",
+        "publisher",
+        "productName",
+        "displayName",
+        "description",
+        "ownership",
+        "source",
+        "variant",
+        "validation",
+        "toolkit",
+        "deployment",
+        "actions",
+        "payloads",
+        "detection",
+        "intune",
+        "targets",
+        "update"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 3
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$"
+        },
+        "publisher": {
+          "$ref": "#/$defs/applicationDefinition/$defs/text"
+        },
+        "productName": {
+          "$ref": "#/$defs/applicationDefinition/$defs/text"
+        },
+        "displayName": {
+          "$ref": "#/$defs/applicationDefinition/$defs/text"
+        },
+        "description": {
+          "$ref": "#/$defs/applicationDefinition/$defs/text"
+        },
+        "ownership": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "team",
+            "contact",
+            "recipeRevision"
+          ],
+          "properties": {
+            "team": {
+              "$ref": "#/$defs/applicationDefinition/$defs/text"
+            },
+            "contact": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "minLength": 1
+            },
+            "recipeRevision": {
+              "$ref": "#/$defs/applicationDefinition/$defs/text"
+            }
+          }
+        },
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "provider",
+            "application",
+            "moduleVersion",
+            "definitionsRelease",
+            "selectionMap",
+            "selectionConstants",
+            "parameterMap"
+          ],
+          "properties": {
+            "provider": {
+              "const": "Evergreen"
+            },
+            "application": {
+              "$ref": "#/$defs/applicationDefinition/$defs/text"
+            },
+            "moduleVersion": {
+              "const": "2610.2859.0"
+            },
+            "definitionsRelease": {
+              "const": "v26.11.03.146"
+            },
+            "selectionMap": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "Architecture",
+                "Type"
+              ],
+              "properties": {
+                "Architecture": {
+                  "const": "architecture"
+                },
+                "Type": {
+                  "const": "installerType"
+                },
+                "Channel": {
+                  "const": "channel"
+                },
+                "Language": {
+                  "const": "language"
+                }
+              }
+            },
+            "selectionConstants": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [],
+              "properties": {
+                "InstallerType": {
+                  "$ref": "#/$defs/applicationDefinition/$defs/text"
+                },
+                "UriSuffix": {
+                  "type": "string",
+                  "pattern": "^\\.[^\\\\/]+$"
+                }
+              }
+            },
+            "parameterMap": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [],
+              "properties": {
+                "Language": {
+                  "const": "language"
+                }
+              }
+            }
+          }
+        },
+        "variant": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "edition",
+            "channel",
+            "language",
+            "architecture",
+            "installerType",
+            "versionPolicy",
+            "targetVersion"
+          ],
+          "properties": {
+            "edition": {
+              "$ref": "#/$defs/applicationDefinition/$defs/text"
+            },
+            "channel": {
+              "$ref": "#/$defs/applicationDefinition/$defs/text"
+            },
+            "language": {
+              "$ref": "#/$defs/applicationDefinition/$defs/text"
+            },
+            "architecture": {
+              "const": "x64"
+            },
+            "installerType": {
+              "enum": [
+                "msi",
+                "exe"
+              ]
+            },
+            "versionPolicy": {
+              "enum": [
+                "latest",
+                "pinned"
+              ]
+            },
+            "targetVersion": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/applicationDefinition/$defs/numericVersion"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "versionPolicy": {
+                    "const": "latest"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "targetVersion": {
+                    "type": "null"
+                  }
+                }
+              },
+              "else": {
+                "properties": {
+                  "targetVersion": {
+                    "$ref": "#/$defs/applicationDefinition/$defs/numericVersion"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "validation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "allowedDownloadHosts",
+            "requireVendorSha256",
+            "requireAuthenticode",
+            "approvedSignerSubjects",
+            "expectedProductName",
+            "msiPropertiesToRecord"
+          ],
+          "properties": {
+            "allowedDownloadHosts": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9](?:[A-Za-z0-9.-]*[A-Za-z0-9])?$"
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "requireVendorSha256": {
+              "type": "boolean"
+            },
+            "requireAuthenticode": {
+              "type": "boolean"
+            },
+            "approvedSignerSubjects": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/applicationDefinition/$defs/text"
+              },
+              "uniqueItems": true
+            },
+            "expectedProductName": {
+              "$ref": "#/$defs/applicationDefinition/$defs/text"
+            },
+            "msiPropertiesToRecord": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "ProductName",
+                  "ProductVersion",
+                  "ProductCode",
+                  "UpgradeCode",
+                  "Manufacturer",
+                  "ProductLanguage"
+                ]
+              },
+              "uniqueItems": true
+            }
+          }
+        },
+        "toolkit": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "version",
+            "profile",
+            "packageRevision",
+            "scriptVersion",
+            "scriptDate",
+            "scriptAuthor",
+            "requireAdmin",
+            "successExitCodes",
+            "rebootExitCodes"
+          ],
+          "properties": {
+            "version": {
+              "const": "4.1.8"
+            },
+            "profile": {
+              "const": "official-4.1.8-native-v2"
+            },
+            "packageRevision": {
+              "type": "string",
+              "pattern": "^[0-9]+$"
+            },
+            "scriptVersion": {
+              "$ref": "#/$defs/applicationDefinition/$defs/numericVersion"
+            },
+            "scriptDate": {
+              "type": "string",
+              "format": "date",
+              "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+            },
+            "scriptAuthor": {
+              "$ref": "#/$defs/applicationDefinition/$defs/text"
+            },
+            "requireAdmin": {
+              "const": true
+            },
+            "successExitCodes": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/applicationDefinition/$defs/exitCode"
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "rebootExitCodes": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/applicationDefinition/$defs/exitCode"
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            }
+          }
+        },
+        "deployment": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "context",
+            "mode",
+            "processes",
+            "deferral",
+            "repair",
+            "prerequisites",
+            "externalPolicyPrerequisites"
+          ],
+          "properties": {
+            "context": {
+              "const": "system"
+            },
+            "mode": {
+              "const": "Auto"
+            },
+            "processes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "name"
+                ],
+                "properties": {
+                  "name": {
+                    "$ref": "#/$defs/applicationDefinition/$defs/text"
+                  },
+                  "description": {
+                    "$ref": "#/$defs/applicationDefinition/$defs/text"
+                  }
+                }
+              },
+              "uniqueItems": true
+            },
+            "deferral": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "policy"
+              ],
+              "properties": {
+                "policy": {
+                  "const": "template-default"
+                }
+              }
+            },
+            "repair": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "supported",
+                "reason"
+              ],
+              "properties": {
+                "supported": {
+                  "const": false
+                },
+                "reason": {
+                  "$ref": "#/$defs/applicationDefinition/$defs/text"
+                }
+              }
+            },
+            "prerequisites": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/applicationDefinition/$defs/text"
+              }
+            },
+            "externalPolicyPrerequisites": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "provider",
+                  "setting",
+                  "requiredValue"
+                ],
+                "properties": {
+                  "provider": {
+                    "const": "Intune"
+                  },
+                  "setting": {
+                    "$ref": "#/$defs/applicationDefinition/$defs/text"
+                  },
+                  "requiredValue": {
+                    "type": [
+                      "string",
+                      "boolean",
+                      "number"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "actions": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "Install",
+            "Uninstall",
+            "Repair"
+          ],
+          "properties": {
+            "Install": {
+              "$ref": "#/$defs/applicationDefinition/$defs/action"
+            },
+            "Uninstall": {
+              "$ref": "#/$defs/applicationDefinition/$defs/action"
+            },
+            "Repair": {
+              "$ref": "#/$defs/applicationDefinition/$defs/action"
+            }
+          }
+        },
+        "payloads": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "installer",
+            "support"
+          ],
+          "properties": {
+            "installer": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "destination"
+              ],
+              "properties": {
+                "destination": {
+                  "$ref": "#/$defs/applicationDefinition/$defs/fileName"
+                }
+              }
+            },
+            "support": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "source",
+                  "destination"
+                ],
+                "properties": {
+                  "source": {
+                    "$ref": "#/$defs/applicationDefinition/$defs/relativePath"
+                  },
+                  "destination": {
+                    "$ref": "#/$defs/applicationDefinition/$defs/relativePath"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "detection": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "source",
+            "binding",
+            "versionFormat",
+            "runAs32Bit",
+            "enforceSignatureCheck"
+          ],
+          "properties": {
+            "source": {
+              "$ref": "#/$defs/applicationDefinition/$defs/relativePath"
+            },
+            "binding": {
+              "const": "MinimumVersion"
+            },
+            "versionFormat": {
+              "const": "numeric"
+            },
+            "runAs32Bit": {
+              "const": false
+            },
+            "enforceSignatureCheck": {
+              "type": "boolean"
+            }
+          }
+        },
+        "intune": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "requirements",
+            "returnCodes",
+            "maximumInstallationTimeInMinutes"
+          ],
+          "properties": {
+            "requirements": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "minimumSupportedOperatingSystem",
+                "applicability"
+              ],
+              "properties": {
+                "minimumSupportedOperatingSystem": {
+                  "const": "W11_22H2"
+                },
+                "applicability": {
+                  "const": "fresh-or-upgrade"
+                }
+              }
+            },
+            "returnCodes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "code",
+                  "type"
+                ],
+                "properties": {
+                  "code": {
+                    "$ref": "#/$defs/applicationDefinition/$defs/exitCode"
+                  },
+                  "type": {
+                    "enum": [
+                      "success",
+                      "softReboot",
+                      "hardReboot",
+                      "retry",
+                      "failed"
+                    ]
+                  }
+                }
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "maximumInstallationTimeInMinutes": {
+              "const": 120
+            }
+          }
+        },
+        "targets": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "pilotGroupId",
+            "productionGroupId"
+          ],
+          "properties": {
+            "pilotGroupId": {
+              "$ref": "#/$defs/applicationDefinition/$defs/nullableGuid"
+            },
+            "productionGroupId": {
+              "$ref": "#/$defs/applicationDefinition/$defs/nullableGuid"
+            }
+          }
+        },
+        "update": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "strategy",
+            "selfUpdater",
+            "retainedSuccessfulReleases",
+            "productionApprovalRequired",
+            "downgradeHandling"
+          ],
+          "properties": {
+            "strategy": {
+              "const": "new-app-per-release"
+            },
+            "selfUpdater": {
+              "const": "centrally-controlled"
+            },
+            "retainedSuccessfulReleases": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "productionApprovalRequired": {
+              "const": true
+            },
+            "downgradeHandling": {
+              "const": "vendor-default"
+            }
+          }
+        }
+      },
+      "$defs": {
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "numericVersion": {
+          "type": "string",
+          "pattern": "^[0-9]+(?:\\.[0-9]+){1,3}$"
+        },
+        "exitCode": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "fileName": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^(?!\\.{1,2}$)(?!.*[ .]$)[^<>:\"/\\\\|?*\\u0000-\\u001F]+$"
+        },
+        "relativePath": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^(?![\\\\/])(?!.*(?:^|[\\\\/])\\.{1,2}(?:[\\\\/]|$))(?!.*[ .\\\\/]$)[^<>:\"|?*\\u0000-\\u001F]+$"
+        },
+        "nullableGuid": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+            }
+          ]
+        },
+        "action": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "Main"
+          ],
+          "properties": {
+            "Pre": {
+              "$ref": "#/$defs/applicationDefinition/$defs/relativePath"
+            },
+            "Main": {
+              "$ref": "#/$defs/applicationDefinition/$defs/relativePath"
+            },
+            "Post": {
+              "$ref": "#/$defs/applicationDefinition/$defs/relativePath"
+            }
+          }
+        }
+      }
+    },
+    "discoveredRelease": {
+      "title": "Discovered release v1",
+      "description": "Immutable discovery result. This record has not accepted an installer or deployment. Preserve source provenance without signed URLs or secrets.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "recordType",
+        "applicationId",
+        "definitionSha256",
+        "discoveryFingerprint",
+        "version",
+        "sourceUrl",
+        "vendorSha256",
+        "variant",
+        "evergreenModuleVersion",
+        "definitionsRelease",
+        "discoveredAtUtc",
+        "rawMetadata"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "recordType": {
+          "const": "DiscoveredRelease"
+        },
+        "applicationId": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "definitionSha256": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{64}$"
+        },
+        "discoveryFingerprint": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{64}$"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^[0-9]+(?:\\.[0-9]+){1,3}$"
+        },
+        "sourceUrl": {
+          "type": "string",
+          "pattern": "^https://[A-Za-z0-9](?:[A-Za-z0-9.-]*[A-Za-z0-9])?(?::[0-9]+)?(?:/[^?#\\s]*)?$",
+          "description": "Unsigned HTTPS URL without user information, query string or fragment. Consumers also validate hosts and redirects."
+        },
+        "vendorSha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9A-Fa-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "variant": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "architecture",
+            "language",
+            "channel",
+            "edition",
+            "installerType",
+            "versionPolicy",
+            "targetVersion"
+          ],
+          "properties": {
+            "architecture": {
+              "const": "x64"
+            },
+            "language": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "channel": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "edition": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "installerType": {
+              "enum": [
+                "msi",
+                "exe"
+              ]
+            },
+            "versionPolicy": {
+              "enum": [
+                "latest",
+                "pinned"
+              ]
+            },
+            "targetVersion": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^[0-9]+(?:\\.[0-9]+){1,3}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "versionPolicy": {
+                    "const": "latest"
+                  }
+                }
+              },
+              "then": {
+                "properties": {
+                  "targetVersion": {
+                    "type": "null"
+                  }
+                }
+              },
+              "else": {
+                "properties": {
+                  "targetVersion": {
+                    "type": "string",
+                    "pattern": "^[0-9]+(?:\\.[0-9]+){1,3}$"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "evergreenModuleVersion": {
+          "const": "2610.2859.0"
+        },
+        "definitionsRelease": {
+          "const": "v26.11.03.146"
+        },
+        "discoveredAtUtc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "rawMetadata": {
+          "type": "object",
+          "description": "Only known scalar provider fields; never URI, signed URLs, tokens or arbitrary nested metadata.",
+          "additionalProperties": false,
+          "properties": {
+            "Version": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "Architecture": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "Type": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "Channel": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "Language": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "InstallerType": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "Sha256": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "actions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "Install",
+        "Uninstall",
+        "Repair"
+      ],
+      "properties": {
+        "Install": {
+          "$ref": "#/$defs/applicationDefinition/$defs/action"
+        },
+        "Uninstall": {
+          "$ref": "#/$defs/applicationDefinition/$defs/action"
+        },
+        "Repair": {
+          "$ref": "#/$defs/applicationDefinition/$defs/action"
+        }
+      }
+    },
+    "returnCodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "code",
+          "type"
+        ],
+        "properties": {
+          "code": {
+            "$ref": "#/$defs/applicationDefinition/$defs/exitCode"
+          },
+          "type": {
+            "enum": [
+              "success",
+              "softReboot",
+              "hardReboot",
+              "retry",
+              "failed"
+            ]
+          }
+        }
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "AppVendor",
+        "AppName",
+        "AppVersion",
+        "AppArch",
+        "AppLang",
+        "AppRevision",
+        "AppSuccessExitCodes",
+        "AppRebootExitCodes",
+        "AppProcessesToClose",
+        "AppScriptVersion",
+        "AppScriptDate",
+        "AppScriptAuthor",
+        "RequireAdmin"
+      ],
+      "properties": {
+        "AppVendor": {
+          "$ref": "#/$defs/text"
+        },
+        "AppName": {
+          "$ref": "#/$defs/text"
+        },
+        "AppVersion": {
+          "$ref": "#/$defs/numericVersion"
+        },
+        "AppArch": {
+          "const": "x64"
+        },
+        "AppLang": {
+          "$ref": "#/$defs/text"
+        },
+        "AppRevision": {
+          "type": "string",
+          "pattern": "^[0-9]+$"
+        },
+        "AppSuccessExitCodes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/applicationDefinition/$defs/exitCode"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "AppRebootExitCodes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/applicationDefinition/$defs/exitCode"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "AppProcessesToClose": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "Name"
+            ],
+            "properties": {
+              "Name": {
+                "$ref": "#/$defs/text"
+              },
+              "Description": {
+                "$ref": "#/$defs/text"
+              }
+            }
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "AppScriptVersion": {
+          "$ref": "#/$defs/numericVersion"
+        },
+        "AppScriptDate": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        },
+        "AppScriptAuthor": {
+          "$ref": "#/$defs/text"
+        },
+        "RequireAdmin": {
+          "const": true
+        }
+      }
+    },
+    "profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "setupFile",
+        "installCommand",
+        "uninstallCommand",
+        "context",
+        "architecture",
+        "minimumOS",
+        "maximumInstallationTimeInMinutes",
+        "returnCodes",
+        "runAs32Bit",
+        "enforceSignatureCheck"
+      ],
+      "properties": {
+        "name": {
+          "const": "official-4.1.8-native-v2"
+        },
+        "setupFile": {
+          "const": "Invoke-AppDeployToolkit.exe"
+        },
+        "installCommand": {
+          "const": "Invoke-AppDeployToolkit.exe -DeploymentType Install -DeployMode Auto"
+        },
+        "uninstallCommand": {
+          "const": "Invoke-AppDeployToolkit.exe -DeploymentType Uninstall -DeployMode Auto"
+        },
+        "context": {
+          "const": "system"
+        },
+        "architecture": {
+          "const": "x64"
+        },
+        "minimumOS": {
+          "const": "W11_22H2"
+        },
+        "maximumInstallationTimeInMinutes": {
+          "const": 120
+        },
+        "returnCodes": {
+          "$ref": "#/$defs/returnCodes"
+        },
+        "runAs32Bit": {
+          "const": false
+        },
+        "enforceSignatureCheck": {
+          "type": "boolean"
+        }
+      }
+    },
+    "inputIdentity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "role",
+        "relativePath",
+        "sha256",
+        "destination"
+      ],
+      "properties": {
+        "role": {
+          "enum": [
+            "action",
+            "detection",
+            "support",
+            "installer"
+          ]
+        },
+        "relativePath": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "destination": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/relativePath"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "input": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "role",
+        "relativePath",
+        "sha256",
+        "destination",
+        "source"
+      ],
+      "properties": {
+        "role": {
+          "enum": [
+            "action",
+            "detection",
+            "support",
+            "installer"
+          ]
+        },
+        "relativePath": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "destination": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/relativePath"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source": {
+          "$ref": "#/$defs/absolutePath"
+        }
+      }
+    },
+    "implementation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "path": {
+          "$ref": "#/$defs/relativePath"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    },
+    "detectionBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "Text",
+        "SourceSha256",
+        "GeneratedSha256",
+        "Version"
+      ],
+      "properties": {
+        "Text": {
+          "$ref": "#/$defs/text"
+        },
+        "SourceSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "GeneratedSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "Version": {
+          "$ref": "#/$defs/numericVersion"
+        }
+      }
+    },
+    "publication": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "displayName",
+        "publisher",
+        "description",
+        "version"
+      ],
+      "properties": {
+        "displayName": {
+          "$ref": "#/$defs/text"
+        },
+        "publisher": {
+          "$ref": "#/$defs/text"
+        },
+        "description": {
+          "$ref": "#/$defs/text"
+        },
+        "version": {
+          "$ref": "#/$defs/numericVersion"
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "releaseSha256",
+        "installerEvidenceSha256",
+        "authenticode",
+        "policyHash"
+      ],
+      "properties": {
+        "releaseSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "installerEvidenceSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "authenticode": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "subject"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "NotCheckedFixture",
+                "NotRequired",
+                "Valid"
+              ]
+            },
+            "subject": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/text"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          }
+        },
+        "policyHash": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "applicationId",
+        "metadata",
+        "actions",
+        "profile",
+        "mode",
+        "inputs",
+        "generatedDetectionSha256",
+        "implementations",
+        "dependencyPins"
+      ],
+      "properties": {
+        "applicationId": {
+          "$ref": "#/$defs/text"
+        },
+        "metadata": {
+          "$ref": "#/$defs/metadata"
+        },
+        "actions": {
+          "$ref": "#/$defs/actions"
+        },
+        "profile": {
+          "const": "official-4.1.8-native-v2"
+        },
+        "mode": {
+          "const": "Auto"
+        },
+        "inputs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/inputIdentity"
+          },
+          "minItems": 3,
+          "uniqueItems": true
+        },
+        "generatedDetectionSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "implementations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/implementation"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "dependencyPins": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "evergreen",
+            "definitions",
+            "psadt",
+            "intuneWin32App",
+            "contentPrep",
+            "contentPrepSha256"
+          ],
+          "properties": {
+            "evergreen": {
+              "const": "2610.2859.0"
+            },
+            "definitions": {
+              "const": "v26.11.03.146"
+            },
+            "psadt": {
+              "const": "4.1.8"
+            },
+            "intuneWin32App": {
+              "const": "1.5.0"
+            },
+            "contentPrep": {
+              "const": "1.8.7"
+            },
+            "contentPrepSha256": {
+              "const": "c1ba45b5cb939e84af064bb7ff4b38fb3dfe33c8dc1078fd9b157672eae671f6"
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "fixture": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "provenance": {
+            "properties": {
+              "authenticode": {
+                "properties": {
+                  "status": {
+                    "const": "NotCheckedFixture"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "provenance": {
+            "properties": {
+              "authenticode": {
+                "properties": {
+                  "status": {
+                    "enum": [
+                      "NotRequired",
+                      "Valid"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

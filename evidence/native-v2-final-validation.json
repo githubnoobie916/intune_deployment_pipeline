@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "profile": "psadt-4.1.8-auto-v2",
+  "validationKind": "Offline structural and contract validation",
+  "checkedAtUtc": "2026-11-04T06:46:23.6411757Z",
+  "referenceSyntax": [
+    {
+      "Passed": true,
+      "PowerShellVersion": "5.1.26100.9711",
+      "ParsedPowerShellFiles": 17,
+      "ParsedJsonFiles": 22,
+      "ParsedDocumentationBlocks": 6,
+      "Limitation": "Syntax only; JSON Schema and runtime behavior are separate checks."
+    },
+    {
+      "Passed": true,
+      "PowerShellVersion": "7.6.9",
+      "ParsedPowerShellFiles": 17,
+      "ParsedJsonFiles": 22,
+      "ParsedDocumentationBlocks": 6,
+      "Limitation": "Syntax only; JSON Schema and runtime behavior are separate checks."
+    }
+  ],
+  "nativeExampleContract": [
+    {
+      "Passed": true,
+      "PowerShellVersion": "5.1.26100.9711",
+      "Checks": 69,
+      "Applications": [
+        "firefox",
+        "notepadplusplus"
+      ],
+      "DetectionUnchanged": true,
+      "Limitation": "Offline contract validation; no module import, endpoint execution, packaging or tenant operation."
+    },
+    {
+      "Passed": true,
+      "PowerShellVersion": "7.6.9",
+      "Checks": 69,
+      "Applications": [
+        "firefox",
+        "notepadplusplus"
+      ],
+      "DetectionUnchanged": true,
+      "Limitation": "Offline contract validation; no module import, endpoint execution, packaging or tenant operation."
+    }
+  ],
+  "checkedFileHashes": [
+    {
+      "path": "tests/Test-NativeExampleContract.ps1",
+      "sha256": "1A32BB938DA6FC21F299DA77103CDF9D408A9D42CCE745430B887C405391B78B"
+    },
+    {
+      "path": "tests/Test-ReferenceSyntax.ps1",
+      "sha256": "A637E4DCABAB72970102B7B51D55BB952E0A34C5BCACC49904B32AB1AADE89FB"
+    },
+    {
+      "path": "examples/Package-Application.example.ps1",
+      "sha256": "FA212522AF44A1A52C5477DB8A125E647298F54B6B1FBBDA161B1EACBAC93020"
+    },
+    {
+      "path": "examples/Discover-Application.example.ps1",
+      "sha256": "3ACE21E5359A767E38CBC88568B33EB4FCA6C57F252B1CACA166EB7958AE2593"
+    }
+  ],
+  "supportingEvidence": [
+    "psadt-4.1.8-native-v2-validation.json",
+    "native-v2-example-validation.json",
+    "native-v2-intune-validation.json"
+  ],
+  "localMarkdownLinks": {
+    "status": "Passed",
+    "localLinks": 62,
+    "checkedAtUtc": "2026-11-04T06:46:23.6411757Z",
+    "documents": 9,
+    "brokenLinks": []
+  },
+  "notPerformed": [
+    "Installer download or execution",
+    "Generated deployment script execution on endpoints",
+    "PSAppDeployToolkit or IntuneWin32App module import",
+    "Actual intunewin packaging",
+    "Authentication, Intune publication, assignment or policy creation",
+    "Business functionality acceptance"
+  ],
+  "limitations": [
+    "Generated examples contain the complete toolkit with populated deployment scripts but no installer payloads.",
+    "Syntax, hashes and contract checks do not establish endpoint runtime behavior.",
+    "Firefox DisableAppUpdate is a separately managed Intune prerequisite with verification pending."
+  ]
+}

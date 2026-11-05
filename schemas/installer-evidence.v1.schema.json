@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/intune-lifecycle/installer-evidence.v1.schema.json",
+  "title": "Installer evidence v1",
+  "description": "Installer evidence record. Null fields mean pending, not accepted. Runtime acceptance must require completed matching values and verify downloaded bytes/signatures. Explicit fixtures never establish publish readiness.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "recordType",
+    "fixture",
+    "applicationId",
+    "version",
+    "sha256",
+    "finalUrl",
+    "identity",
+    "review"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "recordType": {
+      "const": "InstallerEvidence"
+    },
+    "fixture": {
+      "type": "boolean"
+    },
+    "applicationId": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+(?:\\.[0-9]+){1,3}$"
+    },
+    "sha256": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "finalUrl": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^https://[A-Za-z0-9](?:[A-Za-z0-9.-]*[A-Za-z0-9])?(?::[0-9]+)?(?:/[^?#\\s]*)?$",
+          "description": "Unsigned HTTPS URL without user information, query string or fragment. Consumers also validate hosts and redirects."
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "identity": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "productName",
+            "architecture",
+            "version",
+            "language",
+            "msiProperties"
+          ],
+          "properties": {
+            "productName": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "architecture": {
+              "const": "x64"
+            },
+            "version": {
+              "type": "string",
+              "pattern": "^[0-9]+(?:\\.[0-9]+){1,3}$"
+            },
+            "language": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "msiProperties": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [],
+              "properties": {
+                "ProductName": {
+                  "type": "string"
+                },
+                "ProductVersion": {
+                  "type": "string"
+                },
+                "ProductCode": {
+                  "type": "string"
+                },
+                "UpgradeCode": {
+                  "type": "string"
+                },
+                "Manufacturer": {
+                  "type": "string"
+                },
+                "ProductLanguage": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "approvedBy",
+        "approvedAtUtc"
+      ],
+      "properties": {
+        "approvedBy": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "approvedAtUtc": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

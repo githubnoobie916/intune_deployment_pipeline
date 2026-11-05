@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "recordType": "IllustrativeOperationalRecord",
+  "exampleOnly": true,
+  "consumable": false,
+  "implementedOperationalStore": false,
+  "applicationId": "mozilla.firefox.current.x64.en-us",
+  "artifactReference": {
+    "buildId": null,
+    "packageSha256": null,
+    "detectionSha256": null
+  },
+  "tenant": {
+    "tenantId": null,
+    "cloud": null,
+    "intuneAppId": null,
+    "committedContentVersion": null
+  },
+  "rollout": {
+    "pilotGroupId": null,
+    "productionGroupId": null,
+    "assignmentIds": [],
+    "approvalRecord": null,
+    "observations": []
+  },
+  "lastReconciledAtUtc": null,
+  "operationHistory": [],
+  "note": "Illustrates future operational state separate from the immutable build manifest. No publication, assignment, reconciliation or endpoint acceptance occurred. This file is not an input to the current scripts. Never store credentials, tokens or signed URLs here."
+}

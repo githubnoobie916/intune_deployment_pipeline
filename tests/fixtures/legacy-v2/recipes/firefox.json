@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 2,
+  "id": "mozilla.firefox.current.x64.en-us",
+  "publisher": "Mozilla",
+  "displayName": "Mozilla Firefox (x64 en-US)",
+  "description": "Current-channel Firefox; application update policy must be managed separately through Intune.",
+  "ownership": {
+    "team": "Endpoint Engineering (example owner; replace before use)",
+    "contact": null,
+    "recipeRevision": "2"
+  },
+  "source": {
+    "provider": "Evergreen",
+    "application": "MozillaFirefox",
+    "moduleVersion": "2610.2859.0",
+    "definitionsRelease": "v26.11.03.146",
+    "parameters": {
+      "Language": [
+        "en-US"
+      ]
+    },
+    "selection": {
+      "Architecture": "x64",
+      "Type": "msi",
+      "Channel": "Current",
+      "Language": "en-US"
+    }
+  },
+  "variant": {
+    "edition": "Firefox Release",
+    "channel": "Current",
+    "language": "en-US",
+    "architecture": "x64",
+    "installerType": "msi",
+    "versionPolicy": "resolve-at-discovery",
+    "targetVersion": null
+  },
+  "validation": {
+    "allowedDownloadHosts": [
+      "archive.mozilla.org"
+    ],
+    "requireVendorSha256": true,
+    "requireAuthenticode": true,
+    "approvedSignerSubjects": [],
+    "identityReviewStatus": "pending",
+    "expectedProductName": "Mozilla Firefox",
+    "expectedArchitecture": "x64",
+    "msiPropertiesToRecord": [
+      "ProductName",
+      "ProductVersion",
+      "ProductCode",
+      "UpgradeCode",
+      "Manufacturer",
+      "ProductLanguage"
+    ]
+  },
+  "toolkit": {
+    "version": "4.1.8",
+    "templateRevision": "official-4.1.8-native-v2",
+    "metadataFile": "../apps/firefox/metadata.json",
+    "actionsFile": "../apps/firefox/actions.json"
+  },
+  "deployment": {
+    "context": "system",
+    "mode": "Auto",
+    "install": {
+      "kind": "msi",
+      "setupFile": "Firefox.msi",
+      "arguments": "INSTALL_DIRECTORY_PATH=\"<ProgramW6432>\\Mozilla Firefox\" DESKTOP_SHORTCUT=false INSTALL_MAINTENANCE_SERVICE=false REMOVE_DISTRIBUTION_DIR=false"
+    },
+    "uninstall": {
+      "kind": "exe",
+      "installedPath": "<ProgramW6432>\\Mozilla Firefox\\uninstall\\helper.exe",
+      "arguments": "/S"
+    },
+    "repair": {
+      "supported": false,
+      "reason": "Mozilla MSI is an EXE wrapper and does not implement MSI repair or uninstall."
+    },
+    "configuration": [],
+    "processes": [
+      {
+        "name": "firefox",
+        "description": "Mozilla Firefox"
+      }
+    ],
+    "deferral": {
+      "policy": "template-default",
+      "deadline": null
+    },
+    "prerequisites": [],
+    "rebootPolicy": "Intune-controls-reboot",
+    "externalPolicyPrerequisites": [
+      {
+        "provider": "Intune",
+        "setting": "DisableAppUpdate",
+        "requiredValue": true,
+        "verificationStatus": "pending",
+        "policyId": null
+      }
+    ]
+  },
+  "intune": {
+    "setupEntryPoint": "Invoke-AppDeployToolkit.exe",
+    "installCommand": "Invoke-AppDeployToolkit.exe -DeploymentType Install -DeployMode Auto",
+    "uninstallCommand": "Invoke-AppDeployToolkit.exe -DeploymentType Uninstall -DeployMode Auto",
+    "detection": {
+      "kind": "script",
+      "scriptFile": "../apps/firefox/Detect.ps1",
+      "versionComparison": "greaterThanOrEqual",
+      "minimumVersionFrom": "resolved-release.version",
+      "architecture": "x64",
+      "language": "en-US",
+      "runAs32Bit": false,
+      "enforceSignatureCheck": false
+    },
+    "requirements": {
+      "architecture": "x64",
+      "minimumSupportedOperatingSystem": "W11_22H2",
+      "applicability": "fresh-or-upgrade",
+      "customScriptFile": null
+    },
+    "dependencies": [],
+    "returnCodes": [
+      {
+        "code": 0,
+        "type": "success"
+      },
+      {
+        "code": 3010,
+        "type": "softReboot"
+      },
+      {
+        "code": 1641,
+        "type": "hardReboot"
+      },
+      {
+        "code": 1618,
+        "type": "retry"
+      },
+      {
+        "code": 1602,
+        "type": "retry"
+      },
+      {
+        "code": 60001,
+        "type": "failed"
+      },
+      {
+        "code": 69001,
+        "type": "failed"
+      },
+      {
+        "code": 1707,
+        "type": "success"
+      },
+      {
+        "code": 60008,
+        "type": "failed"
+      }
+    ],
+    "maximumInstallationTimeInMinutes": 120
+  },
+  "targets": {
+    "pilotGroupId": null,
+    "productionGroupId": null
+  },
+  "update": {
+    "strategy": "new-app-per-release",
+    "selfUpdater": "centrally-controlled",
+    "retainedSuccessfulReleases": 3,
+    "productionApprovalRequired": true,
+    "downgradeHandling": "vendor-default"
+  },
+  "provenance": {
+    "engineerSupplied": [
+      "id",
+      "publisher",
+      "displayName",
+      "ownership",
+      "source.selection",
+      "variant",
+      "validation",
+      "deployment",
+      "intune",
+      "targets",
+      "update"
+    ],
+    "evergreenDerived": [
+      "resolved-release.version",
+      "resolved-release.sourceUrl",
+      "resolved-release.vendorSha256",
+      "resolved-release.rawMetadata"
+    ],
+    "installerDerived": [
+      "resolved-release.downloadSha256",
+      "resolved-release.authenticode",
+      "resolved-release.msiProperties",
+      "resolved-release.peArchitecture"
+    ],
+    "buildGenerated": [
+      "buildId",
+      "recipeHash",
+      "templateHash",
+      "toolVersions",
+      "sourceManifest",
+      "packageSha256",
+      "testEvidence",
+      "intuneAppId (publication only)"
+    ]
+  }
+}

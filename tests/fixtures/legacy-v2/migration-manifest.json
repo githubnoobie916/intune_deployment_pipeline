@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "description": "Exact retired v2 authoring/detection fixtures retained for migration and historical tests; not active application inputs.",
+  "files": [
+    {
+      "original": "examples/recipes/firefox.json",
+      "archived": "tests/fixtures/legacy-v2/recipes/firefox.json",
+      "sha256": "63eb01d88f4aaef86af75ce0214ac7708c7e28b6ba6ae21b235fd549a86ac398"
+    },
+    {
+      "original": "examples/recipes/notepadplusplus.json",
+      "archived": "tests/fixtures/legacy-v2/recipes/notepadplusplus.json",
+      "sha256": "8fc5b3e0bf99ec84972da4e07afb339ce5bf47ce8bacdd5afd7528b870e8c2c1"
+    },
+    {
+      "original": "examples/apps/firefox/metadata.json",
+      "archived": "tests/fixtures/legacy-v2/apps/firefox/metadata.json",
+      "sha256": "0e16585b88ca24694bae613fc79699bb2393d137aff5c583ccffe84578f4b090"
+    },
+    {
+      "original": "examples/apps/firefox/actions.json",
+      "archived": "tests/fixtures/legacy-v2/apps/firefox/actions.json",
+      "sha256": "7a70fb690e7fae7fb2bdd94dc54c59d59e5a8109e17fdb5b44a6da150da7252f"
+    },
+    {
+      "original": "examples/apps/firefox/Detect.ps1",
+      "archived": "tests/fixtures/legacy-v2/apps/firefox/Detect.ps1",
+      "sha256": "e8bb3888329e74ffc9633f7ffce825900860f2543e0149cf76e3f8f5422aa1c6"
+    },
+    {
+      "original": "examples/apps/notepadplusplus/metadata.json",
+      "archived": "tests/fixtures/legacy-v2/apps/notepadplusplus/metadata.json",
+      "sha256": "efff0f0b4c2756cd549036356eecbb5065ab1fd724d5a785bed38b9774088f44"
+    },
+    {
+      "original": "examples/apps/notepadplusplus/actions.json",
+      "archived": "tests/fixtures/legacy-v2/apps/notepadplusplus/actions.json",
+      "sha256": "7a70fb690e7fae7fb2bdd94dc54c59d59e5a8109e17fdb5b44a6da150da7252f"
+    },
+    {
+      "original": "examples/apps/notepadplusplus/Detect.ps1",
+      "archived": "tests/fixtures/legacy-v2/apps/notepadplusplus/Detect.ps1",
+      "sha256": "caa26aa5609da8a42d6689ea48af014940a6f0def39a27e58363dc0cfe6d92e7"
+    }
+  ],
+  "buildManifest": {
+    "original": "examples/build-manifest.example.json",
+    "archived": "tests/fixtures/legacy-v2/build-manifest.example.json",
+    "sha256": "9860371c3ee7cd320a05266ab7eec17563fe53544461c3067d2ff064718c75be",
+    "replacement": "Non-consumable current output reference; operational state illustrated separately."
+  }
+}

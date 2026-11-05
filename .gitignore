@@ -1,0 +1,13 @@
+# Research dependencies and offline validation output, not application releases.
+.research/
+.validation/
+generated-examples/
+work/
+state/
+artifacts/
+*.intunewin
+*.pfx
+*.p12
+*.key
+.env
+*.log

@@ -1,0 +1,786 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:intune-deployment-research:application-recipe:2",
+  "title": "Illustrative application recipe — engineer intent, not executable expressions",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "publisher",
+    "displayName",
+    "description",
+    "ownership",
+    "source",
+    "variant",
+    "validation",
+    "toolkit",
+    "deployment",
+    "intune",
+    "targets",
+    "update",
+    "provenance"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$"
+    },
+    "publisher": {
+      "type": "string",
+      "minLength": 1
+    },
+    "displayName": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ownership": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "team",
+        "contact",
+        "recipeRevision"
+      ],
+      "properties": {
+        "team": {
+          "type": "string",
+          "minLength": 1
+        },
+        "contact": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "recipeRevision": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "provider",
+        "application",
+        "moduleVersion",
+        "definitionsRelease",
+        "parameters",
+        "selection"
+      ],
+      "properties": {
+        "provider": {
+          "enum": [
+            "Evergreen",
+            "EngineerProvided"
+          ]
+        },
+        "application": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "moduleVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "definitionsRelease": {
+          "type": "string",
+          "minLength": 1
+        },
+        "parameters": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [],
+          "properties": {
+            "Language": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "selection": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "Architecture",
+            "Type"
+          ],
+          "properties": {
+            "Architecture": {
+              "type": "string",
+              "minLength": 1
+            },
+            "Type": {
+              "type": "string",
+              "minLength": 1
+            },
+            "Channel": {
+              "type": "string",
+              "minLength": 1
+            },
+            "Language": {
+              "type": "string",
+              "minLength": 1
+            },
+            "InstallerType": {
+              "type": "string",
+              "minLength": 1
+            },
+            "UriSuffix": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "variant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "edition",
+        "channel",
+        "language",
+        "architecture",
+        "installerType",
+        "versionPolicy",
+        "targetVersion"
+      ],
+      "properties": {
+        "edition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "channel": {
+          "type": "string",
+          "minLength": 1
+        },
+        "language": {
+          "type": "string",
+          "minLength": 1
+        },
+        "architecture": {
+          "enum": [
+            "x64",
+            "x86",
+            "arm64"
+          ]
+        },
+        "installerType": {
+          "enum": [
+            "msi",
+            "exe"
+          ]
+        },
+        "versionPolicy": {
+          "enum": [
+            "resolve-at-discovery",
+            "pinned"
+          ]
+        },
+        "targetVersion": {
+          "minLength": 1,
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "versionPolicy": {
+                "const": "pinned"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "targetVersion": {
+                "minLength": 1,
+                "type": "string"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "targetVersion": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "allowedDownloadHosts",
+        "requireVendorSha256",
+        "requireAuthenticode",
+        "approvedSignerSubjects",
+        "identityReviewStatus",
+        "expectedProductName",
+        "expectedArchitecture",
+        "msiPropertiesToRecord"
+      ],
+      "properties": {
+        "allowedDownloadHosts": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "requireVendorSha256": {
+          "type": "boolean"
+        },
+        "requireAuthenticode": {
+          "type": "boolean"
+        },
+        "approvedSignerSubjects": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "identityReviewStatus": {
+          "enum": [
+            "pending",
+            "approved"
+          ]
+        },
+        "expectedProductName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "expectedArchitecture": {
+          "type": "string",
+          "minLength": 1
+        },
+        "msiPropertiesToRecord": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "toolkit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "templateRevision",
+        "metadataFile",
+        "actionsFile"
+      ],
+      "properties": {
+        "version": {
+          "const": "4.1.8"
+        },
+        "templateRevision": {
+          "const": "official-4.1.8-native-v2"
+        },
+        "metadataFile": {
+          "type": "string",
+          "minLength": 1
+        },
+        "actionsFile": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "deployment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "context",
+        "mode",
+        "install",
+        "uninstall",
+        "repair",
+        "configuration",
+        "processes",
+        "deferral",
+        "prerequisites",
+        "rebootPolicy",
+        "externalPolicyPrerequisites"
+      ],
+      "properties": {
+        "context": {
+          "enum": [
+            "system",
+            "user"
+          ]
+        },
+        "mode": {
+          "enum": [
+            "Silent",
+            "Interactive",
+            "Auto",
+            "NonInteractive"
+          ]
+        },
+        "install": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "setupFile",
+            "arguments"
+          ],
+          "properties": {
+            "kind": {
+              "enum": [
+                "msi",
+                "exe"
+              ]
+            },
+            "setupFile": {
+              "type": "string",
+              "minLength": 1
+            },
+            "arguments": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "uninstall": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "installedPath",
+            "arguments"
+          ],
+          "properties": {
+            "kind": {
+              "enum": [
+                "exe",
+                "msi-product-code"
+              ]
+            },
+            "installedPath": {
+              "type": "string",
+              "minLength": 1
+            },
+            "arguments": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "repair": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "supported",
+            "reason"
+          ],
+          "properties": {
+            "supported": {
+              "type": "boolean"
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "configuration": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "source",
+              "destination",
+              "behavior"
+            ],
+            "properties": {
+              "source": {
+                "type": "string",
+                "minLength": 1
+              },
+              "destination": {
+                "type": "string",
+                "minLength": 1
+              },
+              "behavior": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "processes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "description"
+            ],
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "deferral": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "policy",
+            "deadline"
+          ],
+          "properties": {
+            "policy": {
+              "const": "template-default"
+            },
+            "deadline": {
+              "type": "null"
+            }
+          }
+        },
+        "prerequisites": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "rebootPolicy": {
+          "enum": [
+            "Intune-controls-reboot"
+          ]
+        },
+        "externalPolicyPrerequisites": {
+          "type": "array",
+          "items": {
+            "properties": {
+              "verificationStatus": {
+                "enum": [
+                  "pending",
+                  "verified"
+                ]
+              },
+              "requiredValue": {
+                "type": "boolean"
+              },
+              "provider": {
+                "const": "Intune"
+              },
+              "policyId": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "minLength": 1
+              },
+              "setting": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "provider",
+              "setting",
+              "requiredValue",
+              "verificationStatus",
+              "policyId"
+            ],
+            "additionalProperties": false,
+            "type": "object"
+          }
+        }
+      }
+    },
+    "intune": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "setupEntryPoint",
+        "installCommand",
+        "uninstallCommand",
+        "detection",
+        "requirements",
+        "dependencies",
+        "returnCodes",
+        "maximumInstallationTimeInMinutes"
+      ],
+      "properties": {
+        "setupEntryPoint": {
+          "const": "Invoke-AppDeployToolkit.exe"
+        },
+        "installCommand": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uninstallCommand": {
+          "type": "string",
+          "minLength": 1
+        },
+        "detection": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "scriptFile",
+            "versionComparison",
+            "minimumVersionFrom",
+            "architecture",
+            "language",
+            "runAs32Bit",
+            "enforceSignatureCheck"
+          ],
+          "properties": {
+            "kind": {
+              "enum": [
+                "script",
+                "msi",
+                "file",
+                "registry"
+              ]
+            },
+            "scriptFile": {
+              "type": "string",
+              "minLength": 1
+            },
+            "versionComparison": {
+              "enum": [
+                "greaterThanOrEqual",
+                "equal"
+              ]
+            },
+            "minimumVersionFrom": {
+              "const": "resolved-release.version"
+            },
+            "architecture": {
+              "type": "string",
+              "minLength": 1
+            },
+            "language": {
+              "type": "string",
+              "minLength": 1
+            },
+            "runAs32Bit": {
+              "type": "boolean"
+            },
+            "enforceSignatureCheck": {
+              "type": "boolean"
+            }
+          }
+        },
+        "requirements": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "architecture",
+            "minimumSupportedOperatingSystem",
+            "applicability",
+            "customScriptFile"
+          ],
+          "properties": {
+            "architecture": {
+              "enum": [
+                "x64",
+                "x86",
+                "arm64"
+              ]
+            },
+            "minimumSupportedOperatingSystem": {
+              "type": "string",
+              "minLength": 1
+            },
+            "applicability": {
+              "enum": [
+                "fresh-or-upgrade",
+                "update-only"
+              ]
+            },
+            "customScriptFile": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "appId",
+              "autoInstall"
+            ],
+            "properties": {
+              "appId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "autoInstall": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "returnCodes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "code",
+              "type"
+            ],
+            "properties": {
+              "code": {
+                "type": "integer"
+              },
+              "type": {
+                "enum": [
+                  "success",
+                  "softReboot",
+                  "hardReboot",
+                  "retry",
+                  "failed"
+                ]
+              }
+            }
+          }
+        },
+        "maximumInstallationTimeInMinutes": {
+          "const": 120
+        }
+      }
+    },
+    "targets": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pilotGroupId",
+        "productionGroupId"
+      ],
+      "properties": {
+        "pilotGroupId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "productionGroupId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "update": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "strategy",
+        "selfUpdater",
+        "retainedSuccessfulReleases",
+        "productionApprovalRequired",
+        "downgradeHandling"
+      ],
+      "properties": {
+        "strategy": {
+          "enum": [
+            "new-app-per-release",
+            "replace-content"
+          ]
+        },
+        "selfUpdater": {
+          "enum": [
+            "centrally-controlled",
+            "vendor-managed"
+          ]
+        },
+        "retainedSuccessfulReleases": {
+          "type": "integer",
+          "minimum": 2
+        },
+        "productionApprovalRequired": {
+          "const": true
+        },
+        "downgradeHandling": {
+          "const": "vendor-default"
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "engineerSupplied",
+        "evergreenDerived",
+        "installerDerived",
+        "buildGenerated"
+      ],
+      "properties": {
+        "engineerSupplied": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "evergreenDerived": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "installerDerived": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "buildGenerated": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}
